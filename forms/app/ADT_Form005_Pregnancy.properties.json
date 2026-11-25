@@ -1,0 +1,9 @@
+{
+  "title": "Pregnancy",
+  "icon": "icon-people-pregnant-ltf",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "ageInYears(contact) >= 13 && ageInYears(contact) <= 64"
+  }
+}

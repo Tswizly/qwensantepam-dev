@@ -1,0 +1,1265 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Adult Vision</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="spectacle_type-0">
+            <value>None</value>
+          </text>
+          <text id="spectacle_type-1">
+            <value>Distance</value>
+          </text>
+          <text id="spectacle_type-2">
+            <value>Reading</value>
+          </text>
+          <text id="spectacle_type-3">
+            <value>Both</value>
+          </text>
+          <text id="va_distance-0">
+            <value>6/12 or better</value>
+          </text>
+          <text id="va_distance-1">
+            <value>Worse than 6/12</value>
+          </text>
+          <text id="va_near-0">
+            <value>N6 or better</value>
+          </text>
+          <text id="va_near-1">
+            <value>Worse than N6</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/case_history_group:label">
+            <value>Case History</value>
+          </text>
+          <text id="/data/case_history_group/blurred_vision:label">
+            <value>Does the patient experience blurred vision (with spectacles if used)?</value>
+          </text>
+          <text id="/data/case_history_group/wears_spectacles:label">
+            <value>Does the patient wear spectacles?</value>
+          </text>
+          <text id="/data/case_history_group/eye_pain:label">
+            <value>Is the patient experiencing eye pain or discomfort?</value>
+          </text>
+          <text id="/data/case_history_group/history_diabetes:label">
+            <value>Has the patient been diagnosed with diabetes?</value>
+          </text>
+          <text id="/data/case_history_group/history_hypertension:label">
+            <value>Has the patient been diagnosed with hypertension (high blood pressure)?</value>
+          </text>
+          <text id="/data/case_history_group/eye_medications:label">
+            <value>Is the patient currently using eye drops or eye medications?</value>
+          </text>
+          <text id="/data/distance_va_group:label">
+            <value>Distance Visual Acuity (3 meters)</value>
+          </text>
+          <text id="/data/distance_va_group/distance_va_note:label">
+            <value>Position patient 3 meters from Tumbling E chart. Test each eye separately in ambient light (with distance spectacles if worn).</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_right:label">
+            <value>Right eye distance visual acuity (3 meters):</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_left:label">
+            <value>Left eye distance visual acuity (3 meters):</value>
+          </text>
+          <text id="/data/near_va_group:label">
+            <value>Near Visual Acuity (40 cm)</value>
+          </text>
+          <text id="/data/near_va_group/near_va_note:label">
+            <value>Hold reading card 40 cm from patient's eyes. Test both eyes together in ambient light (with reading spectacles if worn).</value>
+          </text>
+          <text id="/data/near_va_group/va_near_both:label">
+            <value>Near visual acuity at 40 cm (both eyes):</value>
+          </text>
+          <text id="/data/external_eye_group:label">
+            <value>External Eye Screening (Ambient Light)</value>
+          </text>
+          <text id="/data/external_eye_group/external_eye_note:label">
+            <value>Examine external eye in adequate ambient lighting without an ophthalmoscope or penlight. Do not touch patient's eyes.</value>
+          </text>
+          <text id="/data/external_eye_group/ext_crust_pus:label">
+            <value>Significant crust or pus on eyelid margins?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_excessive_watering:label">
+            <value>Excessive watering or sticky discharge from eyes?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_inward_eyelashes:label">
+            <value>Eyelashes turning inwards (trichiasis)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_abnormal_lid_closure:label">
+            <value>Abnormal eyelid closure (inability to close completely)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_red_conjunctiva:label">
+            <value>Abnormal redness on white part of eye (conjunctiva)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_hazy_cornea:label">
+            <value>Abnormal haziness, cloudiness, or redness on coloured part (cornea/iris)?</value>
+          </text>
+          <text id="/data/results_refer_group:label">
+            <value>Results - Referral Required</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_banner:label">
+            <value>REFERRAL REQUIRED: Comprehensive Eye Examination Needed</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_pain:label">
+            <value>• Ocular Pain / Discomfort reported by patient.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_systemic:label">
+            <value>• Systemic Condition: Known history of diabetes or hypertension increases risk of retinopathy.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_medication:label">
+            <value>• Current Eye Medication: Patient is actively using eye medication/drops.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_dist_va:label">
+            <value>• Distance Visual Acuity: Reduced vision (&lt; 6/12) in one or both eyes at 3 meters.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_near_va:label">
+            <value>• Near Visual Acuity: Reduced reading vision (&lt; N6) at 40 cm.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_external:label">
+            <value>• External Eye Abnormalities detected under ambient light inspection.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_protocol:label">
+            <value>Protocol: Refer patient to an optometrist, ophthalmic nurse, or ophthalmologist within 30 days. Complete referral form, explain findings to patient, and counsel on hand and eye hygiene.</value>
+          </text>
+          <text id="/data/results_pass_group:label">
+            <value>Results - Screening Passed</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_banner:label">
+            <value>SCREENING PASSED: Vision Within Normal Limits</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_counseling:label">
+            <value>Patient meets visual acuity thresholds (Distance &gt;= 6/12, Near &gt;= N6) and no red flags or external abnormalities were observed. Counsel on regular follow-up checks, eye hygiene, and advising immediate consultation if vision changes occur.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="spectacle_type-0">
+            <value>Aucun</value>
+          </text>
+          <text id="spectacle_type-1">
+            <value>Loin</value>
+          </text>
+          <text id="spectacle_type-2">
+            <value>Lecture</value>
+          </text>
+          <text id="spectacle_type-3">
+            <value>Les deux</value>
+          </text>
+          <text id="va_distance-0">
+            <value>6/12 ou mieux</value>
+          </text>
+          <text id="va_distance-1">
+            <value>Moins de 6/12</value>
+          </text>
+          <text id="va_near-0">
+            <value>N6 ou mieux</value>
+          </text>
+          <text id="va_near-1">
+            <value>Moins de N6</value>
+          </text>
+          <text id="/data/case_history_group:label">
+            <value>Histoire clinique</value>
+          </text>
+          <text id="/data/case_history_group/blurred_vision:label">
+            <value>Le patient a-t-il une vision floue (avec lunettes si utilisées) ?</value>
+          </text>
+          <text id="/data/case_history_group/wears_spectacles:label">
+            <value>Le patient porte-t-il des lunettes ?</value>
+          </text>
+          <text id="/data/case_history_group/eye_pain:label">
+            <value>Le patient ressent-il une douleur ou un inconfort oculaire ?</value>
+          </text>
+          <text id="/data/case_history_group/history_diabetes:label">
+            <value>Le patient a-t-il été diagnostiqué avec le diabète ?</value>
+          </text>
+          <text id="/data/case_history_group/history_hypertension:label">
+            <value>Le patient a-t-il été diagnostiqué avec une hypertension artérielle ?</value>
+          </text>
+          <text id="/data/case_history_group/eye_medications:label">
+            <value>Le patient utilise-t-il actuellement des gouttes ou médicaments pour les yeux ?</value>
+          </text>
+          <text id="/data/distance_va_group:label">
+            <value>Acuité visuelle de loin (3 mètres)</value>
+          </text>
+          <text id="/data/distance_va_group/distance_va_note:label">
+            <value>Placez le patient à 3 mètres de l'échelle d'E. Testez chaque œil séparément sous éclairage ambiant (avec lunettes de loin si portées).</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_right:label">
+            <value>Acuité visuelle de loin - œil droit (3 mètres) :</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_left:label">
+            <value>Acuité visuelle de loin - œil gauche (3 mètres) :</value>
+          </text>
+          <text id="/data/near_va_group:label">
+            <value>Acuité visuelle de près (40 cm)</value>
+          </text>
+          <text id="/data/near_va_group/near_va_note:label">
+            <value>Tenez la carte de lecture à 40 cm des yeux du patient. Testez les deux yeux ensemble sous éclairage ambiant (avec lunettes de lecture si portées).</value>
+          </text>
+          <text id="/data/near_va_group/va_near_both:label">
+            <value>Acuité visuelle de près à 40 cm (les deux yeux) :</value>
+          </text>
+          <text id="/data/external_eye_group:label">
+            <value>Examen oculaire externe (lumière ambiante)</value>
+          </text>
+          <text id="/data/external_eye_group/external_eye_note:label">
+            <value>Examinez les yeux sous un bon éclairage ambiant, sans ophtalmoscope ni lampe torche. Ne touchez pas les yeux du patient.</value>
+          </text>
+          <text id="/data/external_eye_group/ext_crust_pus:label">
+            <value>Croûtes importantes ou pus sur le bord des paupières ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_excessive_watering:label">
+            <value>Larmoiement excessif ou écoulement collant des yeux ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_inward_eyelashes:label">
+            <value>Cils tournés vers l'intérieur (trichiasis) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_abnormal_lid_closure:label">
+            <value>Fermeture anormale des paupières (impossibilité de fermer complètement) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_red_conjunctiva:label">
+            <value>Rougeur anormale sur le blanc de l'œil (conjonctive) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_hazy_cornea:label">
+            <value>Opacité, voile ou rougeur sur la partie colorée (cornée/iris) ?</value>
+          </text>
+          <text id="/data/results_refer_group:label">
+            <value>Résultats - Référence requise</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_banner:label">
+            <value>RÉFÉRENCE REQUISE : Examen oculaire complet nécessaire</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_pain:label">
+            <value>• Douleur ou gêne oculaire signalée par le patient.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_systemic:label">
+            <value>• Condition systémique : Antécédents de diabète ou d'hypertension augmentant le risque de rétinopathie.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_medication:label">
+            <value>• Médicaments oculaires en cours : Le patient utilise des gouttes ou médicaments pour les yeux.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_dist_va:label">
+            <value>• Acuité visuelle de loin : Vision réduite (&lt; 6/12) à un ou deux yeux à 3 mètres.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_near_va:label">
+            <value>• Acuité visuelle de près : Vision de lecture réduite (&lt; N6) à 40 cm.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_external:label">
+            <value>• Anomalies oculaires externes détectées lors de l'examen sous lumière ambiante.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_protocol:label">
+            <value>Protocole : Référer le patient à un optométriste, une infirmière ophtalmique ou un ophtalmologiste dans les 30 jours. Remplir la fiche de référence et conseiller sur l'hygiène oculaire.</value>
+          </text>
+          <text id="/data/results_pass_group:label">
+            <value>Résultats - Dépistage réussi</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_banner:label">
+            <value>DÉPISTAGE RÉUSSI : Vision dans les limites normales</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_counseling:label">
+            <value>Le patient atteint les seuils d'acuité visuelle (Loin &gt;= 6/12, Près &gt;= N6) sans anomalie externe. Conseillez un suivi régulier, l'hygiène des yeux, et de consulter rapidement en cas de changement visuel.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_screening_result:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_blurred_vision:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_wears_spectacles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_eye_pain:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_history_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_history_hypertension:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_eye_medications:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_va_distance_right:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_va_distance_left:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_va_near_both:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_crust_pus:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_excessive_watering:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_inward_eyelashes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_abnormal_lid_closure:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_red_conjunctiva:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_hazy_cornea:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_systemic:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_pain:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_medication:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_va:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_external:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="spectacle_type-0">
+            <value>Okenn</value>
+          </text>
+          <text id="spectacle_type-1">
+            <value>Lwen</value>
+          </text>
+          <text id="spectacle_type-2">
+            <value>Lekti</value>
+          </text>
+          <text id="spectacle_type-3">
+            <value>Toulede</value>
+          </text>
+          <text id="va_distance-0">
+            <value>6/12 oswa pi bon</value>
+          </text>
+          <text id="va_distance-1">
+            <value>Pi ba pase 6/12</value>
+          </text>
+          <text id="va_near-0">
+            <value>N6 oswa pi bon</value>
+          </text>
+          <text id="va_near-1">
+            <value>Pi ba pase N6</value>
+          </text>
+          <text id="/data/case_history_group:label">
+            <value>Istwa pasyan an</value>
+          </text>
+          <text id="/data/case_history_group/blurred_vision:label">
+            <value>Èske pasyan an wè twoub (avèk linèt si li itilize) ?</value>
+          </text>
+          <text id="/data/case_history_group/wears_spectacles:label">
+            <value>Èske pasyan an mete linèt ?</value>
+          </text>
+          <text id="/data/case_history_group/eye_pain:label">
+            <value>Èske pasyan an gen doulè oswa malèz nan je ?</value>
+          </text>
+          <text id="/data/case_history_group/history_diabetes:label">
+            <value>Èske yo te dyagnostike pasyan an ak dyabèt ?</value>
+          </text>
+          <text id="/data/case_history_group/history_hypertension:label">
+            <value>Èske yo te dyagnostike pasyan an ak tansyon wo ?</value>
+          </text>
+          <text id="/data/case_history_group/eye_medications:label">
+            <value>Èske pasyan an ap itilize gout oswa medikaman pou je kounye a ?</value>
+          </text>
+          <text id="/data/distance_va_group:label">
+            <value>Klere vizyèl distans (3 mèt)</value>
+          </text>
+          <text id="/data/distance_va_group/distance_va_note:label">
+            <value>Mete pasyan an a 3 mèt de tablo E a. Teste chak je apa nan limyè anbyan (avèk linèt pou lwen si li mete).</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_right:label">
+            <value>Klere vizyèl distans - je dwat (3 mèt) :</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_left:label">
+            <value>Klere vizyèl distans - je gòch (3 mèt) :</value>
+          </text>
+          <text id="/data/near_va_group:label">
+            <value>Klere vizyèl de pre (40 cm)</value>
+          </text>
+          <text id="/data/near_va_group/near_va_note:label">
+            <value>Kenbe kat lekti a a 40 cm de je pasyan an. Teste toulede je yo ansanm nan limyè anbyan (avèk linèt lekti si li mete).</value>
+          </text>
+          <text id="/data/near_va_group/va_near_both:label">
+            <value>Klere vizyèl de pre a 40 cm (toulede je) :</value>
+          </text>
+          <text id="/data/external_eye_group:label">
+            <value>Egzamen ekstèn je (limyè anbyan)</value>
+          </text>
+          <text id="/data/external_eye_group/external_eye_note:label">
+            <value>Egzamine je yo nan bon limyè anbyan san oftalmoskòp ni lanp. Pa touche je pasyan an.</value>
+          </text>
+          <text id="/data/external_eye_group/ext_crust_pus:label">
+            <value>Èske gen kwout enpòtan oswa pi sou bò po je yo ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_excessive_watering:label">
+            <value>Èske gen dlo k ap koule twòp oswa ekoulman kolan nan je yo ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_inward_eyelashes:label">
+            <value>Èske plim je yo vire anndan (trikiyazis) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_abnormal_lid_closure:label">
+            <value>Èske gen fèmen po je ki pa nòmal (pa ka fèmen je nèt) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_red_conjunctiva:label">
+            <value>Èske gen woujè ki pa nòmal sou pati blan je a (konjonktiv) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_hazy_cornea:label">
+            <value>Èske gen twoub, tach blanch/gri, oswa wouj sou pati ki gen koulè a (kone/iris) ?</value>
+          </text>
+          <text id="/data/results_refer_group:label">
+            <value>Rezilta - Referans obligatwa</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_banner:label">
+            <value>REFERANS OBLIGATWA: Egzamen je konplè nesesè</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_pain:label">
+            <value>• Pasyan an rapòte doulè oswa malèz nan je.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_systemic:label">
+            <value>• Maladi jeneral: Istwa dyabèt oswa tansyon wo ki ogmante risk retinopati.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_medication:label">
+            <value>• Medikaman pou je: Pasyan an ap pran gout oswa medikaman pou je.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_dist_va:label">
+            <value>• Klere vizyèl distans: Vizyon redui (&lt; 6/12) nan youn oswa toulede je a 3 mèt.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_near_va:label">
+            <value>• Klere vizyèl de pre: Vizyon lekti redui (&lt; N6) a 40 cm.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_external:label">
+            <value>• Pwoblèm ekstèn nan je yo detekte pandan egzamen anba limyè anbyan.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_protocol:label">
+            <value>Pwotokòl: Voye pasyan an wè yon optometris, enfimyè je, oswa doktè je nan 30 jou. Ranpli fòm referans lan epi bay konsèy sou ijyèn je ak lave men.</value>
+          </text>
+          <text id="/data/results_pass_group:label">
+            <value>Rezilta - Depistaj reyisi</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_banner:label">
+            <value>DEPISTAJ REYISI: Vizyon nòmal pou laj la</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_counseling:label">
+            <value>Pasyan an rive nan nivo klere vizyèl nòmal (Lwen &gt;= 6/12, Pre &gt;= N6) san okenn pwoblèm ekstèn. Bay konsèy pou tcheke je regilyèman, kenbe bon ijyèn, epi vin konsilte touswit si vizyon an ta chanje.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_screening_result:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_blurred_vision:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_wears_spectacles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_eye_pain:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_history_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_history_hypertension:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_eye_medications:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_va_distance_right:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_va_distance_left:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_va_near_both:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_crust_pus:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_excessive_watering:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_inward_eyelashes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_abnormal_lid_closure:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_red_conjunctiva:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_ext_hazy_cornea:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_systemic:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_pain:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_medication:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_va:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_reason_external:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="ADT_Form010_Vision" version="20261120104527" prefix="J1!ADT_Form010_Vision!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source tag="hidden">user</source>
+            <source_id tag="hidden"/>
+            <user>
+              <contact_id tag="hidden"/>
+              <parent>
+                <_id tag="hidden"/>
+              </parent>
+              <facility_id tag="hidden"/>
+            </user>
+            <contact>
+              <_id tag="hidden"/>
+              <name/>
+              <short_name tag="hidden"/>
+              <patient_id tag="hidden"/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id tag="hidden"/>
+                <parent>
+                  <contact>
+                    <nurse_name tag="hidden"/>
+                    <phone tag="hidden"/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <case_history_group>
+            <blurred_vision tag="hidden"/>
+            <blurred_vision_label/>
+            <wears_spectacles tag="hidden"/>
+            <wears_spectacles_label/>
+            <eye_pain tag="hidden"/>
+            <eye_pain_label/>
+            <history_diabetes tag="hidden"/>
+            <history_diabetes_label/>
+            <history_hypertension tag="hidden"/>
+            <history_hypertension_label/>
+            <eye_medications tag="hidden"/>
+            <eye_medications_label/>
+          </case_history_group>
+          <distance_va_group>
+            <distance_va_note tag="hidden"/>
+            <va_distance_right tag="hidden"/>
+            <va_distance_right_label/>
+            <va_distance_left tag="hidden"/>
+            <va_distance_left_label/>
+          </distance_va_group>
+          <near_va_group>
+            <near_va_note tag="hidden"/>
+            <va_near_both tag="hidden"/>
+            <va_near_both_label/>
+          </near_va_group>
+          <external_eye_group>
+            <external_eye_note tag="hidden"/>
+            <ext_crust_pus tag="hidden"/>
+            <ext_crust_pus_label/>
+            <ext_excessive_watering tag="hidden"/>
+            <ext_excessive_watering_label/>
+            <ext_inward_eyelashes tag="hidden"/>
+            <ext_inward_eyelashes_label/>
+            <ext_abnormal_lid_closure tag="hidden"/>
+            <ext_abnormal_lid_closure_label/>
+            <ext_red_conjunctiva tag="hidden"/>
+            <ext_red_conjunctiva_label/>
+            <ext_hazy_cornea tag="hidden"/>
+            <ext_hazy_cornea_label/>
+          </external_eye_group>
+          <calc_refer_systemic tag="hidden"/>
+          <calc_refer_medication tag="hidden"/>
+          <calc_refer_pain tag="hidden"/>
+          <calc_refer_distance_va tag="hidden"/>
+          <calc_refer_near_va tag="hidden"/>
+          <calc_refer_va tag="hidden"/>
+          <calc_refer_external tag="hidden"/>
+          <calc_vision_referral tag="hidden"/>
+          <calc_vision_pass tag="hidden"/>
+          <results_refer_group tag="hidden">
+            <res_refer_banner tag="hidden"/>
+            <res_refer_pain tag="hidden"/>
+            <res_refer_systemic tag="hidden"/>
+            <res_refer_medication tag="hidden"/>
+            <res_refer_dist_va tag="hidden"/>
+            <res_refer_near_va tag="hidden"/>
+            <res_refer_external tag="hidden"/>
+            <res_refer_protocol tag="hidden"/>
+          </results_refer_group>
+          <results_pass_group tag="hidden">
+            <res_pass_banner tag="hidden"/>
+            <res_pass_counseling tag="hidden"/>
+          </results_pass_group>
+          <data tag="hidden">
+            <_screening_result tag="hidden"/>
+            <_blurred_vision tag="hidden"/>
+            <_wears_spectacles tag="hidden"/>
+            <_eye_pain tag="hidden"/>
+            <_history_diabetes tag="hidden"/>
+            <_history_hypertension tag="hidden"/>
+            <_eye_medications tag="hidden"/>
+            <_va_distance_right tag="hidden"/>
+            <_va_distance_left tag="hidden"/>
+            <_va_near_both tag="hidden"/>
+            <_ext_crust_pus tag="hidden"/>
+            <_ext_excessive_watering tag="hidden"/>
+            <_ext_inward_eyelashes tag="hidden"/>
+            <_ext_abnormal_lid_closure tag="hidden"/>
+            <_ext_red_conjunctiva tag="hidden"/>
+            <_ext_hazy_cornea tag="hidden"/>
+            <_referral_reason_systemic tag="hidden"/>
+            <_referral_reason_pain tag="hidden"/>
+            <_referral_reason_medication tag="hidden"/>
+            <_referral_reason_va tag="hidden"/>
+            <_referral_reason_external tag="hidden"/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="spectacle_type">
+        <root>
+          <item>
+            <itextId>spectacle_type-0</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>spectacle_type-1</itextId>
+            <name>distance</name>
+          </item>
+          <item>
+            <itextId>spectacle_type-2</itextId>
+            <name>reading</name>
+          </item>
+          <item>
+            <itextId>spectacle_type-3</itextId>
+            <name>both</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="va_distance">
+        <root>
+          <item>
+            <itextId>va_distance-0</itextId>
+            <name>pass</name>
+          </item>
+          <item>
+            <itextId>va_distance-1</itextId>
+            <name>fail</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="va_near">
+        <root>
+          <item>
+            <itextId>va_near-0</itextId>
+            <name>pass</name>
+          </item>
+          <item>
+            <itextId>va_near-1</itextId>
+            <name>fail</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/case_history_group/blurred_vision" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/blurred_vision_label" type="string" calculate="jr:choice-name( /data/case_history_group/blurred_vision , 'blurred_vision')"/>
+      <bind nodeset="/data/case_history_group/wears_spectacles" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/wears_spectacles_label" type="string" calculate="jr:choice-name( /data/case_history_group/wears_spectacles , 'wears_spectacles')"/>
+      <bind nodeset="/data/case_history_group/eye_pain" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/eye_pain_label" type="string" calculate="jr:choice-name( /data/case_history_group/eye_pain , 'eye_pain')"/>
+      <bind nodeset="/data/case_history_group/history_diabetes" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_diabetes_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_diabetes , 'history_diabetes')"/>
+      <bind nodeset="/data/case_history_group/history_hypertension" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_hypertension_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_hypertension , 'history_hypertension')"/>
+      <bind nodeset="/data/case_history_group/eye_medications" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/eye_medications_label" type="string" calculate="jr:choice-name( /data/case_history_group/eye_medications , 'eye_medications')"/>
+      <bind nodeset="/data/distance_va_group/distance_va_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/distance_va_group/va_distance_right" type="string" required="true()"/>
+      <bind nodeset="/data/distance_va_group/va_distance_right_label" type="string" calculate="jr:choice-name( /data/distance_va_group/va_distance_right , 'va_distance_right')"/>
+      <bind nodeset="/data/distance_va_group/va_distance_left" type="string" required="true()"/>
+      <bind nodeset="/data/distance_va_group/va_distance_left_label" type="string" calculate="jr:choice-name( /data/distance_va_group/va_distance_left , 'va_distance_left')"/>
+      <bind nodeset="/data/near_va_group/near_va_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/near_va_group/va_near_both" type="string" required="true()"/>
+      <bind nodeset="/data/near_va_group/va_near_both_label" type="string" calculate="jr:choice-name( /data/near_va_group/va_near_both , 'va_near_both')"/>
+      <bind nodeset="/data/external_eye_group/external_eye_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/external_eye_group/ext_crust_pus" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_crust_pus_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_crust_pus , 'ext_crust_pus')"/>
+      <bind nodeset="/data/external_eye_group/ext_excessive_watering" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_excessive_watering_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_excessive_watering , 'ext_excessive_watering')"/>
+      <bind nodeset="/data/external_eye_group/ext_inward_eyelashes" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_inward_eyelashes_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_inward_eyelashes , 'ext_inward_eyelashes')"/>
+      <bind nodeset="/data/external_eye_group/ext_abnormal_lid_closure" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_abnormal_lid_closure_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_abnormal_lid_closure , 'ext_abnormal_lid_closure')"/>
+      <bind nodeset="/data/external_eye_group/ext_red_conjunctiva" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_red_conjunctiva_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_red_conjunctiva , 'ext_red_conjunctiva')"/>
+      <bind nodeset="/data/external_eye_group/ext_hazy_cornea" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_hazy_cornea_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_hazy_cornea , 'ext_hazy_cornea')"/>
+      <bind nodeset="/data/calc_refer_systemic" type="string" calculate="if( /data/case_history_group/history_diabetes  = 'yes' or  /data/case_history_group/history_hypertension  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_medication" type="string" calculate="if( /data/case_history_group/eye_medications  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_pain" type="string" calculate="if( /data/case_history_group/eye_pain  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_distance_va" type="string" calculate="if( /data/distance_va_group/va_distance_right  = 'fail' or  /data/distance_va_group/va_distance_left  = 'fail', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_near_va" type="string" calculate="if( /data/near_va_group/va_near_both  = 'fail', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_va" type="string" calculate="if( /data/calc_refer_distance_va  = 'true' or  /data/calc_refer_near_va  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_external" type="string" calculate="if( /data/external_eye_group/ext_crust_pus  = 'yes' or  /data/external_eye_group/ext_excessive_watering  = 'yes' or  /data/external_eye_group/ext_inward_eyelashes  = 'yes' or  /data/external_eye_group/ext_abnormal_lid_closure  = 'yes' or  /data/external_eye_group/ext_red_conjunctiva  = 'yes' or  /data/external_eye_group/ext_hazy_cornea  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_vision_referral" type="string" calculate="if( /data/calc_refer_systemic  = 'true' or  /data/calc_refer_medication  = 'true' or  /data/calc_refer_pain  = 'true' or  /data/calc_refer_va  = 'true' or  /data/calc_refer_external  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/calc_vision_pass" type="string" calculate="if( /data/calc_vision_referral  = 'false', 'true', 'false')"/>
+      <bind nodeset="/data/results_refer_group" relevant=" /data/calc_vision_referral  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_banner" readonly="true()" type="string" relevant=" /data/calc_vision_referral  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_pain" readonly="true()" type="string" relevant=" /data/calc_refer_pain  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_systemic" readonly="true()" type="string" relevant=" /data/calc_refer_systemic  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_medication" readonly="true()" type="string" relevant=" /data/calc_refer_medication  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_dist_va" readonly="true()" type="string" relevant=" /data/calc_refer_distance_va  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_near_va" readonly="true()" type="string" relevant=" /data/calc_refer_near_va  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_external" readonly="true()" type="string" relevant=" /data/calc_refer_external  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_protocol" readonly="true()" type="string" relevant=" /data/calc_vision_referral  = 'true'"/>
+      <bind nodeset="/data/results_pass_group" relevant=" /data/calc_vision_pass  = 'true'"/>
+      <bind nodeset="/data/results_pass_group/res_pass_banner" readonly="true()" type="string" relevant=" /data/calc_vision_pass  = 'true'"/>
+      <bind nodeset="/data/results_pass_group/res_pass_counseling" readonly="true()" type="string" relevant=" /data/calc_vision_pass  = 'true'"/>
+      <bind nodeset="/data/data/_screening_result" type="string" calculate="if( /data/calc_vision_referral  = 'true', 'refer', 'pass')"/>
+      <bind nodeset="/data/data/_blurred_vision" type="string" calculate=" /data/case_history_group/blurred_vision "/>
+      <bind nodeset="/data/data/_wears_spectacles" type="string" calculate=" /data/case_history_group/wears_spectacles "/>
+      <bind nodeset="/data/data/_eye_pain" type="string" calculate=" /data/case_history_group/eye_pain "/>
+      <bind nodeset="/data/data/_history_diabetes" type="string" calculate=" /data/case_history_group/history_diabetes "/>
+      <bind nodeset="/data/data/_history_hypertension" type="string" calculate=" /data/case_history_group/history_hypertension "/>
+      <bind nodeset="/data/data/_eye_medications" type="string" calculate=" /data/case_history_group/eye_medications "/>
+      <bind nodeset="/data/data/_va_distance_right" type="string" calculate=" /data/distance_va_group/va_distance_right "/>
+      <bind nodeset="/data/data/_va_distance_left" type="string" calculate=" /data/distance_va_group/va_distance_left "/>
+      <bind nodeset="/data/data/_va_near_both" type="string" calculate=" /data/near_va_group/va_near_both "/>
+      <bind nodeset="/data/data/_ext_crust_pus" type="string" calculate=" /data/external_eye_group/ext_crust_pus "/>
+      <bind nodeset="/data/data/_ext_excessive_watering" type="string" calculate=" /data/external_eye_group/ext_excessive_watering "/>
+      <bind nodeset="/data/data/_ext_inward_eyelashes" type="string" calculate=" /data/external_eye_group/ext_inward_eyelashes "/>
+      <bind nodeset="/data/data/_ext_abnormal_lid_closure" type="string" calculate=" /data/external_eye_group/ext_abnormal_lid_closure "/>
+      <bind nodeset="/data/data/_ext_red_conjunctiva" type="string" calculate=" /data/external_eye_group/ext_red_conjunctiva "/>
+      <bind nodeset="/data/data/_ext_hazy_cornea" type="string" calculate=" /data/external_eye_group/ext_hazy_cornea "/>
+      <bind nodeset="/data/data/_referral_reason_systemic" type="string" calculate=" /data/calc_refer_systemic "/>
+      <bind nodeset="/data/data/_referral_reason_pain" type="string" calculate=" /data/calc_refer_pain "/>
+      <bind nodeset="/data/data/_referral_reason_medication" type="string" calculate=" /data/calc_refer_medication "/>
+      <bind nodeset="/data/data/_referral_reason_va" type="string" calculate=" /data/calc_refer_va "/>
+      <bind nodeset="/data/data/_referral_reason_external" type="string" calculate=" /data/calc_refer_external "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/case_history_group">
+      <label ref="jr:itext('/data/case_history_group:label')"/>
+      <select1 ref="/data/case_history_group/blurred_vision">
+        <label ref="jr:itext('/data/case_history_group/blurred_vision:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/wears_spectacles">
+        <label ref="jr:itext('/data/case_history_group/wears_spectacles:label')"/>
+        <itemset nodeset="instance('spectacle_type')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/eye_pain">
+        <label ref="jr:itext('/data/case_history_group/eye_pain:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_diabetes">
+        <label ref="jr:itext('/data/case_history_group/history_diabetes:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_hypertension">
+        <label ref="jr:itext('/data/case_history_group/history_hypertension:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/eye_medications">
+        <label ref="jr:itext('/data/case_history_group/eye_medications:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/distance_va_group">
+      <label ref="jr:itext('/data/distance_va_group:label')"/>
+      <input ref="/data/distance_va_group/distance_va_note">
+        <label ref="jr:itext('/data/distance_va_group/distance_va_note:label')"/>
+      </input>
+      <select1 ref="/data/distance_va_group/va_distance_right">
+        <label ref="jr:itext('/data/distance_va_group/va_distance_right:label')"/>
+        <itemset nodeset="instance('va_distance')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/distance_va_group/va_distance_left">
+        <label ref="jr:itext('/data/distance_va_group/va_distance_left:label')"/>
+        <itemset nodeset="instance('va_distance')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/near_va_group">
+      <label ref="jr:itext('/data/near_va_group:label')"/>
+      <input ref="/data/near_va_group/near_va_note">
+        <label ref="jr:itext('/data/near_va_group/near_va_note:label')"/>
+      </input>
+      <select1 ref="/data/near_va_group/va_near_both">
+        <label ref="jr:itext('/data/near_va_group/va_near_both:label')"/>
+        <itemset nodeset="instance('va_near')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/external_eye_group">
+      <label ref="jr:itext('/data/external_eye_group:label')"/>
+      <input ref="/data/external_eye_group/external_eye_note">
+        <label ref="jr:itext('/data/external_eye_group/external_eye_note:label')"/>
+      </input>
+      <select1 ref="/data/external_eye_group/ext_crust_pus">
+        <label ref="jr:itext('/data/external_eye_group/ext_crust_pus:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_excessive_watering">
+        <label ref="jr:itext('/data/external_eye_group/ext_excessive_watering:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_inward_eyelashes">
+        <label ref="jr:itext('/data/external_eye_group/ext_inward_eyelashes:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_abnormal_lid_closure">
+        <label ref="jr:itext('/data/external_eye_group/ext_abnormal_lid_closure:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_red_conjunctiva">
+        <label ref="jr:itext('/data/external_eye_group/ext_red_conjunctiva:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_hazy_cornea">
+        <label ref="jr:itext('/data/external_eye_group/ext_hazy_cornea:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_refer_group">
+      <label ref="jr:itext('/data/results_refer_group:label')"/>
+      <input ref="/data/results_refer_group/res_refer_banner" appearance="h1 red">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_banner:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_pain">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_pain:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_systemic">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_systemic:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_medication">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_medication:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_dist_va">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_dist_va:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_near_va">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_near_va:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_external">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_external:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_protocol">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_pass_group">
+      <label ref="jr:itext('/data/results_pass_group:label')"/>
+      <input ref="/data/results_pass_group/res_pass_banner" appearance="h1 green">
+        <label ref="jr:itext('/data/results_pass_group/res_pass_banner:label')"/>
+      </input>
+      <input ref="/data/results_pass_group/res_pass_counseling">
+        <label ref="jr:itext('/data/results_pass_group/res_pass_counseling:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+  </h:body>
+</h:html>

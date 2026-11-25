@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Undo Death Report</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/undo/undo_information:jr:constraintMsg">
+            <value>Only submit this report if you want to undo the death report.</value>
+          </text>
+          <text id="/data/undo/undo_information:label">
+            <value> Submitting this form will undo the death report of <output value=" /data/patient_display_name "/>. Are you sure you want to undo the death report?</value>
+          </text>
+          <text id="/data/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;To finish, be sure to click the Submit button.</value>
+          </text>
+          <text id="/data/group_review/r_summary_details:label">
+            <value>Patient Details</value>
+          </text>
+          <text id="/data/group_review/r_patient_details:label">
+            <value><output value=" /data/patient_display_name "/> <output value=" /data/group_review/c_patient_age "/></value>
+          </text>
+          <text id="/data/group_review/r_key_instruction:label">
+            <value>Important Information</value>
+          </text>
+          <text id="/data/group_review/r_undo_confirm:label">
+            <value> Submitting this form will undo the death report for <output value=" /data/patient_display_name "/> and allow follow-ups to resume.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/undo/undo_information:jr:constraintMsg">
+            <value>Soumettez ce rapport uniquement si vous souhaitez annuler le rapport de décès.</value>
+          </text>
+          <text id="/data/undo/undo_information:label">
+            <value> La soumission de ce formulaire annulera le rapport de décès de <output value=" /data/patient_display_name "/>. Êtes-vous sûr(e) de vouloir annuler le rapport de décès ?</value>
+          </text>
+          <text id="/data/group_review/submit:label">
+            <value>#### Pour terminer, n'oubliez pas de cliquer sur le bouton Soumettre.</value>
+          </text>
+          <text id="/data/group_review/r_summary_details:label">
+            <value>Détails du patient</value>
+          </text>
+          <text id="/data/group_review/c_patient_age:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/group_review/r_patient_details:label">
+            <value><output value=" /data/patient_display_name "/> <output value=" /data/group_review/c_patient_age "/></value>
+          </text>
+          <text id="/data/group_review/r_key_instruction:label">
+            <value>Informations importantes</value>
+          </text>
+          <text id="/data/group_review/blank_note:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/group_review/r_undo_confirm:label">
+            <value> La soumission de ce formulaire annulera le rapport de décès pour <output value=" /data/patient_display_name "/> et permettra la reprise des suivis.</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/undo/undo_information:jr:constraintMsg">
+            <value>Soumèt rapò sa a sèlman si ou vle anile rapò lanmò a.</value>
+          </text>
+          <text id="/data/undo/undo_information:label">
+            <value> Soumèt fòm sa a ap anile rapò lanmò pou <output value=" /data/patient_display_name "/>. Èske ou sèten ou vle anile rapò lanmò a?</value>
+          </text>
+          <text id="/data/group_review/submit:label">
+            <value>#### Pou fini, asire w ou klike sou bouton Soumèt la.</value>
+          </text>
+          <text id="/data/group_review/r_summary_details:label">
+            <value>Detay Pasyan an</value>
+          </text>
+          <text id="/data/group_review/c_patient_age:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/group_review/r_patient_details:label">
+            <value><output value=" /data/patient_display_name "/> <output value=" /data/group_review/c_patient_age "/></value>
+          </text>
+          <text id="/data/group_review/r_key_instruction:label">
+            <value>Enfòmasyon enpòtan</value>
+          </text>
+          <text id="/data/group_review/blank_note:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/group_review/r_undo_confirm:label">
+            <value> Soumèt fòm sa a ap anile rapò lanmò pou <output value=" /data/patient_display_name "/> epi pèmèt swivi yo rekòmanse.</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="GEN_Form006_UndoDeathReport" version="2026-11-24 22:05:45.888000" prefix="J1!GEN_Form006_UndoDeathReport!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id>0</facility_id>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone>0</phone>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source>user</source>
+          <source_id/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_display_name tag="hidden"/>
+          <patient_sex/>
+          <patient_date_of_birth>0</patient_date_of_birth>
+          <patient_age_in_years tag="hidden">0</patient_age_in_years>
+          <patient_age_in_months tag="hidden">0</patient_age_in_months>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks/>
+          <undo>
+            <undo_information/>
+          </undo>
+          <group_review tag="hidden">
+            <submit/>
+            <r_summary_details/>
+            <c_patient_age/>
+            <r_patient_details/>
+            <r_key_instruction/>
+            <blank_note/>
+            <r_undo_confirm/>
+          </group_review>
+          <data tag="hidden">
+            <__confirm_undo tag="Whether or not the health worker wants to confirm undoing the death report."/>
+            <meta tag="hidden">
+              <__patient_uuid/>
+              <__patient_id/>
+              <__household_uuid/>
+              <__source/>
+              <__source_id/>
+            </meta>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_display_name" type="string" calculate="if(../patient_short_name = '', ../patient_name, concat(../patient_name, ' (', ../patient_short_name, ')'))"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/undo/undo_information" type="string" required="true()" constraint=". = 'yes'" jr:constraintMsg="jr:itext('/data/undo/undo_information:jr:constraintMsg')"/>
+      <bind nodeset="/data/group_review/submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_summary_details" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/c_patient_age" type="string" calculate="if(../../patient_age_in_days &lt; 31, concat(../../patient_age_in_days, ' days old'), if(../../patient_age_in_months &lt; 12, concat(../../patient_age_in_months, ' months old'), concat(../../patient_age_in_years, ' years old')))"/>
+      <bind nodeset="/data/group_review/r_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_key_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/blank_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_undo_confirm" readonly="true()" type="string"/>
+      <bind nodeset="/data/data/__confirm_undo" type="string" calculate=" /data/undo/undo_information "/>
+      <bind nodeset="/data/data/meta/__patient_uuid" type="string" calculate="../../../inputs/contact/_id"/>
+      <bind nodeset="/data/data/meta/__patient_id" type="string" calculate="../../../inputs/contact/patient_id"/>
+      <bind nodeset="/data/data/meta/__household_uuid" type="string" calculate="../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/data/data/meta/__source" type="string" calculate="../../../inputs/source"/>
+      <bind nodeset="/data/data/meta/__source_id" type="string" calculate="../../../inputs/source_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/undo">
+      <select1 ref="/data/undo/undo_information" appearance="multiline">
+        <label ref="jr:itext('/data/undo/undo_information:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/group_review">
+      <input ref="/data/group_review/submit">
+        <label ref="jr:itext('/data/group_review/submit:label')"/>
+      </input>
+      <input ref="/data/group_review/r_summary_details" appearance="h1 yellow">
+        <label ref="jr:itext('/data/group_review/r_summary_details:label')"/>
+      </input>
+      <input ref="/data/group_review/r_patient_details">
+        <label ref="jr:itext('/data/group_review/r_patient_details:label')"/>
+      </input>
+      <input ref="/data/group_review/r_key_instruction" appearance="h1 blue">
+        <label ref="jr:itext('/data/group_review/r_key_instruction:label')"/>
+      </input>
+      <input ref="/data/group_review/blank_note"/>
+      <input ref="/data/group_review/r_undo_confirm" appearance="h1 red">
+        <label ref="jr:itext('/data/group_review/r_undo_confirm:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/data">
+      <group ref="/data/data/meta"/>
+    </group>
+  </h:body>
+</h:html>

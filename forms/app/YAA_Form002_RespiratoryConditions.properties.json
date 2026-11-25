@@ -1,0 +1,9 @@
+{
+  "title": "Respiratory Conditions",
+  "icon": "icon-condition-cough@2x",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "ageInYears(contact) >= 6 && ageInYears(contact) <= 17"
+  }
+}

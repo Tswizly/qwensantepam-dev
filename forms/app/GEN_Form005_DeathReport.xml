@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Death Report</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="places_of_death-0">
+            <value>Health facility</value>
+          </text>
+          <text id="places_of_death-1">
+            <value>Home</value>
+          </text>
+          <text id="places_of_death-2">
+            <value>Other</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/death_details:label">
+            <value>Death details</value>
+          </text>
+          <text id="/data/death_details/date_of_death:jr:constraintMsg">
+            <value>Date of death can only be from today up to 1 year ago.</value>
+          </text>
+          <text id="/data/death_details/date_of_death:label">
+            <value>Date of Death</value>
+          </text>
+          <text id="/data/death_details/place_of_death:label">
+            <value>Place of death</value>
+          </text>
+          <text id="/data/death_details/place_of_death_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/death_details/death_information:label">
+            <value> Provide any relevant information related to the death of <output value=" /data/patient_name "/>.</value>
+          </text>
+          <text id="/data/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;To finish, be sure to click the Submit button.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/group_review/r_summary_details:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/group_review/r_patient_details:label">
+            <value> &lt;div style="text-align:center;"&gt;<output value=" /data/patient_name "/>
+<output value=" /data/group_review/c_patient_age "/>
+Date of Death: <output value=" /data/death_details/date_of_death "/>&lt;/div&gt;</value>
+          </text>
+          <text id="/data/group_review/r_death_info:label">
+            <value> &lt;div style="text-align:center;"&gt;Relevant Information: <output value=" /data/death_details/death_information "/>&lt;/div&gt;</value>
+          </text>
+          <text id="/data/group_review/r_key_instruction:label">
+            <value>&lt;b&gt;Important Information&lt;/b&gt;&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/group_review/r_referral:label">
+            <value> &lt;b&gt;You will never be able to do any follow ups on <output value=" /data/patient_name "/> when you submit this death report.&lt;/b&gt;</value>
+          </text>
+          <text id="/data/group_review/r_undo:label">
+            <value>You will be able to undo this death report later, if needed.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/death_details:label">
+            <value>Détails du décès</value>
+          </text>
+          <text id="/data/death_details/date_of_death:jr:constraintMsg">
+            <value>La date du décès ne peut être comprise qu'entre aujourd'hui et il y a un an maximum.</value>
+          </text>
+          <text id="/data/death_details/date_of_death:label">
+            <value>Date du décès</value>
+          </text>
+          <text id="/data/death_details/place_of_death:label">
+            <value>Lieu du décès</value>
+          </text>
+          <text id="/data/death_details/place_of_death_other:label">
+            <value>Précisez autre</value>
+          </text>
+          <text id="/data/death_details/death_information:label">
+            <value> Veuillez fournir toute information pertinente relative au décès de <output value=" /data/patient_name "/>.</value>
+          </text>
+          <text id="/data/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Pour terminer, n'oubliez pas de cliquer sur le bouton Soumettre.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/group_review/r_summary_details:label">
+            <value>Détails du patient&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/group_review/c_patient_age:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/group_review/r_patient_details:label">
+            <value> &lt;div style="text-align:center;"&gt;<output value=" /data/patient_name "/>
+<output value=" /data/group_review/c_patient_age "/>
+Date de décès : <output value=" /data/death_details/date_of_death "/>&lt;/div&gt;</value>
+          </text>
+          <text id="/data/group_review/r_death_info:label">
+            <value> &lt;div style="text-align:center;"&gt;Informations pertinentes : <output value=" /data/death_details/death_information "/>&lt;/div&gt;</value>
+          </text>
+          <text id="/data/group_review/r_key_instruction:label">
+            <value>&lt;b&gt;Informations importantes&lt;/b&gt;&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/group_review/blank_note:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/group_review/r_referral:label">
+            <value> &lt;b&gt;Vous ne pourrez plus effectuer aucun suivi concernant <output value=" /data/patient_name "/> après avoir soumis ce rapport de décès.&lt;/b&gt;</value>
+          </text>
+          <text id="/data/group_review/r_undo:label">
+            <value>Vous pourrez annuler ce signalement de décès ultérieurement, si nécessaire.</value>
+          </text>
+          <text id="yes_no-0">
+            <value>-</value>
+          </text>
+          <text id="yes_no-1">
+            <value>-</value>
+          </text>
+          <text id="places_of_death-0">
+            <value>-</value>
+          </text>
+          <text id="places_of_death-1">
+            <value>-</value>
+          </text>
+          <text id="places_of_death-2">
+            <value>-</value>
+          </text>
+          <text id="/data/group_review:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__date_of_death:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__place_of_death:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__place_of_death_other:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__death_information:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__household_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__source_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/death_details:label">
+            <value>Detay sou lanmò</value>
+          </text>
+          <text id="/data/death_details/date_of_death:jr:constraintMsg">
+            <value>Dat lanmò a ka sèlman soti jodi a rive jis 1 an de sa.</value>
+          </text>
+          <text id="/data/death_details/date_of_death:label">
+            <value>Dat Lanmò</value>
+          </text>
+          <text id="/data/death_details/place_of_death:label">
+            <value>Kote lanmò a</value>
+          </text>
+          <text id="/data/death_details/place_of_death_other:label">
+            <value>Espesifye lòt</value>
+          </text>
+          <text id="/data/death_details/death_information:label">
+            <value> Bay nenpòt enfòmasyon ki enpòtan konsènan lanmò <output value=" /data/patient_name "/>.</value>
+          </text>
+          <text id="/data/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Pou fini, asire w ou klike sou bouton Soumèt la.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/group_review/r_summary_details:label">
+            <value>Detay Pasyan an&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/group_review/c_patient_age:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/group_review/r_patient_details:label">
+            <value> &lt;div style="text-align:center;"&gt;<output value=" /data/patient_name "/>
+<output value=" /data/group_review/c_patient_age "/>
+Dat Lanmò: <output value=" /data/death_details/date_of_death "/>&lt;/div&gt;</value>
+          </text>
+          <text id="/data/group_review/r_death_info:label">
+            <value> &lt;div style="text-align:center;"&gt;Enfòmasyon enpòtan: <output value=" /data/death_details/death_information "/>&lt;/div&gt;</value>
+          </text>
+          <text id="/data/group_review/r_key_instruction:label">
+            <value>&lt;b&gt;Enfòmasyon enpòtan&lt;/b&gt;&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/group_review/blank_note:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/group_review/r_referral:label">
+            <value> Ou p'ap janm ka fè okenn swivi sou <output value=" /data/patient_name "/> lè ou soumèt rapò lanmò sa a.</value>
+          </text>
+          <text id="/data/group_review/r_undo:label">
+            <value>Ou ap kapab anile rapò lanmò sa a pita, si sa nesesè.</value>
+          </text>
+          <text id="yes_no-0">
+            <value>-</value>
+          </text>
+          <text id="yes_no-1">
+            <value>-</value>
+          </text>
+          <text id="places_of_death-0">
+            <value>-</value>
+          </text>
+          <text id="places_of_death-1">
+            <value>-</value>
+          </text>
+          <text id="places_of_death-2">
+            <value>-</value>
+          </text>
+          <text id="/data/group_review:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__date_of_death:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__place_of_death:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__place_of_death_other:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/__death_information:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__household_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/meta/__source_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="GEN_Form005_DeathReport" version="2026-11-24 21:13:52.896000" prefix="J1!GEN_Form005_DeathReport!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id>0</facility_id>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone>0</phone>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source>user</source>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth>0</patient_date_of_birth>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <death_details>
+            <date_of_death/>
+            <place_of_death/>
+            <place_of_death_other/>
+            <death_information/>
+          </death_details>
+          <group_review tag="hidden">
+            <submit/>
+            <r_summary_details/>
+            <c_patient_age/>
+            <r_patient_details/>
+            <r_death_info/>
+            <r_key_instruction/>
+            <blank_note/>
+            <r_referral/>
+            <r_undo/>
+          </group_review>
+          <data tag="hidden">
+            <__date_of_death/>
+            <__place_of_death/>
+            <__place_of_death_other/>
+            <__death_information/>
+            <meta tag="hidden">
+              <__patient_uuid/>
+              <__patient_id/>
+              <__household_uuid/>
+              <__source/>
+              <__source_id/>
+            </meta>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="places_of_death">
+        <root>
+          <item>
+            <itextId>places_of_death-0</itextId>
+            <name>health_facility</name>
+          </item>
+          <item>
+            <itextId>places_of_death-1</itextId>
+            <name>home</name>
+          </item>
+          <item>
+            <itextId>places_of_death-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/death_details/date_of_death" type="date" constraint="(. &lt;= now()) and floor(decimal-date-time(today()) - decimal-date-time(.)) &lt;= 365" jr:constraintMsg="jr:itext('/data/death_details/date_of_death:jr:constraintMsg')"/>
+      <bind nodeset="/data/death_details/place_of_death" type="string"/>
+      <bind nodeset="/data/death_details/place_of_death_other" type="string" relevant="selected(../place_of_death, 'other')"/>
+      <bind nodeset="/data/death_details/death_information" type="string"/>
+      <bind nodeset="/data/group_review/submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_summary_details" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/c_patient_age" type="string" calculate="if(../../patient_age_in_days &lt; 31, &#10;concat(../../patient_age_in_days, ' days old'),&#10;if(../../patient_age_in_months &lt; 12, &#10;concat(../../patient_age_in_months, ' months old'), &#10;concat(../../patient_age_in_years, ' years old')))"/>
+      <bind nodeset="/data/group_review/r_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_death_info" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_key_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/blank_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_referral" readonly="true()" type="string"/>
+      <bind nodeset="/data/group_review/r_undo" readonly="true()" type="string"/>
+      <bind nodeset="/data/data/__date_of_death" type="string" calculate=" /data/death_details/date_of_death "/>
+      <bind nodeset="/data/data/__place_of_death" type="string" calculate=" /data/death_details/place_of_death "/>
+      <bind nodeset="/data/data/__place_of_death_other" type="string" calculate=" /data/death_details/place_of_death_other "/>
+      <bind nodeset="/data/data/__death_information" type="string" calculate=" /data/death_details/death_information "/>
+      <bind nodeset="/data/data/meta/__patient_uuid" type="string" calculate="../../../inputs/contact/_id"/>
+      <bind nodeset="/data/data/meta/__patient_id" type="string" calculate="../../../inputs/contact/patient_id"/>
+      <bind nodeset="/data/data/meta/__household_uuid" type="string" calculate="../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/data/data/meta/__source" type="string" calculate="../../../inputs/source"/>
+      <bind nodeset="/data/data/meta/__source_id" type="string" calculate="../../../inputs/source_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/death_details">
+      <label ref="jr:itext('/data/death_details:label')"/>
+      <input ref="/data/death_details/date_of_death">
+        <label ref="jr:itext('/data/death_details/date_of_death:label')"/>
+      </input>
+      <select1 ref="/data/death_details/place_of_death">
+        <label ref="jr:itext('/data/death_details/place_of_death:label')"/>
+        <itemset nodeset="instance('places_of_death')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/death_details/place_of_death_other">
+        <label ref="jr:itext('/data/death_details/place_of_death_other:label')"/>
+      </input>
+      <input ref="/data/death_details/death_information" appearance="multiline">
+        <label ref="jr:itext('/data/death_details/death_information:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/group_review">
+      <input ref="/data/group_review/submit">
+        <label ref="jr:itext('/data/group_review/submit:label')"/>
+      </input>
+      <input ref="/data/group_review/r_summary_details" appearance="h1 yellow">
+        <label ref="jr:itext('/data/group_review/r_summary_details:label')"/>
+      </input>
+      <input ref="/data/group_review/r_patient_details">
+        <label ref="jr:itext('/data/group_review/r_patient_details:label')"/>
+      </input>
+      <input ref="/data/group_review/r_death_info">
+        <label ref="jr:itext('/data/group_review/r_death_info:label')"/>
+      </input>
+      <input ref="/data/group_review/r_key_instruction" appearance="h1 blue">
+        <label ref="jr:itext('/data/group_review/r_key_instruction:label')"/>
+      </input>
+      <input ref="/data/group_review/blank_note"/>
+      <input ref="/data/group_review/r_referral" appearance="h1 red">
+        <label ref="jr:itext('/data/group_review/r_referral:label')"/>
+      </input>
+      <input ref="/data/group_review/r_undo">
+        <label ref="jr:itext('/data/group_review/r_undo:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/data">
+      <group ref="/data/data/meta"/>
+    </group>
+  </h:body>
+</h:html>

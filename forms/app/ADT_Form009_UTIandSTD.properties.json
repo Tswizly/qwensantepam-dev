@@ -1,0 +1,9 @@
+{
+  "title": "UTI and STD",
+  "icon": "no_image_selected",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64"
+  }
+}

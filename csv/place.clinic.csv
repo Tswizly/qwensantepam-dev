@@ -1,0 +1,5 @@
+reference_id:excluded,parent:place WHERE reference_id=COL_VAL,is_name_generated,name,contact:person WHERE reference_id=COL_VAL
+t1_nurse_1_zone,territory_1,false,Territory 1's Nurse 1 Zone,t1_nurse_zone_1_nurse
+t1_nurse_2_zone,territory_1,false,Territory 1's Nurse 2 Zone,t1_nurse_zone_2_nurse
+t2_nurse_1_zone,territory_2,false,Territory 1's Nurse 1 Zone,t2_nurse_zone_1_nurse
+t2_nurse_2_zone,territory_2,false,Territory 1's Nurse 2 Zone,t2_nurse_zone_2_nurse

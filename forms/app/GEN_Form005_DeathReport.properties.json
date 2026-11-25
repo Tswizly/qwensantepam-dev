@@ -1,0 +1,9 @@
+{
+  "title": "Death Report",
+  "icon": "icon-death-general",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "!contact.date_of_death"
+  }
+}

@@ -1,0 +1,2135 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Stock Count</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/stock:label">
+            <value>Stock - Stock</value>
+          </text>
+          <text id="/data/stock/litacid_gel:label">
+            <value>Litacid Gel</value>
+          </text>
+          <text id="/data/stock/litacid_gel:hint">
+            <value> Add the quantity: <output value=" /data/stock/litacid_gel "/> unit</value>
+          </text>
+          <text id="/data/stock/calamine_lotion:label">
+            <value>Calamine Lotion</value>
+          </text>
+          <text id="/data/stock/calamine_lotion:hint">
+            <value> Add the quantity: <output value=" /data/stock/calamine_lotion "/> unit</value>
+          </text>
+          <text id="/data/stock/cotrimoxazole_400_80mg:label">
+            <value>Cotrimoxazole 400 80Mg</value>
+          </text>
+          <text id="/data/stock/cotrimoxazole_400_80mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/cotrimoxazole_400_80mg "/> unit</value>
+          </text>
+          <text id="/data/stock/albendazole_400mg:label">
+            <value>Albendazole 400Mg</value>
+          </text>
+          <text id="/data/stock/albendazole_400mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/albendazole_400mg "/> unit</value>
+          </text>
+          <text id="/data/stock/buscopan_injectable:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/stock/buscopan_injectable:hint">
+            <value> Add the quantity: <output value=" /data/stock/buscopan_injectable "/> unit</value>
+          </text>
+          <text id="/data/stock/cloxacillin_500mg:label">
+            <value>Cloxacillin 500mg</value>
+          </text>
+          <text id="/data/stock/cloxacillin_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/cloxacillin_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/benzathine_penicillin_injectable:label">
+            <value>Benzathine Penicillin Injectable</value>
+          </text>
+          <text id="/data/stock/benzathine_penicillin_injectable:hint">
+            <value> Add the quantity: <output value=" /data/stock/benzathine_penicillin_injectable "/> unit</value>
+          </text>
+          <text id="/data/stock/vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/data/stock/vitamin_a:hint">
+            <value> Add the quantity: <output value=" /data/stock/vitamin_a "/> unit</value>
+          </text>
+          <text id="/data/stock/strips:label">
+            <value>Strips</value>
+          </text>
+          <text id="/data/stock/strips:hint">
+            <value> Add the quantity: <output value=" /data/stock/strips "/> unit</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic:label">
+            <value>Triple Antibiotic</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic:hint">
+            <value> Add the quantity: <output value=" /data/stock/triple_antibiotic "/> unit</value>
+          </text>
+          <text id="/data/stock/furosemide_injectable:label">
+            <value>Furosemide Injectable</value>
+          </text>
+          <text id="/data/stock/furosemide_injectable:hint">
+            <value> Add the quantity: <output value=" /data/stock/furosemide_injectable "/> unit</value>
+          </text>
+          <text id="/data/stock/nifedipine_20mg:label">
+            <value>Nifedipine 20mg</value>
+          </text>
+          <text id="/data/stock/nifedipine_20mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/nifedipine_20mg "/> unit</value>
+          </text>
+          <text id="/data/stock/enalapril_10mg:label">
+            <value>Enalapril 10mg</value>
+          </text>
+          <text id="/data/stock/enalapril_10mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/enalapril_10mg "/> unit</value>
+          </text>
+          <text id="/data/stock/salbutamol_syrup:label">
+            <value>Salbutamol Syrup</value>
+          </text>
+          <text id="/data/stock/salbutamol_syrup:hint">
+            <value> Add the quantity: <output value=" /data/stock/salbutamol_syrup "/> unit</value>
+          </text>
+          <text id="/data/stock/ors:label">
+            <value>ORS</value>
+          </text>
+          <text id="/data/stock/ors:hint">
+            <value> Add the quantity: <output value=" /data/stock/ors "/> unit</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate:label">
+            <value>Benzyl Benzoate</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate:hint">
+            <value> Add the quantity: <output value=" /data/stock/benzyl_benzoate "/> unit</value>
+          </text>
+          <text id="/data/stock/metronidazole_500mg:label">
+            <value>Metronidazole 500mg</value>
+          </text>
+          <text id="/data/stock/metronidazole_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/metronidazole_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/omeprazole_20mg:label">
+            <value>Omeprazole 20mg</value>
+          </text>
+          <text id="/data/stock/omeprazole_20mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/omeprazole_20mg "/> unit</value>
+          </text>
+          <text id="/data/stock/nifedipine_10mg:label">
+            <value>Nifedipine 10mg</value>
+          </text>
+          <text id="/data/stock/nifedipine_10mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/nifedipine_10mg "/> unit</value>
+          </text>
+          <text id="/data/stock/mioflex:label">
+            <value>Mioflex</value>
+          </text>
+          <text id="/data/stock/mioflex:hint">
+            <value> Add the quantity: <output value=" /data/stock/mioflex "/> unit</value>
+          </text>
+          <text id="/data/stock/paracetamol_syrup:label">
+            <value>Paracetamol Syrup</value>
+          </text>
+          <text id="/data/stock/paracetamol_syrup:hint">
+            <value> Add the quantity: <output value=" /data/stock/paracetamol_syrup "/> unit</value>
+          </text>
+          <text id="/data/stock/tinidazole_500mg:label">
+            <value>Tinidazole 500mg</value>
+          </text>
+          <text id="/data/stock/tinidazole_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/tinidazole_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/dexamethasone_injectable:label">
+            <value>Dexamethasone Injectable</value>
+          </text>
+          <text id="/data/stock/dexamethasone_injectable:hint">
+            <value> Add the quantity: <output value=" /data/stock/dexamethasone_injectable "/> unit</value>
+          </text>
+          <text id="/data/stock/griseofulvin_tabs:label">
+            <value>Griseofulvin Tabs</value>
+          </text>
+          <text id="/data/stock/griseofulvin_tabs:hint">
+            <value> Add the quantity: <output value=" /data/stock/griseofulvin_tabs "/> unit</value>
+          </text>
+          <text id="/data/stock/chloroquine_150mg:label">
+            <value>Chloroquine 150mg</value>
+          </text>
+          <text id="/data/stock/chloroquine_150mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/chloroquine_150mg "/> unit</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate_25:label">
+            <value>Benzyl Benzoate 25%</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate_25:hint">
+            <value> Add the quantity: <output value=" /data/stock/benzyl_benzoate_25 "/> unit</value>
+          </text>
+          <text id="/data/stock/doxycycline_100mg:label">
+            <value>Doxycycline 100mg</value>
+          </text>
+          <text id="/data/stock/doxycycline_100mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/doxycycline_100mg "/> unit</value>
+          </text>
+          <text id="/data/stock/hctz_25mg:label">
+            <value>HCTZ 25mg</value>
+          </text>
+          <text id="/data/stock/hctz_25mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/hctz_25mg "/> unit</value>
+          </text>
+          <text id="/data/stock/zinc_20mg:label">
+            <value>Zinc 20Mg</value>
+          </text>
+          <text id="/data/stock/zinc_20mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/zinc_20mg "/> unit</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_suspension:label">
+            <value>Ciprofloxacin Suspension</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_suspension:hint">
+            <value> Add the quantity: <output value=" /data/stock/ciprofloxacin_suspension "/> unit</value>
+          </text>
+          <text id="/data/stock/metamizol_injectable:label">
+            <value>Metamizol Injectable</value>
+          </text>
+          <text id="/data/stock/metamizol_injectable:hint">
+            <value> Add the quantity: <output value=" /data/stock/metamizol_injectable "/> unit</value>
+          </text>
+          <text id="/data/stock/albendazole:label">
+            <value>Albendazole</value>
+          </text>
+          <text id="/data/stock/albendazole:hint">
+            <value> Add the quantity: <output value=" /data/stock/albendazole "/> unit</value>
+          </text>
+          <text id="/data/stock/omeprazole_injectable:label">
+            <value>Omeprazole Injectable</value>
+          </text>
+          <text id="/data/stock/omeprazole_injectable:hint">
+            <value> Add the quantity: <output value=" /data/stock/omeprazole_injectable "/> unit</value>
+          </text>
+          <text id="/data/stock/paracetamol_500mg:label">
+            <value>Paracetamol 500mg</value>
+          </text>
+          <text id="/data/stock/paracetamol_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/paracetamol_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_500mg:label">
+            <value>Ciprofloxacin 500mg</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/ciprofloxacin_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/griseofulvin_125mg:label">
+            <value>Griseofulvin 125mg</value>
+          </text>
+          <text id="/data/stock/griseofulvin_125mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/griseofulvin_125mg "/> unit</value>
+          </text>
+          <text id="/data/stock/amoxycillin_500mg:label">
+            <value>Amoxicillin 500mg</value>
+          </text>
+          <text id="/data/stock/amoxycillin_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/amoxycillin_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/cloxacillin_suspension:label">
+            <value>Cloxacillin Suspension</value>
+          </text>
+          <text id="/data/stock/cloxacillin_suspension:hint">
+            <value> Add the quantity: <output value=" /data/stock/cloxacillin_suspension "/> unit</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic_ointment:label">
+            <value>Triple Antibiotic Ointment</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic_ointment:hint">
+            <value> Add the quantity: <output value=" /data/stock/triple_antibiotic_ointment "/> unit</value>
+          </text>
+          <text id="/data/stock/metformin_500mg:label">
+            <value>Metformin 500mg</value>
+          </text>
+          <text id="/data/stock/metformin_500mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/metformin_500mg "/> unit</value>
+          </text>
+          <text id="/data/stock/antifungal_cream:label">
+            <value>Antifungal Cream</value>
+          </text>
+          <text id="/data/stock/antifungal_cream:hint">
+            <value> Add the quantity: <output value=" /data/stock/antifungal_cream "/> unit</value>
+          </text>
+          <text id="/data/stock/iron_folic_acid:label">
+            <value>Iron and Folic Acid</value>
+          </text>
+          <text id="/data/stock/iron_folic_acid:hint">
+            <value> Add the quantity: <output value=" /data/stock/iron_folic_acid "/> unit</value>
+          </text>
+          <text id="/data/stock/salbutamol_4mg:label">
+            <value>Salbutamol 4mg</value>
+          </text>
+          <text id="/data/stock/salbutamol_4mg:hint">
+            <value> Add the quantity: <output value=" /data/stock/salbutamol_4mg "/> unit</value>
+          </text>
+          <text id="/data/stock/zinc_tablets:label">
+            <value>Zinc Tablets</value>
+          </text>
+          <text id="/data/stock/zinc_tablets:hint">
+            <value> Add the quantity: <output value=" /data/stock/zinc_tablets "/> unit</value>
+          </text>
+          <text id="/data/stock/iv_line:label">
+            <value>Iv Line</value>
+          </text>
+          <text id="/data/stock/iv_line:hint">
+            <value> Add the quantity: <output value=" /data/stock/iv_line "/> unit</value>
+          </text>
+          <text id="/data/stock/amoxicillin_suspension:label">
+            <value>Amoxicillin Suspension</value>
+          </text>
+          <text id="/data/stock/amoxicillin_suspension:hint">
+            <value> Add the quantity: <output value=" /data/stock/amoxicillin_suspension "/> unit</value>
+          </text>
+          <text id="/data/stock/lancets:label">
+            <value>Lancets</value>
+          </text>
+          <text id="/data/stock/lancets:hint">
+            <value> Add the quantity: <output value=" /data/stock/lancets "/> unit</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/s_litacid_gel:label">
+            <value> Litacid Gel: **<output value=" /data/stock/litacid_gel___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_calamine_lotion:label">
+            <value> Calamine Lotion: **<output value=" /data/stock/calamine_lotion___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_cotrimoxazole_400_80mg:label">
+            <value> Cotrimoxazole 400 80Mg: **<output value=" /data/stock/cotrimoxazole_400_80mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_albendazole_400mg:label">
+            <value> Albendazole 400Mg: **<output value=" /data/stock/albendazole_400mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_buscopan_injectable:label">
+            <value> Buscopan Injectable: **<output value=" /data/stock/buscopan_injectable___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_500mg:label">
+            <value> Cloxacillin 500mg: **<output value=" /data/stock/cloxacillin_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_benzathine_penicillin_injectable:label">
+            <value> Benzathine Penicillin Injectable: **<output value=" /data/stock/benzathine_penicillin_injectable___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_vitamin_a:label">
+            <value> Vitamin A: **<output value=" /data/stock/vitamin_a___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_strips:label">
+            <value> Strips: **<output value=" /data/stock/strips___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic:label">
+            <value> Triple Antibiotic: **<output value=" /data/stock/triple_antibiotic___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_furosemide_injectable:label">
+            <value> Furosemide Injectable: **<output value=" /data/stock/furosemide_injectable___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_20mg:label">
+            <value> Nifedipine 20mg: **<output value=" /data/stock/nifedipine_20mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_enalapril_10mg:label">
+            <value> Enalapril 10mg: **<output value=" /data/stock/enalapril_10mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_syrup:label">
+            <value> Salbutamol Syrup: **<output value=" /data/stock/salbutamol_syrup___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_ors:label">
+            <value> ORS: **<output value=" /data/stock/ors___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate:label">
+            <value> Benzyl Benzoate: **<output value=" /data/stock/benzyl_benzoate___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_500mg:label">
+            <value> Metronidazole 500mg: **<output value=" /data/stock/metronidazole_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_20mg:label">
+            <value> Omeprazole 20mg: **<output value=" /data/stock/omeprazole_20mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_10mg:label">
+            <value> Nifedipine 10mg: **<output value=" /data/stock/nifedipine_10mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_mioflex:label">
+            <value> Mioflex: **<output value=" /data/stock/mioflex___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_syrup:label">
+            <value> Paracetamol Syrup: **<output value=" /data/stock/paracetamol_syrup___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_tinidazole_500mg:label">
+            <value> Tinidazole 500mg: **<output value=" /data/stock/tinidazole_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_dexamethasone_injectable:label">
+            <value> Dexamethasone Injectable: **<output value=" /data/stock/dexamethasone_injectable___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_tabs:label">
+            <value> Griseofulvin Tabs: **<output value=" /data/stock/griseofulvin_tabs___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_chloroquine_150mg:label">
+            <value> Chloroquine 150mg: **<output value=" /data/stock/chloroquine_150mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate_25:label">
+            <value> Benzyl Benzoate 25%: **<output value=" /data/stock/benzyl_benzoate_25___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_doxycycline_100mg:label">
+            <value> Doxycycline 100mg: **<output value=" /data/stock/doxycycline_100mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_hctz_25mg:label">
+            <value> HCTZ 25mg: **<output value=" /data/stock/hctz_25mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_zinc_20mg:label">
+            <value> Zinc 20Mg: **<output value=" /data/stock/zinc_20mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacin_suspension:label">
+            <value> Ciprofloxacin Suspension: **<output value=" /data/stock/ciprofloxacin_suspension___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_metamizol_injectable:label">
+            <value> Metamizol Injectable: **<output value=" /data/stock/metamizol_injectable___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_albendazole:label">
+            <value> Albendazole: **<output value=" /data/stock/albendazole___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_injectable:label">
+            <value> Omeprazole Injectable: **<output value=" /data/stock/omeprazole_injectable___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_500mg:label">
+            <value> Paracetamol 500mg: **<output value=" /data/stock/paracetamol_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacin_500mg:label">
+            <value> Ciprofloxacin 500mg: **<output value=" /data/stock/ciprofloxacin_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_125mg:label">
+            <value> Griseofulvin 125mg: **<output value=" /data/stock/griseofulvin_125mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_amoxycillin_500mg:label">
+            <value> Amoxicillin 500mg: **<output value=" /data/stock/amoxycillin_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_suspension:label">
+            <value> Cloxacillin Suspension: **<output value=" /data/stock/cloxacillin_suspension___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic_ointment:label">
+            <value> Triple Antibiotic Ointment: **<output value=" /data/stock/triple_antibiotic_ointment___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_metformin_500mg:label">
+            <value> Metformin 500mg: **<output value=" /data/stock/metformin_500mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_antifungal_cream:label">
+            <value> Antifungal Cream: **<output value=" /data/stock/antifungal_cream___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_iron_folic_acid:label">
+            <value> Iron and Folic Acid: **<output value=" /data/stock/iron_folic_acid___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_4mg:label">
+            <value> Salbutamol 4mg: **<output value=" /data/stock/salbutamol_4mg___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_zinc_tablets:label">
+            <value> Zinc Tablets: **<output value=" /data/stock/zinc_tablets___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_iv_line:label">
+            <value> Iv Line: **<output value=" /data/stock/iv_line___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_amoxicillin_suspension:label">
+            <value> Amoxicillin Suspension: **<output value=" /data/stock/amoxicillin_suspension___count "/> unit**</value>
+          </text>
+          <text id="/data/summary/s_lancets:label">
+            <value> Lancets: **<output value=" /data/stock/lancets___count "/> unit**</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/stock:label">
+            <value>Stok - Stok</value>
+          </text>
+          <text id="/data/stock/litacid_gel:label">
+            <value>Jèl Litacid</value>
+          </text>
+          <text id="/data/stock/litacid_gel:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/litacid_gel "/> inite</value>
+          </text>
+          <text id="/data/stock/calamine_lotion:label">
+            <value>Losyon Kalamin</value>
+          </text>
+          <text id="/data/stock/calamine_lotion:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/calamine_lotion "/> inite</value>
+          </text>
+          <text id="/data/stock/cotrimoxazole_400_80mg:label">
+            <value>Cotrimoxazole 400 80Mg</value>
+          </text>
+          <text id="/data/stock/cotrimoxazole_400_80mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/cotrimoxazole_400_80mg "/> inite</value>
+          </text>
+          <text id="/data/stock/albendazole_400mg:label">
+            <value>Albendazole 400Mg</value>
+          </text>
+          <text id="/data/stock/albendazole_400mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/albendazole_400mg "/> inite</value>
+          </text>
+          <text id="/data/stock/buscopan_injectable:label">
+            <value>Biskopan Enjektab</value>
+          </text>
+          <text id="/data/stock/buscopan_injectable:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/buscopan_injectable "/> inite</value>
+          </text>
+          <text id="/data/stock/cloxacillin_500mg:label">
+            <value>Kloksasilin 500mg</value>
+          </text>
+          <text id="/data/stock/cloxacillin_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/cloxacillin_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/benzathine_penicillin_injectable:label">
+            <value>Penisilin Benzatin Enjektab</value>
+          </text>
+          <text id="/data/stock/benzathine_penicillin_injectable:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/benzathine_penicillin_injectable "/> inite</value>
+          </text>
+          <text id="/data/stock/vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/data/stock/vitamin_a:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/vitamin_a "/> inite</value>
+          </text>
+          <text id="/data/stock/strips:label">
+            <value>Bann (Tès Sik)</value>
+          </text>
+          <text id="/data/stock/strips:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/strips "/> inite</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic:label">
+            <value>Triple Antibiotic</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/triple_antibiotic "/> inite</value>
+          </text>
+          <text id="/data/stock/furosemide_injectable:label">
+            <value>Furosemide Injectable</value>
+          </text>
+          <text id="/data/stock/furosemide_injectable:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/furosemide_injectable "/> inite</value>
+          </text>
+          <text id="/data/stock/nifedipine_20mg:label">
+            <value>Nifedipin 20mg</value>
+          </text>
+          <text id="/data/stock/nifedipine_20mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/nifedipine_20mg "/> inite</value>
+          </text>
+          <text id="/data/stock/enalapril_10mg:label">
+            <value>Enalapril 10mg</value>
+          </text>
+          <text id="/data/stock/enalapril_10mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/enalapril_10mg "/> inite</value>
+          </text>
+          <text id="/data/stock/salbutamol_syrup:label">
+            <value>Salbutamol Syrup</value>
+          </text>
+          <text id="/data/stock/salbutamol_syrup:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/salbutamol_syrup "/> inite</value>
+          </text>
+          <text id="/data/stock/ors:label">
+            <value>Sewòm Oral</value>
+          </text>
+          <text id="/data/stock/ors:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/ors "/> inite</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate:label">
+            <value>Benzyl Benzoate</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/benzyl_benzoate "/> inite</value>
+          </text>
+          <text id="/data/stock/metronidazole_500mg:label">
+            <value>Metronidazol 500mg</value>
+          </text>
+          <text id="/data/stock/metronidazole_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/metronidazole_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/omeprazole_20mg:label">
+            <value>Omeprazol 20mg</value>
+          </text>
+          <text id="/data/stock/omeprazole_20mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/omeprazole_20mg "/> inite</value>
+          </text>
+          <text id="/data/stock/nifedipine_10mg:label">
+            <value>Nifedipin 10mg</value>
+          </text>
+          <text id="/data/stock/nifedipine_10mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/nifedipine_10mg "/> inite</value>
+          </text>
+          <text id="/data/stock/mioflex:label">
+            <value>Mioflex</value>
+          </text>
+          <text id="/data/stock/mioflex:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/mioflex "/> inite</value>
+          </text>
+          <text id="/data/stock/paracetamol_syrup:label">
+            <value>Paracetamol Syrup</value>
+          </text>
+          <text id="/data/stock/paracetamol_syrup:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/paracetamol_syrup "/> inite</value>
+          </text>
+          <text id="/data/stock/tinidazole_500mg:label">
+            <value>Tinidazol 500mg</value>
+          </text>
+          <text id="/data/stock/tinidazole_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/tinidazole_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/dexamethasone_injectable:label">
+            <value>Deksametazon Enjektab</value>
+          </text>
+          <text id="/data/stock/dexamethasone_injectable:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/dexamethasone_injectable "/> inite</value>
+          </text>
+          <text id="/data/stock/griseofulvin_tabs:label">
+            <value>Griseofulvin Tabs</value>
+          </text>
+          <text id="/data/stock/griseofulvin_tabs:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/griseofulvin_tabs "/> inite</value>
+          </text>
+          <text id="/data/stock/chloroquine_150mg:label">
+            <value>Klorokwokin 150mg</value>
+          </text>
+          <text id="/data/stock/chloroquine_150mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/chloroquine_150mg "/> inite</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate_25:label">
+            <value>Benzoat Benzil 25%</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate_25:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/benzyl_benzoate_25 "/> inite</value>
+          </text>
+          <text id="/data/stock/doxycycline_100mg:label">
+            <value>Doksiklin 100mg</value>
+          </text>
+          <text id="/data/stock/doxycycline_100mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/doxycycline_100mg "/> inite</value>
+          </text>
+          <text id="/data/stock/hctz_25mg:label">
+            <value>HCTZ 25mg</value>
+          </text>
+          <text id="/data/stock/hctz_25mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/hctz_25mg "/> inite</value>
+          </text>
+          <text id="/data/stock/zinc_20mg:label">
+            <value>Zinc 20Mg</value>
+          </text>
+          <text id="/data/stock/zinc_20mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/zinc_20mg "/> inite</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_suspension:label">
+            <value>Ciprofloxacin Suspension</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_suspension:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/ciprofloxacin_suspension "/> inite</value>
+          </text>
+          <text id="/data/stock/metamizol_injectable:label">
+            <value>Metamizol Injectable</value>
+          </text>
+          <text id="/data/stock/metamizol_injectable:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/metamizol_injectable "/> inite</value>
+          </text>
+          <text id="/data/stock/albendazole:label">
+            <value>Albendazole</value>
+          </text>
+          <text id="/data/stock/albendazole:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/albendazole "/> inite</value>
+          </text>
+          <text id="/data/stock/omeprazole_injectable:label">
+            <value>Omeprazol Enjektab</value>
+          </text>
+          <text id="/data/stock/omeprazole_injectable:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/omeprazole_injectable "/> inite</value>
+          </text>
+          <text id="/data/stock/paracetamol_500mg:label">
+            <value>Parasetamol 500mg</value>
+          </text>
+          <text id="/data/stock/paracetamol_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/paracetamol_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_500mg:label">
+            <value>Siprofloksasin 500mg</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/ciprofloxacin_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/griseofulvin_125mg:label">
+            <value>Grizeyofulvin 125mg</value>
+          </text>
+          <text id="/data/stock/griseofulvin_125mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/griseofulvin_125mg "/> inite</value>
+          </text>
+          <text id="/data/stock/amoxycillin_500mg:label">
+            <value>Amoksisilin 500mg</value>
+          </text>
+          <text id="/data/stock/amoxycillin_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/amoxycillin_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/cloxacillin_suspension:label">
+            <value>Cloxacillin Suspension</value>
+          </text>
+          <text id="/data/stock/cloxacillin_suspension:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/cloxacillin_suspension "/> inite</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic_ointment:label">
+            <value>Pomad Trip Antibyotik</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic_ointment:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/triple_antibiotic_ointment "/> inite</value>
+          </text>
+          <text id="/data/stock/metformin_500mg:label">
+            <value>Mètformin 500mg</value>
+          </text>
+          <text id="/data/stock/metformin_500mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/metformin_500mg "/> inite</value>
+          </text>
+          <text id="/data/stock/antifungal_cream:label">
+            <value>Krèm Antifonjik</value>
+          </text>
+          <text id="/data/stock/antifungal_cream:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/antifungal_cream "/> inite</value>
+          </text>
+          <text id="/data/stock/iron_folic_acid:label">
+            <value>Fè ak Asid Folik</value>
+          </text>
+          <text id="/data/stock/iron_folic_acid:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/iron_folic_acid "/> inite</value>
+          </text>
+          <text id="/data/stock/salbutamol_4mg:label">
+            <value>Salbitamol 4mg</value>
+          </text>
+          <text id="/data/stock/salbutamol_4mg:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/salbutamol_4mg "/> inite</value>
+          </text>
+          <text id="/data/stock/zinc_tablets:label">
+            <value>Zinc Tablets</value>
+          </text>
+          <text id="/data/stock/zinc_tablets:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/zinc_tablets "/> inite</value>
+          </text>
+          <text id="/data/stock/iv_line:label">
+            <value>Iv Line</value>
+          </text>
+          <text id="/data/stock/iv_line:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/iv_line "/> inite</value>
+          </text>
+          <text id="/data/stock/amoxicillin_suspension:label">
+            <value>Amoxicillin Suspension</value>
+          </text>
+          <text id="/data/stock/amoxicillin_suspension:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/amoxicillin_suspension "/> inite</value>
+          </text>
+          <text id="/data/stock/lancets:label">
+            <value>Lansèt</value>
+          </text>
+          <text id="/data/stock/lancets:hint">
+            <value> Ajoute kantite a: <output value=" /data/stock/lancets "/> inite</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Paj rezilta/rezime</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Asire w ou Soumèt pou konplete aksyon sa a.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Atik stòk ou genyen kounye a.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/s_litacid_gel:label">
+            <value> Jèl Litacid: **<output value=" /data/stock/litacid_gel___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_calamine_lotion:label">
+            <value> Losyon Kalamin: **<output value=" /data/stock/calamine_lotion___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_cotrimoxazole_400_80mg:label">
+            <value> Cotrimoxazole 400 80Mg: **<output value=" /data/stock/cotrimoxazole_400_80mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_albendazole_400mg:label">
+            <value> Albendazole 400Mg: **<output value=" /data/stock/albendazole_400mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_buscopan_injectable:label">
+            <value> Biskopan Enjektab: **<output value=" /data/stock/buscopan_injectable___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_500mg:label">
+            <value> Kloksasilin 500mg: **<output value=" /data/stock/cloxacillin_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_benzathine_penicillin_injectable:label">
+            <value> Penisilin Benzatin Enjektab: **<output value=" /data/stock/benzathine_penicillin_injectable___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_vitamin_a:label">
+            <value> Vitamin A: **<output value=" /data/stock/vitamin_a___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_strips:label">
+            <value> Bann (Tès Sik): **<output value=" /data/stock/strips___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic:label">
+            <value> Triple Antibiotic: **<output value=" /data/stock/triple_antibiotic___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_furosemide_injectable:label">
+            <value> Furosemide Injectable: **<output value=" /data/stock/furosemide_injectable___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_20mg:label">
+            <value> Nifedipin 20mg: **<output value=" /data/stock/nifedipine_20mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_enalapril_10mg:label">
+            <value> Enalapril 10mg: **<output value=" /data/stock/enalapril_10mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_syrup:label">
+            <value> Salbutamol Syrup: **<output value=" /data/stock/salbutamol_syrup___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_ors:label">
+            <value> Sewòm Oral: **<output value=" /data/stock/ors___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate:label">
+            <value> Benzyl Benzoate: **<output value=" /data/stock/benzyl_benzoate___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_500mg:label">
+            <value> Metronidazol 500mg: **<output value=" /data/stock/metronidazole_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_20mg:label">
+            <value> Omeprazol 20mg: **<output value=" /data/stock/omeprazole_20mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_10mg:label">
+            <value> Nifedipin 10mg: **<output value=" /data/stock/nifedipine_10mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_mioflex:label">
+            <value> Mioflex: **<output value=" /data/stock/mioflex___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_syrup:label">
+            <value> Paracetamol Syrup: **<output value=" /data/stock/paracetamol_syrup___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_tinidazole_500mg:label">
+            <value> Tinidazol 500mg: **<output value=" /data/stock/tinidazole_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_dexamethasone_injectable:label">
+            <value> Deksametazon Enjektab: **<output value=" /data/stock/dexamethasone_injectable___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_tabs:label">
+            <value> Griseofulvin Tabs: **<output value=" /data/stock/griseofulvin_tabs___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_chloroquine_150mg:label">
+            <value> Klorokwokin 150mg: **<output value=" /data/stock/chloroquine_150mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate_25:label">
+            <value> Benzoat Benzil 25%: **<output value=" /data/stock/benzyl_benzoate_25___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_doxycycline_100mg:label">
+            <value> Doksiklin 100mg: **<output value=" /data/stock/doxycycline_100mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_hctz_25mg:label">
+            <value> HCTZ 25mg: **<output value=" /data/stock/hctz_25mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_zinc_20mg:label">
+            <value> Zinc 20Mg: **<output value=" /data/stock/zinc_20mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacin_suspension:label">
+            <value> Ciprofloxacin Suspension: **<output value=" /data/stock/ciprofloxacin_suspension___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_metamizol_injectable:label">
+            <value> Metamizol Injectable: **<output value=" /data/stock/metamizol_injectable___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_albendazole:label">
+            <value> Albendazole: **<output value=" /data/stock/albendazole___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_injectable:label">
+            <value> Omeprazol Enjektab: **<output value=" /data/stock/omeprazole_injectable___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_500mg:label">
+            <value> Parasetamol 500mg: **<output value=" /data/stock/paracetamol_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacin_500mg:label">
+            <value> Siprofloksasin 500mg: **<output value=" /data/stock/ciprofloxacin_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_125mg:label">
+            <value> Grizeyofulvin 125mg: **<output value=" /data/stock/griseofulvin_125mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_amoxycillin_500mg:label">
+            <value> Amoksisilin 500mg: **<output value=" /data/stock/amoxycillin_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_suspension:label">
+            <value> Cloxacillin Suspension: **<output value=" /data/stock/cloxacillin_suspension___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic_ointment:label">
+            <value> Pomad Trip Antibyotik: **<output value=" /data/stock/triple_antibiotic_ointment___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_metformin_500mg:label">
+            <value> Mètformin 500mg: **<output value=" /data/stock/metformin_500mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_antifungal_cream:label">
+            <value> Krèm Antifonjik: **<output value=" /data/stock/antifungal_cream___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_iron_folic_acid:label">
+            <value> Fè ak Asid Folik: **<output value=" /data/stock/iron_folic_acid___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_4mg:label">
+            <value> Salbitamol 4mg: **<output value=" /data/stock/salbutamol_4mg___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_zinc_tablets:label">
+            <value> Zinc Tablets: **<output value=" /data/stock/zinc_tablets___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_iv_line:label">
+            <value> Iv Line: **<output value=" /data/stock/iv_line___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_amoxicillin_suspension:label">
+            <value> Amoxicillin Suspension: **<output value=" /data/stock/amoxicillin_suspension___count "/> inite**</value>
+          </text>
+          <text id="/data/summary/s_lancets:label">
+            <value> Lansèt: **<output value=" /data/stock/lancets___count "/> inite**</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/stock:label">
+            <value>Stock - Stock</value>
+          </text>
+          <text id="/data/stock/litacid_gel:label">
+            <value>Gel Litacid</value>
+          </text>
+          <text id="/data/stock/litacid_gel:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/litacid_gel "/> unité</value>
+          </text>
+          <text id="/data/stock/calamine_lotion:label">
+            <value>Lotion à la calamine</value>
+          </text>
+          <text id="/data/stock/calamine_lotion:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/calamine_lotion "/> unité</value>
+          </text>
+          <text id="/data/stock/cotrimoxazole_400_80mg:label">
+            <value>Cotrimoxazole 400 80Mg</value>
+          </text>
+          <text id="/data/stock/cotrimoxazole_400_80mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/cotrimoxazole_400_80mg "/> unité</value>
+          </text>
+          <text id="/data/stock/albendazole_400mg:label">
+            <value>Albendazole 400Mg</value>
+          </text>
+          <text id="/data/stock/albendazole_400mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/albendazole_400mg "/> unité</value>
+          </text>
+          <text id="/data/stock/buscopan_injectable:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/stock/buscopan_injectable:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/buscopan_injectable "/> unité</value>
+          </text>
+          <text id="/data/stock/cloxacillin_500mg:label">
+            <value>Cloxacilline 500mg</value>
+          </text>
+          <text id="/data/stock/cloxacillin_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/cloxacillin_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/benzathine_penicillin_injectable:label">
+            <value>Pénicilline Benzathine Injectable</value>
+          </text>
+          <text id="/data/stock/benzathine_penicillin_injectable:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/benzathine_penicillin_injectable "/> unité</value>
+          </text>
+          <text id="/data/stock/vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/data/stock/vitamin_a:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/vitamin_a "/> unité</value>
+          </text>
+          <text id="/data/stock/strips:label">
+            <value>Bandelettes</value>
+          </text>
+          <text id="/data/stock/strips:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/strips "/> unité</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic:label">
+            <value>Triple Antibiotic</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/triple_antibiotic "/> unité</value>
+          </text>
+          <text id="/data/stock/furosemide_injectable:label">
+            <value>Furosemide Injectable</value>
+          </text>
+          <text id="/data/stock/furosemide_injectable:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/furosemide_injectable "/> unité</value>
+          </text>
+          <text id="/data/stock/nifedipine_20mg:label">
+            <value>Nifédipine 20mg</value>
+          </text>
+          <text id="/data/stock/nifedipine_20mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/nifedipine_20mg "/> unité</value>
+          </text>
+          <text id="/data/stock/enalapril_10mg:label">
+            <value>Énalapril 10mg</value>
+          </text>
+          <text id="/data/stock/enalapril_10mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/enalapril_10mg "/> unité</value>
+          </text>
+          <text id="/data/stock/salbutamol_syrup:label">
+            <value>Salbutamol Syrup</value>
+          </text>
+          <text id="/data/stock/salbutamol_syrup:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/salbutamol_syrup "/> unité</value>
+          </text>
+          <text id="/data/stock/ors:label">
+            <value>SRO</value>
+          </text>
+          <text id="/data/stock/ors:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/ors "/> unité</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate:label">
+            <value>Benzyl Benzoate</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/benzyl_benzoate "/> unité</value>
+          </text>
+          <text id="/data/stock/metronidazole_500mg:label">
+            <value>Métronidazole 500mg</value>
+          </text>
+          <text id="/data/stock/metronidazole_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/metronidazole_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/omeprazole_20mg:label">
+            <value>Oméprazole 20mg</value>
+          </text>
+          <text id="/data/stock/omeprazole_20mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/omeprazole_20mg "/> unité</value>
+          </text>
+          <text id="/data/stock/nifedipine_10mg:label">
+            <value>Nifédipine 10mg</value>
+          </text>
+          <text id="/data/stock/nifedipine_10mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/nifedipine_10mg "/> unité</value>
+          </text>
+          <text id="/data/stock/mioflex:label">
+            <value>Mioflex</value>
+          </text>
+          <text id="/data/stock/mioflex:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/mioflex "/> unité</value>
+          </text>
+          <text id="/data/stock/paracetamol_syrup:label">
+            <value>Paracetamol Syrup</value>
+          </text>
+          <text id="/data/stock/paracetamol_syrup:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/paracetamol_syrup "/> unité</value>
+          </text>
+          <text id="/data/stock/tinidazole_500mg:label">
+            <value>Tinidazole 500mg</value>
+          </text>
+          <text id="/data/stock/tinidazole_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/tinidazole_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/dexamethasone_injectable:label">
+            <value>Dexaméthasone Injectable</value>
+          </text>
+          <text id="/data/stock/dexamethasone_injectable:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/dexamethasone_injectable "/> unité</value>
+          </text>
+          <text id="/data/stock/griseofulvin_tabs:label">
+            <value>Griseofulvin Tabs</value>
+          </text>
+          <text id="/data/stock/griseofulvin_tabs:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/griseofulvin_tabs "/> unité</value>
+          </text>
+          <text id="/data/stock/chloroquine_150mg:label">
+            <value>Chloroquine 150mg</value>
+          </text>
+          <text id="/data/stock/chloroquine_150mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/chloroquine_150mg "/> unité</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate_25:label">
+            <value>Benzoate de Benzyle 25%</value>
+          </text>
+          <text id="/data/stock/benzyl_benzoate_25:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/benzyl_benzoate_25 "/> unité</value>
+          </text>
+          <text id="/data/stock/doxycycline_100mg:label">
+            <value>Doxycycline 100mg</value>
+          </text>
+          <text id="/data/stock/doxycycline_100mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/doxycycline_100mg "/> unité</value>
+          </text>
+          <text id="/data/stock/hctz_25mg:label">
+            <value>HCTZ 25mg</value>
+          </text>
+          <text id="/data/stock/hctz_25mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/hctz_25mg "/> unité</value>
+          </text>
+          <text id="/data/stock/zinc_20mg:label">
+            <value>Zinc 20Mg</value>
+          </text>
+          <text id="/data/stock/zinc_20mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/zinc_20mg "/> unité</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_suspension:label">
+            <value>Ciprofloxacin Suspension</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_suspension:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/ciprofloxacin_suspension "/> unité</value>
+          </text>
+          <text id="/data/stock/metamizol_injectable:label">
+            <value>Metamizol Injectable</value>
+          </text>
+          <text id="/data/stock/metamizol_injectable:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/metamizol_injectable "/> unité</value>
+          </text>
+          <text id="/data/stock/albendazole:label">
+            <value>Albendazole</value>
+          </text>
+          <text id="/data/stock/albendazole:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/albendazole "/> unité</value>
+          </text>
+          <text id="/data/stock/omeprazole_injectable:label">
+            <value>Oméprazole Injectable</value>
+          </text>
+          <text id="/data/stock/omeprazole_injectable:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/omeprazole_injectable "/> unité</value>
+          </text>
+          <text id="/data/stock/paracetamol_500mg:label">
+            <value>Paracétamol 500mg</value>
+          </text>
+          <text id="/data/stock/paracetamol_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/paracetamol_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_500mg:label">
+            <value>Ciprofloxacine 500mg</value>
+          </text>
+          <text id="/data/stock/ciprofloxacin_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/ciprofloxacin_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/griseofulvin_125mg:label">
+            <value>Griséofulvine 125mg</value>
+          </text>
+          <text id="/data/stock/griseofulvin_125mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/griseofulvin_125mg "/> unité</value>
+          </text>
+          <text id="/data/stock/amoxycillin_500mg:label">
+            <value>Amoxicilline 500mg</value>
+          </text>
+          <text id="/data/stock/amoxycillin_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/amoxycillin_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/cloxacillin_suspension:label">
+            <value>Cloxacillin Suspension</value>
+          </text>
+          <text id="/data/stock/cloxacillin_suspension:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/cloxacillin_suspension "/> unité</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic_ointment:label">
+            <value>Pommade Triple Antibiotique</value>
+          </text>
+          <text id="/data/stock/triple_antibiotic_ointment:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/triple_antibiotic_ointment "/> unité</value>
+          </text>
+          <text id="/data/stock/metformin_500mg:label">
+            <value>Metformine 500mg</value>
+          </text>
+          <text id="/data/stock/metformin_500mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/metformin_500mg "/> unité</value>
+          </text>
+          <text id="/data/stock/antifungal_cream:label">
+            <value>Crème Antifongique</value>
+          </text>
+          <text id="/data/stock/antifungal_cream:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/antifungal_cream "/> unité</value>
+          </text>
+          <text id="/data/stock/iron_folic_acid:label">
+            <value>Fer et Acide Folique</value>
+          </text>
+          <text id="/data/stock/iron_folic_acid:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/iron_folic_acid "/> unité</value>
+          </text>
+          <text id="/data/stock/salbutamol_4mg:label">
+            <value>Salbutamol 4mg</value>
+          </text>
+          <text id="/data/stock/salbutamol_4mg:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/salbutamol_4mg "/> unité</value>
+          </text>
+          <text id="/data/stock/zinc_tablets:label">
+            <value>Zinc Tablets</value>
+          </text>
+          <text id="/data/stock/zinc_tablets:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/zinc_tablets "/> unité</value>
+          </text>
+          <text id="/data/stock/iv_line:label">
+            <value>Iv Line</value>
+          </text>
+          <text id="/data/stock/iv_line:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/iv_line "/> unité</value>
+          </text>
+          <text id="/data/stock/amoxicillin_suspension:label">
+            <value>Amoxicillin Suspension</value>
+          </text>
+          <text id="/data/stock/amoxicillin_suspension:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/amoxicillin_suspension "/> unité</value>
+          </text>
+          <text id="/data/stock/lancets:label">
+            <value>Lancettes</value>
+          </text>
+          <text id="/data/stock/lancets:hint">
+            <value> Ajouter la quantité: <output value=" /data/stock/lancets "/> unité</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Page de résultats/résumé</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Assurez-vous de soumettre pour finaliser cette action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Articles en stock que vous possédez actuellement.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/s_litacid_gel:label">
+            <value> Gel Litacid: **<output value=" /data/stock/litacid_gel___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_calamine_lotion:label">
+            <value> Lotion à la calamine: **<output value=" /data/stock/calamine_lotion___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_cotrimoxazole_400_80mg:label">
+            <value> Cotrimoxazole 400 80Mg: **<output value=" /data/stock/cotrimoxazole_400_80mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_albendazole_400mg:label">
+            <value> Albendazole 400Mg: **<output value=" /data/stock/albendazole_400mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_buscopan_injectable:label">
+            <value> Buscopan Injectable: **<output value=" /data/stock/buscopan_injectable___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_500mg:label">
+            <value> Cloxacilline 500mg: **<output value=" /data/stock/cloxacillin_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_benzathine_penicillin_injectable:label">
+            <value> Pénicilline Benzathine Injectable: **<output value=" /data/stock/benzathine_penicillin_injectable___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_vitamin_a:label">
+            <value> Vitamin A: **<output value=" /data/stock/vitamin_a___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_strips:label">
+            <value> Bandelettes: **<output value=" /data/stock/strips___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic:label">
+            <value> Triple Antibiotic: **<output value=" /data/stock/triple_antibiotic___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_furosemide_injectable:label">
+            <value> Furosemide Injectable: **<output value=" /data/stock/furosemide_injectable___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_20mg:label">
+            <value> Nifédipine 20mg: **<output value=" /data/stock/nifedipine_20mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_enalapril_10mg:label">
+            <value> Énalapril 10mg: **<output value=" /data/stock/enalapril_10mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_syrup:label">
+            <value> Salbutamol Syrup: **<output value=" /data/stock/salbutamol_syrup___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_ors:label">
+            <value> SRO: **<output value=" /data/stock/ors___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate:label">
+            <value> Benzyl Benzoate: **<output value=" /data/stock/benzyl_benzoate___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_500mg:label">
+            <value> Métronidazole 500mg: **<output value=" /data/stock/metronidazole_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_20mg:label">
+            <value> Oméprazole 20mg: **<output value=" /data/stock/omeprazole_20mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_10mg:label">
+            <value> Nifédipine 10mg: **<output value=" /data/stock/nifedipine_10mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_mioflex:label">
+            <value> Mioflex: **<output value=" /data/stock/mioflex___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_syrup:label">
+            <value> Paracetamol Syrup: **<output value=" /data/stock/paracetamol_syrup___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_tinidazole_500mg:label">
+            <value> Tinidazole 500mg: **<output value=" /data/stock/tinidazole_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_dexamethasone_injectable:label">
+            <value> Dexaméthasone Injectable: **<output value=" /data/stock/dexamethasone_injectable___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_tabs:label">
+            <value> Griseofulvin Tabs: **<output value=" /data/stock/griseofulvin_tabs___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_chloroquine_150mg:label">
+            <value> Chloroquine 150mg: **<output value=" /data/stock/chloroquine_150mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate_25:label">
+            <value> Benzoate de Benzyle 25%: **<output value=" /data/stock/benzyl_benzoate_25___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_doxycycline_100mg:label">
+            <value> Doxycycline 100mg: **<output value=" /data/stock/doxycycline_100mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_hctz_25mg:label">
+            <value> HCTZ 25mg: **<output value=" /data/stock/hctz_25mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_zinc_20mg:label">
+            <value> Zinc 20Mg: **<output value=" /data/stock/zinc_20mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacin_suspension:label">
+            <value> Ciprofloxacin Suspension: **<output value=" /data/stock/ciprofloxacin_suspension___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_metamizol_injectable:label">
+            <value> Metamizol Injectable: **<output value=" /data/stock/metamizol_injectable___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_albendazole:label">
+            <value> Albendazole: **<output value=" /data/stock/albendazole___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_injectable:label">
+            <value> Oméprazole Injectable: **<output value=" /data/stock/omeprazole_injectable___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_500mg:label">
+            <value> Paracétamol 500mg: **<output value=" /data/stock/paracetamol_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacin_500mg:label">
+            <value> Ciprofloxacine 500mg: **<output value=" /data/stock/ciprofloxacin_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_125mg:label">
+            <value> Griséofulvine 125mg: **<output value=" /data/stock/griseofulvin_125mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_amoxycillin_500mg:label">
+            <value> Amoxicilline 500mg: **<output value=" /data/stock/amoxycillin_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_suspension:label">
+            <value> Cloxacillin Suspension: **<output value=" /data/stock/cloxacillin_suspension___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic_ointment:label">
+            <value> Pommade Triple Antibiotique: **<output value=" /data/stock/triple_antibiotic_ointment___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_metformin_500mg:label">
+            <value> Metformine 500mg: **<output value=" /data/stock/metformin_500mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_antifungal_cream:label">
+            <value> Crème Antifongique: **<output value=" /data/stock/antifungal_cream___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_iron_folic_acid:label">
+            <value> Fer et Acide Folique: **<output value=" /data/stock/iron_folic_acid___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_4mg:label">
+            <value> Salbutamol 4mg: **<output value=" /data/stock/salbutamol_4mg___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_zinc_tablets:label">
+            <value> Zinc Tablets: **<output value=" /data/stock/zinc_tablets___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_iv_line:label">
+            <value> Iv Line: **<output value=" /data/stock/iv_line___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_amoxicillin_suspension:label">
+            <value> Amoxicillin Suspension: **<output value=" /data/stock/amoxicillin_suspension___count "/> unité**</value>
+          </text>
+          <text id="/data/summary/s_lancets:label">
+            <value> Lancettes: **<output value=" /data/stock/lancets___count "/> unité**</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="stock_count" version="now()" prefix="J1!stock_count!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <date_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <stock>
+            <litacid_gel>0</litacid_gel>
+            <litacid_gel___count/>
+            <calamine_lotion>0</calamine_lotion>
+            <calamine_lotion___count/>
+            <cotrimoxazole_400_80mg>0</cotrimoxazole_400_80mg>
+            <cotrimoxazole_400_80mg___count/>
+            <albendazole_400mg>0</albendazole_400mg>
+            <albendazole_400mg___count/>
+            <buscopan_injectable>0</buscopan_injectable>
+            <buscopan_injectable___count/>
+            <cloxacillin_500mg>0</cloxacillin_500mg>
+            <cloxacillin_500mg___count/>
+            <benzathine_penicillin_injectable>0</benzathine_penicillin_injectable>
+            <benzathine_penicillin_injectable___count/>
+            <vitamin_a>0</vitamin_a>
+            <vitamin_a___count/>
+            <strips>0</strips>
+            <strips___count/>
+            <triple_antibiotic>0</triple_antibiotic>
+            <triple_antibiotic___count/>
+            <furosemide_injectable>0</furosemide_injectable>
+            <furosemide_injectable___count/>
+            <nifedipine_20mg>0</nifedipine_20mg>
+            <nifedipine_20mg___count/>
+            <enalapril_10mg>0</enalapril_10mg>
+            <enalapril_10mg___count/>
+            <salbutamol_syrup>0</salbutamol_syrup>
+            <salbutamol_syrup___count/>
+            <ors>0</ors>
+            <ors___count/>
+            <benzyl_benzoate>0</benzyl_benzoate>
+            <benzyl_benzoate___count/>
+            <metronidazole_500mg>0</metronidazole_500mg>
+            <metronidazole_500mg___count/>
+            <omeprazole_20mg>0</omeprazole_20mg>
+            <omeprazole_20mg___count/>
+            <nifedipine_10mg>0</nifedipine_10mg>
+            <nifedipine_10mg___count/>
+            <mioflex>0</mioflex>
+            <mioflex___count/>
+            <paracetamol_syrup>0</paracetamol_syrup>
+            <paracetamol_syrup___count/>
+            <tinidazole_500mg>0</tinidazole_500mg>
+            <tinidazole_500mg___count/>
+            <dexamethasone_injectable>0</dexamethasone_injectable>
+            <dexamethasone_injectable___count/>
+            <griseofulvin_tabs>0</griseofulvin_tabs>
+            <griseofulvin_tabs___count/>
+            <chloroquine_150mg>0</chloroquine_150mg>
+            <chloroquine_150mg___count/>
+            <benzyl_benzoate_25>0</benzyl_benzoate_25>
+            <benzyl_benzoate_25___count/>
+            <doxycycline_100mg>0</doxycycline_100mg>
+            <doxycycline_100mg___count/>
+            <hctz_25mg>0</hctz_25mg>
+            <hctz_25mg___count/>
+            <zinc_20mg>0</zinc_20mg>
+            <zinc_20mg___count/>
+            <ciprofloxacin_suspension>0</ciprofloxacin_suspension>
+            <ciprofloxacin_suspension___count/>
+            <metamizol_injectable>0</metamizol_injectable>
+            <metamizol_injectable___count/>
+            <albendazole>0</albendazole>
+            <albendazole___count/>
+            <omeprazole_injectable>0</omeprazole_injectable>
+            <omeprazole_injectable___count/>
+            <paracetamol_500mg>0</paracetamol_500mg>
+            <paracetamol_500mg___count/>
+            <ciprofloxacin_500mg>0</ciprofloxacin_500mg>
+            <ciprofloxacin_500mg___count/>
+            <griseofulvin_125mg>0</griseofulvin_125mg>
+            <griseofulvin_125mg___count/>
+            <amoxycillin_500mg>0</amoxycillin_500mg>
+            <amoxycillin_500mg___count/>
+            <cloxacillin_suspension>0</cloxacillin_suspension>
+            <cloxacillin_suspension___count/>
+            <triple_antibiotic_ointment>0</triple_antibiotic_ointment>
+            <triple_antibiotic_ointment___count/>
+            <metformin_500mg>0</metformin_500mg>
+            <metformin_500mg___count/>
+            <antifungal_cream>0</antifungal_cream>
+            <antifungal_cream___count/>
+            <iron_folic_acid>0</iron_folic_acid>
+            <iron_folic_acid___count/>
+            <salbutamol_4mg>0</salbutamol_4mg>
+            <salbutamol_4mg___count/>
+            <zinc_tablets>0</zinc_tablets>
+            <zinc_tablets___count/>
+            <iv_line>0</iv_line>
+            <iv_line___count/>
+            <amoxicillin_suspension>0</amoxicillin_suspension>
+            <amoxicillin_suspension___count/>
+            <lancets>0</lancets>
+            <lancets___count/>
+          </stock>
+          <place_id/>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <s_litacid_gel/>
+            <s_calamine_lotion/>
+            <s_cotrimoxazole_400_80mg/>
+            <s_albendazole_400mg/>
+            <s_buscopan_injectable/>
+            <s_cloxacillin_500mg/>
+            <s_benzathine_penicillin_injectable/>
+            <s_vitamin_a/>
+            <s_strips/>
+            <s_triple_antibiotic/>
+            <s_furosemide_injectable/>
+            <s_nifedipine_20mg/>
+            <s_enalapril_10mg/>
+            <s_salbutamol_syrup/>
+            <s_ors/>
+            <s_benzyl_benzoate/>
+            <s_metronidazole_500mg/>
+            <s_omeprazole_20mg/>
+            <s_nifedipine_10mg/>
+            <s_mioflex/>
+            <s_paracetamol_syrup/>
+            <s_tinidazole_500mg/>
+            <s_dexamethasone_injectable/>
+            <s_griseofulvin_tabs/>
+            <s_chloroquine_150mg/>
+            <s_benzyl_benzoate_25/>
+            <s_doxycycline_100mg/>
+            <s_hctz_25mg/>
+            <s_zinc_20mg/>
+            <s_ciprofloxacin_suspension/>
+            <s_metamizol_injectable/>
+            <s_albendazole/>
+            <s_omeprazole_injectable/>
+            <s_paracetamol_500mg/>
+            <s_ciprofloxacin_500mg/>
+            <s_griseofulvin_125mg/>
+            <s_amoxycillin_500mg/>
+            <s_cloxacillin_suspension/>
+            <s_triple_antibiotic_ointment/>
+            <s_metformin_500mg/>
+            <s_antifungal_cream/>
+            <s_iron_folic_acid/>
+            <s_salbutamol_4mg/>
+            <s_zinc_tablets/>
+            <s_iv_line/>
+            <s_amoxicillin_suspension/>
+            <s_lancets/>
+          </summary>
+          <out>
+            <litacid_gel_availables/>
+            <calamine_lotion_availables/>
+            <cotrimoxazole_400_80mg_availables/>
+            <albendazole_400mg_availables/>
+            <buscopan_injectable_availables/>
+            <cloxacillin_500mg_availables/>
+            <benzathine_penicillin_injectable_availables/>
+            <vitamin_a_availables/>
+            <strips_availables/>
+            <triple_antibiotic_availables/>
+            <furosemide_injectable_availables/>
+            <nifedipine_20mg_availables/>
+            <enalapril_10mg_availables/>
+            <salbutamol_syrup_availables/>
+            <ors_availables/>
+            <benzyl_benzoate_availables/>
+            <metronidazole_500mg_availables/>
+            <omeprazole_20mg_availables/>
+            <nifedipine_10mg_availables/>
+            <mioflex_availables/>
+            <paracetamol_syrup_availables/>
+            <tinidazole_500mg_availables/>
+            <dexamethasone_injectable_availables/>
+            <griseofulvin_tabs_availables/>
+            <chloroquine_150mg_availables/>
+            <benzyl_benzoate_25_availables/>
+            <doxycycline_100mg_availables/>
+            <hctz_25mg_availables/>
+            <zinc_20mg_availables/>
+            <ciprofloxacin_suspension_availables/>
+            <metamizol_injectable_availables/>
+            <albendazole_availables/>
+            <omeprazole_injectable_availables/>
+            <paracetamol_500mg_availables/>
+            <ciprofloxacin_500mg_availables/>
+            <griseofulvin_125mg_availables/>
+            <amoxycillin_500mg_availables/>
+            <cloxacillin_suspension_availables/>
+            <triple_antibiotic_ointment_availables/>
+            <metformin_500mg_availables/>
+            <antifungal_cream_availables/>
+            <iron_folic_acid_availables/>
+            <salbutamol_4mg_availables/>
+            <zinc_tablets_availables/>
+            <iv_line_availables/>
+            <amoxicillin_suspension_availables/>
+            <lancets_availables/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/data/inputs" relevant="./source='user'"/>
+      <bind nodeset="/data/inputs/date_id" type="string"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/stock/litacid_gel" type="int" required="true()"/>
+      <bind nodeset="/data/stock/litacid_gel___count" type="string" calculate=" /data/stock/litacid_gel "/>
+      <bind nodeset="/data/stock/calamine_lotion" type="int" required="true()"/>
+      <bind nodeset="/data/stock/calamine_lotion___count" type="string" calculate=" /data/stock/calamine_lotion "/>
+      <bind nodeset="/data/stock/cotrimoxazole_400_80mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/cotrimoxazole_400_80mg___count" type="string" calculate=" /data/stock/cotrimoxazole_400_80mg "/>
+      <bind nodeset="/data/stock/albendazole_400mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/albendazole_400mg___count" type="string" calculate=" /data/stock/albendazole_400mg "/>
+      <bind nodeset="/data/stock/buscopan_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/stock/buscopan_injectable___count" type="string" calculate=" /data/stock/buscopan_injectable "/>
+      <bind nodeset="/data/stock/cloxacillin_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/cloxacillin_500mg___count" type="string" calculate=" /data/stock/cloxacillin_500mg "/>
+      <bind nodeset="/data/stock/benzathine_penicillin_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/stock/benzathine_penicillin_injectable___count" type="string" calculate=" /data/stock/benzathine_penicillin_injectable "/>
+      <bind nodeset="/data/stock/vitamin_a" type="int" required="true()"/>
+      <bind nodeset="/data/stock/vitamin_a___count" type="string" calculate=" /data/stock/vitamin_a "/>
+      <bind nodeset="/data/stock/strips" type="int" required="true()"/>
+      <bind nodeset="/data/stock/strips___count" type="string" calculate=" /data/stock/strips "/>
+      <bind nodeset="/data/stock/triple_antibiotic" type="int" required="true()"/>
+      <bind nodeset="/data/stock/triple_antibiotic___count" type="string" calculate=" /data/stock/triple_antibiotic "/>
+      <bind nodeset="/data/stock/furosemide_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/stock/furosemide_injectable___count" type="string" calculate=" /data/stock/furosemide_injectable "/>
+      <bind nodeset="/data/stock/nifedipine_20mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/nifedipine_20mg___count" type="string" calculate=" /data/stock/nifedipine_20mg "/>
+      <bind nodeset="/data/stock/enalapril_10mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/enalapril_10mg___count" type="string" calculate=" /data/stock/enalapril_10mg "/>
+      <bind nodeset="/data/stock/salbutamol_syrup" type="int" required="true()"/>
+      <bind nodeset="/data/stock/salbutamol_syrup___count" type="string" calculate=" /data/stock/salbutamol_syrup "/>
+      <bind nodeset="/data/stock/ors" type="int" required="true()"/>
+      <bind nodeset="/data/stock/ors___count" type="string" calculate=" /data/stock/ors "/>
+      <bind nodeset="/data/stock/benzyl_benzoate" type="int" required="true()"/>
+      <bind nodeset="/data/stock/benzyl_benzoate___count" type="string" calculate=" /data/stock/benzyl_benzoate "/>
+      <bind nodeset="/data/stock/metronidazole_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/metronidazole_500mg___count" type="string" calculate=" /data/stock/metronidazole_500mg "/>
+      <bind nodeset="/data/stock/omeprazole_20mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/omeprazole_20mg___count" type="string" calculate=" /data/stock/omeprazole_20mg "/>
+      <bind nodeset="/data/stock/nifedipine_10mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/nifedipine_10mg___count" type="string" calculate=" /data/stock/nifedipine_10mg "/>
+      <bind nodeset="/data/stock/mioflex" type="int" required="true()"/>
+      <bind nodeset="/data/stock/mioflex___count" type="string" calculate=" /data/stock/mioflex "/>
+      <bind nodeset="/data/stock/paracetamol_syrup" type="int" required="true()"/>
+      <bind nodeset="/data/stock/paracetamol_syrup___count" type="string" calculate=" /data/stock/paracetamol_syrup "/>
+      <bind nodeset="/data/stock/tinidazole_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/tinidazole_500mg___count" type="string" calculate=" /data/stock/tinidazole_500mg "/>
+      <bind nodeset="/data/stock/dexamethasone_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/stock/dexamethasone_injectable___count" type="string" calculate=" /data/stock/dexamethasone_injectable "/>
+      <bind nodeset="/data/stock/griseofulvin_tabs" type="int" required="true()"/>
+      <bind nodeset="/data/stock/griseofulvin_tabs___count" type="string" calculate=" /data/stock/griseofulvin_tabs "/>
+      <bind nodeset="/data/stock/chloroquine_150mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/chloroquine_150mg___count" type="string" calculate=" /data/stock/chloroquine_150mg "/>
+      <bind nodeset="/data/stock/benzyl_benzoate_25" type="int" required="true()"/>
+      <bind nodeset="/data/stock/benzyl_benzoate_25___count" type="string" calculate=" /data/stock/benzyl_benzoate_25 "/>
+      <bind nodeset="/data/stock/doxycycline_100mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/doxycycline_100mg___count" type="string" calculate=" /data/stock/doxycycline_100mg "/>
+      <bind nodeset="/data/stock/hctz_25mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/hctz_25mg___count" type="string" calculate=" /data/stock/hctz_25mg "/>
+      <bind nodeset="/data/stock/zinc_20mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/zinc_20mg___count" type="string" calculate=" /data/stock/zinc_20mg "/>
+      <bind nodeset="/data/stock/ciprofloxacin_suspension" type="int" required="true()"/>
+      <bind nodeset="/data/stock/ciprofloxacin_suspension___count" type="string" calculate=" /data/stock/ciprofloxacin_suspension "/>
+      <bind nodeset="/data/stock/metamizol_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/stock/metamizol_injectable___count" type="string" calculate=" /data/stock/metamizol_injectable "/>
+      <bind nodeset="/data/stock/albendazole" type="int" required="true()"/>
+      <bind nodeset="/data/stock/albendazole___count" type="string" calculate=" /data/stock/albendazole "/>
+      <bind nodeset="/data/stock/omeprazole_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/stock/omeprazole_injectable___count" type="string" calculate=" /data/stock/omeprazole_injectable "/>
+      <bind nodeset="/data/stock/paracetamol_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/paracetamol_500mg___count" type="string" calculate=" /data/stock/paracetamol_500mg "/>
+      <bind nodeset="/data/stock/ciprofloxacin_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/ciprofloxacin_500mg___count" type="string" calculate=" /data/stock/ciprofloxacin_500mg "/>
+      <bind nodeset="/data/stock/griseofulvin_125mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/griseofulvin_125mg___count" type="string" calculate=" /data/stock/griseofulvin_125mg "/>
+      <bind nodeset="/data/stock/amoxycillin_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/amoxycillin_500mg___count" type="string" calculate=" /data/stock/amoxycillin_500mg "/>
+      <bind nodeset="/data/stock/cloxacillin_suspension" type="int" required="true()"/>
+      <bind nodeset="/data/stock/cloxacillin_suspension___count" type="string" calculate=" /data/stock/cloxacillin_suspension "/>
+      <bind nodeset="/data/stock/triple_antibiotic_ointment" type="int" required="true()"/>
+      <bind nodeset="/data/stock/triple_antibiotic_ointment___count" type="string" calculate=" /data/stock/triple_antibiotic_ointment "/>
+      <bind nodeset="/data/stock/metformin_500mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/metformin_500mg___count" type="string" calculate=" /data/stock/metformin_500mg "/>
+      <bind nodeset="/data/stock/antifungal_cream" type="int" required="true()"/>
+      <bind nodeset="/data/stock/antifungal_cream___count" type="string" calculate=" /data/stock/antifungal_cream "/>
+      <bind nodeset="/data/stock/iron_folic_acid" type="int" required="true()"/>
+      <bind nodeset="/data/stock/iron_folic_acid___count" type="string" calculate=" /data/stock/iron_folic_acid "/>
+      <bind nodeset="/data/stock/salbutamol_4mg" type="int" required="true()"/>
+      <bind nodeset="/data/stock/salbutamol_4mg___count" type="string" calculate=" /data/stock/salbutamol_4mg "/>
+      <bind nodeset="/data/stock/zinc_tablets" type="int" required="true()"/>
+      <bind nodeset="/data/stock/zinc_tablets___count" type="string" calculate=" /data/stock/zinc_tablets "/>
+      <bind nodeset="/data/stock/iv_line" type="int" required="true()"/>
+      <bind nodeset="/data/stock/iv_line___count" type="string" calculate=" /data/stock/iv_line "/>
+      <bind nodeset="/data/stock/amoxicillin_suspension" type="int" required="true()"/>
+      <bind nodeset="/data/stock/amoxicillin_suspension___count" type="string" calculate=" /data/stock/amoxicillin_suspension "/>
+      <bind nodeset="/data/stock/lancets" type="int" required="true()"/>
+      <bind nodeset="/data/stock/lancets___count" type="string" calculate=" /data/stock/lancets "/>
+      <bind nodeset="/data/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/s_litacid_gel" readonly="true()" type="string" relevant=" /data/stock/litacid_gel___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_calamine_lotion" readonly="true()" type="string" relevant=" /data/stock/calamine_lotion___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_cotrimoxazole_400_80mg" readonly="true()" type="string" relevant=" /data/stock/cotrimoxazole_400_80mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_albendazole_400mg" readonly="true()" type="string" relevant=" /data/stock/albendazole_400mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_buscopan_injectable" readonly="true()" type="string" relevant=" /data/stock/buscopan_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_cloxacillin_500mg" readonly="true()" type="string" relevant=" /data/stock/cloxacillin_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_benzathine_penicillin_injectable" readonly="true()" type="string" relevant=" /data/stock/benzathine_penicillin_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_vitamin_a" readonly="true()" type="string" relevant=" /data/stock/vitamin_a___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_strips" readonly="true()" type="string" relevant=" /data/stock/strips___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_triple_antibiotic" readonly="true()" type="string" relevant=" /data/stock/triple_antibiotic___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_furosemide_injectable" readonly="true()" type="string" relevant=" /data/stock/furosemide_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_nifedipine_20mg" readonly="true()" type="string" relevant=" /data/stock/nifedipine_20mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_enalapril_10mg" readonly="true()" type="string" relevant=" /data/stock/enalapril_10mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_salbutamol_syrup" readonly="true()" type="string" relevant=" /data/stock/salbutamol_syrup___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ors" readonly="true()" type="string" relevant=" /data/stock/ors___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_benzyl_benzoate" readonly="true()" type="string" relevant=" /data/stock/benzyl_benzoate___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metronidazole_500mg" readonly="true()" type="string" relevant=" /data/stock/metronidazole_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_omeprazole_20mg" readonly="true()" type="string" relevant=" /data/stock/omeprazole_20mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_nifedipine_10mg" readonly="true()" type="string" relevant=" /data/stock/nifedipine_10mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_mioflex" readonly="true()" type="string" relevant=" /data/stock/mioflex___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_paracetamol_syrup" readonly="true()" type="string" relevant=" /data/stock/paracetamol_syrup___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_tinidazole_500mg" readonly="true()" type="string" relevant=" /data/stock/tinidazole_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_dexamethasone_injectable" readonly="true()" type="string" relevant=" /data/stock/dexamethasone_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_griseofulvin_tabs" readonly="true()" type="string" relevant=" /data/stock/griseofulvin_tabs___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_chloroquine_150mg" readonly="true()" type="string" relevant=" /data/stock/chloroquine_150mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_benzyl_benzoate_25" readonly="true()" type="string" relevant=" /data/stock/benzyl_benzoate_25___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_doxycycline_100mg" readonly="true()" type="string" relevant=" /data/stock/doxycycline_100mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_hctz_25mg" readonly="true()" type="string" relevant=" /data/stock/hctz_25mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_zinc_20mg" readonly="true()" type="string" relevant=" /data/stock/zinc_20mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ciprofloxacin_suspension" readonly="true()" type="string" relevant=" /data/stock/ciprofloxacin_suspension___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metamizol_injectable" readonly="true()" type="string" relevant=" /data/stock/metamizol_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_albendazole" readonly="true()" type="string" relevant=" /data/stock/albendazole___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_omeprazole_injectable" readonly="true()" type="string" relevant=" /data/stock/omeprazole_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_paracetamol_500mg" readonly="true()" type="string" relevant=" /data/stock/paracetamol_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ciprofloxacin_500mg" readonly="true()" type="string" relevant=" /data/stock/ciprofloxacin_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_griseofulvin_125mg" readonly="true()" type="string" relevant=" /data/stock/griseofulvin_125mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_amoxycillin_500mg" readonly="true()" type="string" relevant=" /data/stock/amoxycillin_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_cloxacillin_suspension" readonly="true()" type="string" relevant=" /data/stock/cloxacillin_suspension___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_triple_antibiotic_ointment" readonly="true()" type="string" relevant=" /data/stock/triple_antibiotic_ointment___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metformin_500mg" readonly="true()" type="string" relevant=" /data/stock/metformin_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_antifungal_cream" readonly="true()" type="string" relevant=" /data/stock/antifungal_cream___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_iron_folic_acid" readonly="true()" type="string" relevant=" /data/stock/iron_folic_acid___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_salbutamol_4mg" readonly="true()" type="string" relevant=" /data/stock/salbutamol_4mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_zinc_tablets" readonly="true()" type="string" relevant=" /data/stock/zinc_tablets___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_iv_line" readonly="true()" type="string" relevant=" /data/stock/iv_line___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_amoxicillin_suspension" readonly="true()" type="string" relevant=" /data/stock/amoxicillin_suspension___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_lancets" readonly="true()" type="string" relevant=" /data/stock/lancets___count  &gt; 0"/>
+      <bind nodeset="/data/out/litacid_gel_availables" type="string" calculate=" /data/stock/litacid_gel___count "/>
+      <bind nodeset="/data/out/calamine_lotion_availables" type="string" calculate=" /data/stock/calamine_lotion___count "/>
+      <bind nodeset="/data/out/cotrimoxazole_400_80mg_availables" type="string" calculate=" /data/stock/cotrimoxazole_400_80mg___count "/>
+      <bind nodeset="/data/out/albendazole_400mg_availables" type="string" calculate=" /data/stock/albendazole_400mg___count "/>
+      <bind nodeset="/data/out/buscopan_injectable_availables" type="string" calculate=" /data/stock/buscopan_injectable___count "/>
+      <bind nodeset="/data/out/cloxacillin_500mg_availables" type="string" calculate=" /data/stock/cloxacillin_500mg___count "/>
+      <bind nodeset="/data/out/benzathine_penicillin_injectable_availables" type="string" calculate=" /data/stock/benzathine_penicillin_injectable___count "/>
+      <bind nodeset="/data/out/vitamin_a_availables" type="string" calculate=" /data/stock/vitamin_a___count "/>
+      <bind nodeset="/data/out/strips_availables" type="string" calculate=" /data/stock/strips___count "/>
+      <bind nodeset="/data/out/triple_antibiotic_availables" type="string" calculate=" /data/stock/triple_antibiotic___count "/>
+      <bind nodeset="/data/out/furosemide_injectable_availables" type="string" calculate=" /data/stock/furosemide_injectable___count "/>
+      <bind nodeset="/data/out/nifedipine_20mg_availables" type="string" calculate=" /data/stock/nifedipine_20mg___count "/>
+      <bind nodeset="/data/out/enalapril_10mg_availables" type="string" calculate=" /data/stock/enalapril_10mg___count "/>
+      <bind nodeset="/data/out/salbutamol_syrup_availables" type="string" calculate=" /data/stock/salbutamol_syrup___count "/>
+      <bind nodeset="/data/out/ors_availables" type="string" calculate=" /data/stock/ors___count "/>
+      <bind nodeset="/data/out/benzyl_benzoate_availables" type="string" calculate=" /data/stock/benzyl_benzoate___count "/>
+      <bind nodeset="/data/out/metronidazole_500mg_availables" type="string" calculate=" /data/stock/metronidazole_500mg___count "/>
+      <bind nodeset="/data/out/omeprazole_20mg_availables" type="string" calculate=" /data/stock/omeprazole_20mg___count "/>
+      <bind nodeset="/data/out/nifedipine_10mg_availables" type="string" calculate=" /data/stock/nifedipine_10mg___count "/>
+      <bind nodeset="/data/out/mioflex_availables" type="string" calculate=" /data/stock/mioflex___count "/>
+      <bind nodeset="/data/out/paracetamol_syrup_availables" type="string" calculate=" /data/stock/paracetamol_syrup___count "/>
+      <bind nodeset="/data/out/tinidazole_500mg_availables" type="string" calculate=" /data/stock/tinidazole_500mg___count "/>
+      <bind nodeset="/data/out/dexamethasone_injectable_availables" type="string" calculate=" /data/stock/dexamethasone_injectable___count "/>
+      <bind nodeset="/data/out/griseofulvin_tabs_availables" type="string" calculate=" /data/stock/griseofulvin_tabs___count "/>
+      <bind nodeset="/data/out/chloroquine_150mg_availables" type="string" calculate=" /data/stock/chloroquine_150mg___count "/>
+      <bind nodeset="/data/out/benzyl_benzoate_25_availables" type="string" calculate=" /data/stock/benzyl_benzoate_25___count "/>
+      <bind nodeset="/data/out/doxycycline_100mg_availables" type="string" calculate=" /data/stock/doxycycline_100mg___count "/>
+      <bind nodeset="/data/out/hctz_25mg_availables" type="string" calculate=" /data/stock/hctz_25mg___count "/>
+      <bind nodeset="/data/out/zinc_20mg_availables" type="string" calculate=" /data/stock/zinc_20mg___count "/>
+      <bind nodeset="/data/out/ciprofloxacin_suspension_availables" type="string" calculate=" /data/stock/ciprofloxacin_suspension___count "/>
+      <bind nodeset="/data/out/metamizol_injectable_availables" type="string" calculate=" /data/stock/metamizol_injectable___count "/>
+      <bind nodeset="/data/out/albendazole_availables" type="string" calculate=" /data/stock/albendazole___count "/>
+      <bind nodeset="/data/out/omeprazole_injectable_availables" type="string" calculate=" /data/stock/omeprazole_injectable___count "/>
+      <bind nodeset="/data/out/paracetamol_500mg_availables" type="string" calculate=" /data/stock/paracetamol_500mg___count "/>
+      <bind nodeset="/data/out/ciprofloxacin_500mg_availables" type="string" calculate=" /data/stock/ciprofloxacin_500mg___count "/>
+      <bind nodeset="/data/out/griseofulvin_125mg_availables" type="string" calculate=" /data/stock/griseofulvin_125mg___count "/>
+      <bind nodeset="/data/out/amoxycillin_500mg_availables" type="string" calculate=" /data/stock/amoxycillin_500mg___count "/>
+      <bind nodeset="/data/out/cloxacillin_suspension_availables" type="string" calculate=" /data/stock/cloxacillin_suspension___count "/>
+      <bind nodeset="/data/out/triple_antibiotic_ointment_availables" type="string" calculate=" /data/stock/triple_antibiotic_ointment___count "/>
+      <bind nodeset="/data/out/metformin_500mg_availables" type="string" calculate=" /data/stock/metformin_500mg___count "/>
+      <bind nodeset="/data/out/antifungal_cream_availables" type="string" calculate=" /data/stock/antifungal_cream___count "/>
+      <bind nodeset="/data/out/iron_folic_acid_availables" type="string" calculate=" /data/stock/iron_folic_acid___count "/>
+      <bind nodeset="/data/out/salbutamol_4mg_availables" type="string" calculate=" /data/stock/salbutamol_4mg___count "/>
+      <bind nodeset="/data/out/zinc_tablets_availables" type="string" calculate=" /data/stock/zinc_tablets___count "/>
+      <bind nodeset="/data/out/iv_line_availables" type="string" calculate=" /data/stock/iv_line___count "/>
+      <bind nodeset="/data/out/amoxicillin_suspension_availables" type="string" calculate=" /data/stock/amoxicillin_suspension___count "/>
+      <bind nodeset="/data/out/lancets_availables" type="string" calculate=" /data/stock/lancets___count "/>
+      <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <input ref="/data/inputs/source" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source:label')"/>
+      </input>
+      <input ref="/data/inputs/source_id" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source_id:label')"/>
+      </input>
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id" appearance="db-object"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object"/>
+        <input ref="/data/inputs/contact/name" appearance="hidden"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/stock">
+      <label ref="jr:itext('/data/stock:label')"/>
+      <input ref="/data/stock/litacid_gel">
+        <label ref="jr:itext('/data/stock/litacid_gel:label')"/>
+        <hint ref="jr:itext('/data/stock/litacid_gel:hint')"/>
+      </input>
+      <input ref="/data/stock/calamine_lotion">
+        <label ref="jr:itext('/data/stock/calamine_lotion:label')"/>
+        <hint ref="jr:itext('/data/stock/calamine_lotion:hint')"/>
+      </input>
+      <input ref="/data/stock/cotrimoxazole_400_80mg">
+        <label ref="jr:itext('/data/stock/cotrimoxazole_400_80mg:label')"/>
+        <hint ref="jr:itext('/data/stock/cotrimoxazole_400_80mg:hint')"/>
+      </input>
+      <input ref="/data/stock/albendazole_400mg">
+        <label ref="jr:itext('/data/stock/albendazole_400mg:label')"/>
+        <hint ref="jr:itext('/data/stock/albendazole_400mg:hint')"/>
+      </input>
+      <input ref="/data/stock/buscopan_injectable">
+        <label ref="jr:itext('/data/stock/buscopan_injectable:label')"/>
+        <hint ref="jr:itext('/data/stock/buscopan_injectable:hint')"/>
+      </input>
+      <input ref="/data/stock/cloxacillin_500mg">
+        <label ref="jr:itext('/data/stock/cloxacillin_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/cloxacillin_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/benzathine_penicillin_injectable">
+        <label ref="jr:itext('/data/stock/benzathine_penicillin_injectable:label')"/>
+        <hint ref="jr:itext('/data/stock/benzathine_penicillin_injectable:hint')"/>
+      </input>
+      <input ref="/data/stock/vitamin_a">
+        <label ref="jr:itext('/data/stock/vitamin_a:label')"/>
+        <hint ref="jr:itext('/data/stock/vitamin_a:hint')"/>
+      </input>
+      <input ref="/data/stock/strips">
+        <label ref="jr:itext('/data/stock/strips:label')"/>
+        <hint ref="jr:itext('/data/stock/strips:hint')"/>
+      </input>
+      <input ref="/data/stock/triple_antibiotic">
+        <label ref="jr:itext('/data/stock/triple_antibiotic:label')"/>
+        <hint ref="jr:itext('/data/stock/triple_antibiotic:hint')"/>
+      </input>
+      <input ref="/data/stock/furosemide_injectable">
+        <label ref="jr:itext('/data/stock/furosemide_injectable:label')"/>
+        <hint ref="jr:itext('/data/stock/furosemide_injectable:hint')"/>
+      </input>
+      <input ref="/data/stock/nifedipine_20mg">
+        <label ref="jr:itext('/data/stock/nifedipine_20mg:label')"/>
+        <hint ref="jr:itext('/data/stock/nifedipine_20mg:hint')"/>
+      </input>
+      <input ref="/data/stock/enalapril_10mg">
+        <label ref="jr:itext('/data/stock/enalapril_10mg:label')"/>
+        <hint ref="jr:itext('/data/stock/enalapril_10mg:hint')"/>
+      </input>
+      <input ref="/data/stock/salbutamol_syrup">
+        <label ref="jr:itext('/data/stock/salbutamol_syrup:label')"/>
+        <hint ref="jr:itext('/data/stock/salbutamol_syrup:hint')"/>
+      </input>
+      <input ref="/data/stock/ors">
+        <label ref="jr:itext('/data/stock/ors:label')"/>
+        <hint ref="jr:itext('/data/stock/ors:hint')"/>
+      </input>
+      <input ref="/data/stock/benzyl_benzoate">
+        <label ref="jr:itext('/data/stock/benzyl_benzoate:label')"/>
+        <hint ref="jr:itext('/data/stock/benzyl_benzoate:hint')"/>
+      </input>
+      <input ref="/data/stock/metronidazole_500mg">
+        <label ref="jr:itext('/data/stock/metronidazole_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/metronidazole_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/omeprazole_20mg">
+        <label ref="jr:itext('/data/stock/omeprazole_20mg:label')"/>
+        <hint ref="jr:itext('/data/stock/omeprazole_20mg:hint')"/>
+      </input>
+      <input ref="/data/stock/nifedipine_10mg">
+        <label ref="jr:itext('/data/stock/nifedipine_10mg:label')"/>
+        <hint ref="jr:itext('/data/stock/nifedipine_10mg:hint')"/>
+      </input>
+      <input ref="/data/stock/mioflex">
+        <label ref="jr:itext('/data/stock/mioflex:label')"/>
+        <hint ref="jr:itext('/data/stock/mioflex:hint')"/>
+      </input>
+      <input ref="/data/stock/paracetamol_syrup">
+        <label ref="jr:itext('/data/stock/paracetamol_syrup:label')"/>
+        <hint ref="jr:itext('/data/stock/paracetamol_syrup:hint')"/>
+      </input>
+      <input ref="/data/stock/tinidazole_500mg">
+        <label ref="jr:itext('/data/stock/tinidazole_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/tinidazole_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/dexamethasone_injectable">
+        <label ref="jr:itext('/data/stock/dexamethasone_injectable:label')"/>
+        <hint ref="jr:itext('/data/stock/dexamethasone_injectable:hint')"/>
+      </input>
+      <input ref="/data/stock/griseofulvin_tabs">
+        <label ref="jr:itext('/data/stock/griseofulvin_tabs:label')"/>
+        <hint ref="jr:itext('/data/stock/griseofulvin_tabs:hint')"/>
+      </input>
+      <input ref="/data/stock/chloroquine_150mg">
+        <label ref="jr:itext('/data/stock/chloroquine_150mg:label')"/>
+        <hint ref="jr:itext('/data/stock/chloroquine_150mg:hint')"/>
+      </input>
+      <input ref="/data/stock/benzyl_benzoate_25">
+        <label ref="jr:itext('/data/stock/benzyl_benzoate_25:label')"/>
+        <hint ref="jr:itext('/data/stock/benzyl_benzoate_25:hint')"/>
+      </input>
+      <input ref="/data/stock/doxycycline_100mg">
+        <label ref="jr:itext('/data/stock/doxycycline_100mg:label')"/>
+        <hint ref="jr:itext('/data/stock/doxycycline_100mg:hint')"/>
+      </input>
+      <input ref="/data/stock/hctz_25mg">
+        <label ref="jr:itext('/data/stock/hctz_25mg:label')"/>
+        <hint ref="jr:itext('/data/stock/hctz_25mg:hint')"/>
+      </input>
+      <input ref="/data/stock/zinc_20mg">
+        <label ref="jr:itext('/data/stock/zinc_20mg:label')"/>
+        <hint ref="jr:itext('/data/stock/zinc_20mg:hint')"/>
+      </input>
+      <input ref="/data/stock/ciprofloxacin_suspension">
+        <label ref="jr:itext('/data/stock/ciprofloxacin_suspension:label')"/>
+        <hint ref="jr:itext('/data/stock/ciprofloxacin_suspension:hint')"/>
+      </input>
+      <input ref="/data/stock/metamizol_injectable">
+        <label ref="jr:itext('/data/stock/metamizol_injectable:label')"/>
+        <hint ref="jr:itext('/data/stock/metamizol_injectable:hint')"/>
+      </input>
+      <input ref="/data/stock/albendazole">
+        <label ref="jr:itext('/data/stock/albendazole:label')"/>
+        <hint ref="jr:itext('/data/stock/albendazole:hint')"/>
+      </input>
+      <input ref="/data/stock/omeprazole_injectable">
+        <label ref="jr:itext('/data/stock/omeprazole_injectable:label')"/>
+        <hint ref="jr:itext('/data/stock/omeprazole_injectable:hint')"/>
+      </input>
+      <input ref="/data/stock/paracetamol_500mg">
+        <label ref="jr:itext('/data/stock/paracetamol_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/paracetamol_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/ciprofloxacin_500mg">
+        <label ref="jr:itext('/data/stock/ciprofloxacin_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/ciprofloxacin_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/griseofulvin_125mg">
+        <label ref="jr:itext('/data/stock/griseofulvin_125mg:label')"/>
+        <hint ref="jr:itext('/data/stock/griseofulvin_125mg:hint')"/>
+      </input>
+      <input ref="/data/stock/amoxycillin_500mg">
+        <label ref="jr:itext('/data/stock/amoxycillin_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/amoxycillin_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/cloxacillin_suspension">
+        <label ref="jr:itext('/data/stock/cloxacillin_suspension:label')"/>
+        <hint ref="jr:itext('/data/stock/cloxacillin_suspension:hint')"/>
+      </input>
+      <input ref="/data/stock/triple_antibiotic_ointment">
+        <label ref="jr:itext('/data/stock/triple_antibiotic_ointment:label')"/>
+        <hint ref="jr:itext('/data/stock/triple_antibiotic_ointment:hint')"/>
+      </input>
+      <input ref="/data/stock/metformin_500mg">
+        <label ref="jr:itext('/data/stock/metformin_500mg:label')"/>
+        <hint ref="jr:itext('/data/stock/metformin_500mg:hint')"/>
+      </input>
+      <input ref="/data/stock/antifungal_cream">
+        <label ref="jr:itext('/data/stock/antifungal_cream:label')"/>
+        <hint ref="jr:itext('/data/stock/antifungal_cream:hint')"/>
+      </input>
+      <input ref="/data/stock/iron_folic_acid">
+        <label ref="jr:itext('/data/stock/iron_folic_acid:label')"/>
+        <hint ref="jr:itext('/data/stock/iron_folic_acid:hint')"/>
+      </input>
+      <input ref="/data/stock/salbutamol_4mg">
+        <label ref="jr:itext('/data/stock/salbutamol_4mg:label')"/>
+        <hint ref="jr:itext('/data/stock/salbutamol_4mg:hint')"/>
+      </input>
+      <input ref="/data/stock/zinc_tablets">
+        <label ref="jr:itext('/data/stock/zinc_tablets:label')"/>
+        <hint ref="jr:itext('/data/stock/zinc_tablets:hint')"/>
+      </input>
+      <input ref="/data/stock/iv_line">
+        <label ref="jr:itext('/data/stock/iv_line:label')"/>
+        <hint ref="jr:itext('/data/stock/iv_line:hint')"/>
+      </input>
+      <input ref="/data/stock/amoxicillin_suspension">
+        <label ref="jr:itext('/data/stock/amoxicillin_suspension:label')"/>
+        <hint ref="jr:itext('/data/stock/amoxicillin_suspension:hint')"/>
+      </input>
+      <input ref="/data/stock/lancets">
+        <label ref="jr:itext('/data/stock/lancets:label')"/>
+        <hint ref="jr:itext('/data/stock/lancets:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
+      <input ref="/data/summary/s_submit">
+        <label ref="jr:itext('/data/summary/s_submit:label')"/>
+      </input>
+      <input ref="/data/summary/r_summary" appearance="h1 yellow">
+        <label ref="jr:itext('/data/summary/r_summary:label')"/>
+      </input>
+      <input ref="/data/summary/s_litacid_gel" appearance="li">
+        <label ref="jr:itext('/data/summary/s_litacid_gel:label')"/>
+      </input>
+      <input ref="/data/summary/s_calamine_lotion" appearance="li">
+        <label ref="jr:itext('/data/summary/s_calamine_lotion:label')"/>
+      </input>
+      <input ref="/data/summary/s_cotrimoxazole_400_80mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_cotrimoxazole_400_80mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_albendazole_400mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_albendazole_400mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_buscopan_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_buscopan_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_cloxacillin_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_cloxacillin_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_benzathine_penicillin_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_benzathine_penicillin_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_vitamin_a" appearance="li">
+        <label ref="jr:itext('/data/summary/s_vitamin_a:label')"/>
+      </input>
+      <input ref="/data/summary/s_strips" appearance="li">
+        <label ref="jr:itext('/data/summary/s_strips:label')"/>
+      </input>
+      <input ref="/data/summary/s_triple_antibiotic" appearance="li">
+        <label ref="jr:itext('/data/summary/s_triple_antibiotic:label')"/>
+      </input>
+      <input ref="/data/summary/s_furosemide_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_furosemide_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_nifedipine_20mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_nifedipine_20mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_enalapril_10mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_enalapril_10mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_salbutamol_syrup" appearance="li">
+        <label ref="jr:itext('/data/summary/s_salbutamol_syrup:label')"/>
+      </input>
+      <input ref="/data/summary/s_ors" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ors:label')"/>
+      </input>
+      <input ref="/data/summary/s_benzyl_benzoate" appearance="li">
+        <label ref="jr:itext('/data/summary/s_benzyl_benzoate:label')"/>
+      </input>
+      <input ref="/data/summary/s_metronidazole_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metronidazole_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_omeprazole_20mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_omeprazole_20mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_nifedipine_10mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_nifedipine_10mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_mioflex" appearance="li">
+        <label ref="jr:itext('/data/summary/s_mioflex:label')"/>
+      </input>
+      <input ref="/data/summary/s_paracetamol_syrup" appearance="li">
+        <label ref="jr:itext('/data/summary/s_paracetamol_syrup:label')"/>
+      </input>
+      <input ref="/data/summary/s_tinidazole_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_tinidazole_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_dexamethasone_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_dexamethasone_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_griseofulvin_tabs" appearance="li">
+        <label ref="jr:itext('/data/summary/s_griseofulvin_tabs:label')"/>
+      </input>
+      <input ref="/data/summary/s_chloroquine_150mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_chloroquine_150mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_benzyl_benzoate_25" appearance="li">
+        <label ref="jr:itext('/data/summary/s_benzyl_benzoate_25:label')"/>
+      </input>
+      <input ref="/data/summary/s_doxycycline_100mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_doxycycline_100mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_hctz_25mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_hctz_25mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_zinc_20mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_zinc_20mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_ciprofloxacin_suspension" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ciprofloxacin_suspension:label')"/>
+      </input>
+      <input ref="/data/summary/s_metamizol_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metamizol_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_albendazole" appearance="li">
+        <label ref="jr:itext('/data/summary/s_albendazole:label')"/>
+      </input>
+      <input ref="/data/summary/s_omeprazole_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_omeprazole_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_paracetamol_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_paracetamol_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_ciprofloxacin_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ciprofloxacin_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_griseofulvin_125mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_griseofulvin_125mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_amoxycillin_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_amoxycillin_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_cloxacillin_suspension" appearance="li">
+        <label ref="jr:itext('/data/summary/s_cloxacillin_suspension:label')"/>
+      </input>
+      <input ref="/data/summary/s_triple_antibiotic_ointment" appearance="li">
+        <label ref="jr:itext('/data/summary/s_triple_antibiotic_ointment:label')"/>
+      </input>
+      <input ref="/data/summary/s_metformin_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metformin_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_antifungal_cream" appearance="li">
+        <label ref="jr:itext('/data/summary/s_antifungal_cream:label')"/>
+      </input>
+      <input ref="/data/summary/s_iron_folic_acid" appearance="li">
+        <label ref="jr:itext('/data/summary/s_iron_folic_acid:label')"/>
+      </input>
+      <input ref="/data/summary/s_salbutamol_4mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_salbutamol_4mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_zinc_tablets" appearance="li">
+        <label ref="jr:itext('/data/summary/s_zinc_tablets:label')"/>
+      </input>
+      <input ref="/data/summary/s_iv_line" appearance="li">
+        <label ref="jr:itext('/data/summary/s_iv_line:label')"/>
+      </input>
+      <input ref="/data/summary/s_amoxicillin_suspension" appearance="li">
+        <label ref="jr:itext('/data/summary/s_amoxicillin_suspension:label')"/>
+      </input>
+      <input ref="/data/summary/s_lancets" appearance="li">
+        <label ref="jr:itext('/data/summary/s_lancets:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/out"/>
+  </h:body>
+</h:html>

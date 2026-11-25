@@ -1,0 +1,1228 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Child Wounds</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="body_location-0">
+            <value>Head / Face</value>
+          </text>
+          <text id="body_location-1">
+            <value>Neck</value>
+          </text>
+          <text id="body_location-2">
+            <value>Chest / Torso</value>
+          </text>
+          <text id="body_location-3">
+            <value>Back</value>
+          </text>
+          <text id="body_location-4">
+            <value>Abdomen</value>
+          </text>
+          <text id="body_location-5">
+            <value>Arm / Hand</value>
+          </text>
+          <text id="body_location-6">
+            <value>Leg / Foot</value>
+          </text>
+          <text id="body_location-7">
+            <value>Other</value>
+          </text>
+          <text id="wound_type-0">
+            <value>Cut / Laceration</value>
+          </text>
+          <text id="wound_type-1">
+            <value>Scrape / Abrasion</value>
+          </text>
+          <text id="wound_type-2">
+            <value>Bruise / Contusion</value>
+          </text>
+          <text id="wound_type-3">
+            <value>Puncture wound</value>
+          </text>
+          <text id="wound_type-4">
+            <value>Burn</value>
+          </text>
+          <text id="wound_type-5">
+            <value>Suspected fracture / bone injury</value>
+          </text>
+          <text id="wound_type-6">
+            <value>Animal / Insect bite</value>
+          </text>
+          <text id="wound_type-7">
+            <value>Chronic ulcer / sore</value>
+          </text>
+          <text id="wound_type-8">
+            <value>Other</value>
+          </text>
+          <text id="severity-0">
+            <value>Mild / Superficial</value>
+          </text>
+          <text id="severity-1">
+            <value>Moderate</value>
+          </text>
+          <text id="severity-2">
+            <value>Severe / Deep</value>
+          </text>
+          <text id="duration-0">
+            <value>Today (&lt; 24 hours)</value>
+          </text>
+          <text id="duration-1">
+            <value>1 to 3 days ago</value>
+          </text>
+          <text id="duration-2">
+            <value>4 to 7 days ago</value>
+          </text>
+          <text id="duration-3">
+            <value>More than 1 week ago</value>
+          </text>
+          <text id="bleeding_status-0">
+            <value>No bleeding</value>
+          </text>
+          <text id="bleeding_status-1">
+            <value>Minor / Controlled bleeding</value>
+          </text>
+          <text id="bleeding_status-2">
+            <value>Active / Heavy bleeding</value>
+          </text>
+          <text id="infection_signs-0">
+            <value>None (Clean wound)</value>
+          </text>
+          <text id="infection_signs-1">
+            <value>Redness / Swelling</value>
+          </text>
+          <text id="infection_signs-2">
+            <value>Pus / Discharge</value>
+          </text>
+          <text id="infection_signs-3">
+            <value>Foul odor</value>
+          </text>
+          <text id="infection_signs-4">
+            <value>Warmth / Local fever</value>
+          </text>
+          <text id="tetanus_status-0">
+            <value>Up to date (&lt; 5-10 yrs)</value>
+          </text>
+          <text id="tetanus_status-1">
+            <value>Not up to date (&gt; 5-10 yrs)</value>
+          </text>
+          <text id="tetanus_status-2">
+            <value>Unknown / Unsure</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/wound_assessment_group:label">
+            <value>Wound Documentation</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_assessment_note:label">
+            <value>Document the patient's wound, injury type, and physical characteristics. Note: Treatment and interventions will be recorded separately.</value>
+          </text>
+          <text id="/data/wound_assessment_group/body_part:label">
+            <value>What part of the body is wounded?</value>
+          </text>
+          <text id="/data/wound_assessment_group/body_part_other:label">
+            <value>Specify other body part:</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_types:label">
+            <value>What type of wound or injury is present? (Select all that apply)</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_type_other:label">
+            <value>Specify other wound type:</value>
+          </text>
+          <text id="/data/wound_assessment_group/severity_level:label">
+            <value>Wound severity level:</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_duration:label">
+            <value>When did the injury occur?</value>
+          </text>
+          <text id="/data/wound_assessment_group/bleeding:label">
+            <value>Bleeding status:</value>
+          </text>
+          <text id="/data/wound_assessment_group/infection_symptoms:label">
+            <value>Signs of infection present:</value>
+          </text>
+          <text id="/data/wound_assessment_group/tetanus_vaccine:label">
+            <value>Tetanus vaccination status:</value>
+          </text>
+          <text id="/data/wound_assessment_group/referral_needed:label">
+            <value>Does this wound require urgent referral or physician consultation?</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_notes:label">
+            <value>Clinical notes &amp; wound description:</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_notes:hint">
+            <value>Describe wound size, edges, and relevant observations</value>
+          </text>
+          <text id="/data/summary_group:label">
+            <value>Wound Care Summary &amp; Protocol</value>
+          </text>
+          <text id="/data/summary_group/summary_banner:label">
+            <value>Wound Documentation Complete</value>
+          </text>
+          <text id="/data/summary_group/summary_note:label">
+            <value>Wound documentation is complete. Submit form and continue assessment.</value>
+          </text>
+          <text id="/data/summary_group/submission_clinical_note:label">
+            <value>Additional clinical notes:</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="body_location-0">
+            <value>Tête / Visage</value>
+          </text>
+          <text id="body_location-1">
+            <value>Cou</value>
+          </text>
+          <text id="body_location-2">
+            <value>Poitrine / Torse</value>
+          </text>
+          <text id="body_location-3">
+            <value>Dos</value>
+          </text>
+          <text id="body_location-4">
+            <value>Abdomen</value>
+          </text>
+          <text id="body_location-5">
+            <value>Bras / Main</value>
+          </text>
+          <text id="body_location-6">
+            <value>Jambe / Pied</value>
+          </text>
+          <text id="body_location-7">
+            <value>Autre</value>
+          </text>
+          <text id="wound_type-0">
+            <value>Coupure / Lacération</value>
+          </text>
+          <text id="wound_type-1">
+            <value>Égratignure / Abrasion</value>
+          </text>
+          <text id="wound_type-2">
+            <value>Bleu / Contusion</value>
+          </text>
+          <text id="wound_type-3">
+            <value>Plaie perforante</value>
+          </text>
+          <text id="wound_type-4">
+            <value>Brûlure</value>
+          </text>
+          <text id="wound_type-5">
+            <value>Suspicion de fracture / lésion osseuse</value>
+          </text>
+          <text id="wound_type-6">
+            <value>Morsure / Piqûre</value>
+          </text>
+          <text id="wound_type-7">
+            <value>Ulcère cutané chronique</value>
+          </text>
+          <text id="wound_type-8">
+            <value>Autre</value>
+          </text>
+          <text id="severity-0">
+            <value>Léger / Superficiel</value>
+          </text>
+          <text id="severity-1">
+            <value>Modéré</value>
+          </text>
+          <text id="severity-2">
+            <value>Sévère / Profond</value>
+          </text>
+          <text id="duration-0">
+            <value>Aujourd'hui (&lt; 24 heures)</value>
+          </text>
+          <text id="duration-1">
+            <value>Il y a 1 à 3 jours</value>
+          </text>
+          <text id="duration-2">
+            <value>Il y a 4 à 7 jours</value>
+          </text>
+          <text id="duration-3">
+            <value>Il y a plus d'une semaine</value>
+          </text>
+          <text id="bleeding_status-0">
+            <value>Aucun saignement</value>
+          </text>
+          <text id="bleeding_status-1">
+            <value>Saignement faible ou contrôlé</value>
+          </text>
+          <text id="bleeding_status-2">
+            <value>Saignement actif ou important</value>
+          </text>
+          <text id="infection_signs-0">
+            <value>Aucun (Plaie propre)</value>
+          </text>
+          <text id="infection_signs-1">
+            <value>Rougeur / Gonflement</value>
+          </text>
+          <text id="infection_signs-2">
+            <value>Pus / Écoulement</value>
+          </text>
+          <text id="infection_signs-3">
+            <value>Mauvaise odeur</value>
+          </text>
+          <text id="infection_signs-4">
+            <value>Chaleur locale / Fièvre</value>
+          </text>
+          <text id="tetanus_status-0">
+            <value>À jour (&lt; 5-10 ans)</value>
+          </text>
+          <text id="tetanus_status-1">
+            <value>Pas à jour (&gt; 5-10 ans)</value>
+          </text>
+          <text id="tetanus_status-2">
+            <value>Inconnu / Incertain</value>
+          </text>
+          <text id="/data/wound_assessment_group:label">
+            <value>Documentation des plaies</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_assessment_note:label">
+            <value>Documentez la plaie, le type de blessure et les caractéristiques physiques. Remarque : Le traitement sera enregistré séparément.</value>
+          </text>
+          <text id="/data/wound_assessment_group/body_part:label">
+            <value>Quelle partie du corps est blessée ?</value>
+          </text>
+          <text id="/data/wound_assessment_group/body_part_other:label">
+            <value>Précisez l'autre partie du corps :</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_types:label">
+            <value>Quel type de plaie ou blessure est présent ? (Sélectionnez tout ce qui s'applique)</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_type_other:label">
+            <value>Précisez l'autre type de blessure :</value>
+          </text>
+          <text id="/data/wound_assessment_group/severity_level:label">
+            <value>Niveau de gravité de la plaie :</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_duration:label">
+            <value>Quand la blessure s'est-elle produite ?</value>
+          </text>
+          <text id="/data/wound_assessment_group/bleeding:label">
+            <value>État du saignement :</value>
+          </text>
+          <text id="/data/wound_assessment_group/infection_symptoms:label">
+            <value>Signes d'infection présents :</value>
+          </text>
+          <text id="/data/wound_assessment_group/tetanus_vaccine:label">
+            <value>Statut vaccinal antitétanique :</value>
+          </text>
+          <text id="/data/wound_assessment_group/referral_needed:label">
+            <value>Cette plaie nécessite-t-elle une référence urgente ou un avis médical ?</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_notes:label">
+            <value>Notes cliniques &amp; description de la plaie :</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_notes:hint">
+            <value>Décrivez la taille de la plaie, les berges et les observations</value>
+          </text>
+          <text id="/data/summary_group:label">
+            <value>Résumé des soins de plaie et protocole</value>
+          </text>
+          <text id="/data/summary_group/summary_banner:label">
+            <value>Documentation complète sur la plaie</value>
+          </text>
+          <text id="/data/summary_group/summary_note:label">
+            <value>La documentation relative à la plaie est complète. Veuillez soumettre le formulaire et poursuivre l'évaluation.</value>
+          </text>
+          <text id="/data/summary_group/submission_clinical_note:label">
+            <value>Notes cliniques supplémentaires :</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_body_part:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_wound_types:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_severity_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_wound_duration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_bleeding:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_infection_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_needed:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="body_location-0">
+            <value>Tèt / Figi</value>
+          </text>
+          <text id="body_location-1">
+            <value>Kou</value>
+          </text>
+          <text id="body_location-2">
+            <value>Pwatrin / Kò</value>
+          </text>
+          <text id="body_location-3">
+            <value>Do</value>
+          </text>
+          <text id="body_location-4">
+            <value>Vant</value>
+          </text>
+          <text id="body_location-5">
+            <value>Bra / Men</value>
+          </text>
+          <text id="body_location-6">
+            <value>Janm / Pye</value>
+          </text>
+          <text id="body_location-7">
+            <value>Lòt</value>
+          </text>
+          <text id="wound_type-0">
+            <value>Koupi / Blesi ouvè</value>
+          </text>
+          <text id="wound_type-1">
+            <value>Grafouyen / Egratigni</value>
+          </text>
+          <text id="wound_type-2">
+            <value>Ble / Kontizyon</value>
+          </text>
+          <text id="wound_type-3">
+            <value>Blesi pèse</value>
+          </text>
+          <text id="wound_type-4">
+            <value>Boule</value>
+          </text>
+          <text id="wound_type-5">
+            <value>Sispèk zo kase / blesi nan zo</value>
+          </text>
+          <text id="wound_type-6">
+            <value>Mòde bèt / Pikèt ensèk</value>
+          </text>
+          <text id="wound_type-7">
+            <value>Ilsè / Maleng sou po</value>
+          </text>
+          <text id="wound_type-8">
+            <value>Lòt</value>
+          </text>
+          <text id="severity-0">
+            <value>Lejè / Sipèfisyèl</value>
+          </text>
+          <text id="severity-1">
+            <value>Moderat</value>
+          </text>
+          <text id="severity-2">
+            <value>Grav / Fon</value>
+          </text>
+          <text id="duration-0">
+            <value>Jodi a (&lt; 24 èdtan)</value>
+          </text>
+          <text id="duration-1">
+            <value>1 rive 3 jou de sa</value>
+          </text>
+          <text id="duration-2">
+            <value>4 rive 7 jou de sa</value>
+          </text>
+          <text id="duration-3">
+            <value>Plis pase 1 semèn de sa</value>
+          </text>
+          <text id="bleeding_status-0">
+            <value>Pa gen senyen</value>
+          </text>
+          <text id="bleeding_status-1">
+            <value>Senyen lejè oswa kontwole</value>
+          </text>
+          <text id="bleeding_status-2">
+            <value>Senyen aktif oswa grav</value>
+          </text>
+          <text id="infection_signs-0">
+            <value>Okenn (Blesi pwòp)</value>
+          </text>
+          <text id="infection_signs-1">
+            <value>Woujè / Anfle</value>
+          </text>
+          <text id="infection_signs-2">
+            <value>Pi / Ekoulman</value>
+          </text>
+          <text id="infection_signs-3">
+            <value>Move sant</value>
+          </text>
+          <text id="infection_signs-4">
+            <value>Chalè lokal / Lafyèv</value>
+          </text>
+          <text id="tetanus_status-0">
+            <value>Ajou (&lt; 5-10 ane)</value>
+          </text>
+          <text id="tetanus_status-1">
+            <value>Pa ajou (&gt; 5-10 ane)</value>
+          </text>
+          <text id="tetanus_status-2">
+            <value>Enkoni / Pa sèten</value>
+          </text>
+          <text id="/data/wound_assessment_group:label">
+            <value>Dokimantasyon blesi</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_assessment_note:label">
+            <value>Dokimante blesi a, kalite blesi a, ak karakteristik fizik yo. Remak: Tretman ak pansman ap anrejistre nan yon lòt fòm separe.</value>
+          </text>
+          <text id="/data/wound_assessment_group/body_part:label">
+            <value>Ki pati nan kò a ki blese ?</value>
+          </text>
+          <text id="/data/wound_assessment_group/body_part_other:label">
+            <value>Espesifye lòt pati nan kò a :</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_types:label">
+            <value>Ki kalite blesi ki genyen ? (Chwazi tout sa ki aplike)</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_type_other:label">
+            <value>Espesifye lòt kalite blesi a :</value>
+          </text>
+          <text id="/data/wound_assessment_group/severity_level:label">
+            <value>Nivo gravite blesi a :</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_duration:label">
+            <value>Ki lè blesi a te fèt ?</value>
+          </text>
+          <text id="/data/wound_assessment_group/bleeding:label">
+            <value>Kondisyon senyen an :</value>
+          </text>
+          <text id="/data/wound_assessment_group/infection_symptoms:label">
+            <value>Siy enfeksyon ki prezan :</value>
+          </text>
+          <text id="/data/wound_assessment_group/tetanus_vaccine:label">
+            <value>Estati vaksen tetanòs :</value>
+          </text>
+          <text id="/data/wound_assessment_group/referral_needed:label">
+            <value>Èske blesi sa a bezwen referans ijan oswa konsiltasyon doktè ?</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_notes:label">
+            <value>Nòt klinik &amp; deskripsyon blesi a :</value>
+          </text>
+          <text id="/data/wound_assessment_group/wound_notes:hint">
+            <value>Dekri gwosè blesi a, bò blesi yo ak lòt obsèvasyon</value>
+          </text>
+          <text id="/data/summary_group:label">
+            <value>Rezime swen blesi ak pwotokòl</value>
+          </text>
+          <text id="/data/summary_group/summary_banner:label">
+            <value>Dokimantasyon blesi a fini</value>
+          </text>
+          <text id="/data/summary_group/summary_note:label">
+            <value>Dokimantasyon blesi a konplè. Soumèt fòm lan epi kontinye evalyasyon an.</value>
+          </text>
+          <text id="/data/summary_group/submission_clinical_note:label">
+            <value>Nòt klinik adisyonèl:</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_body_part:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_wound_types:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_severity_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_wound_duration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_bleeding:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_infection_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referral_needed:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="CHD_Form005_Wounds" version="20261120132006" prefix="J1!CHD_Form005_Wounds!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <wound_assessment_group>
+            <wound_assessment_note tag="hidden"/>
+            <body_part tag="hidden"/>
+            <body_part_label/>
+            <body_part_other/>
+            <wound_types tag="hidden"/>
+            <wound_types_label/>
+            <wound_type_other/>
+            <severity_level tag="hidden"/>
+            <severity_level_label/>
+            <wound_duration tag="hidden"/>
+            <wound_duration_label/>
+            <bleeding tag="hidden"/>
+            <bleeding_label/>
+            <infection_symptoms tag="hidden"/>
+            <infection_symptoms_label/>
+            <tetanus_vaccine tag="hidden"/>
+            <tetanus_vaccine_label/>
+            <referral_needed tag="hidden"/>
+            <referral_needed_label/>
+            <wound_notes/>
+          </wound_assessment_group>
+          <summary_group>
+            <summary_banner tag="hidden"/>
+            <summary_note tag="hidden"/>
+            <submission_clinical_note/>
+          </summary_group>
+          <data tag="hidden">
+            <_body_part tag="hidden"/>
+            <_wound_types tag="hidden"/>
+            <_severity_level tag="hidden"/>
+            <_wound_duration tag="hidden"/>
+            <_bleeding tag="hidden"/>
+            <_infection_symptoms tag="hidden"/>
+            <_referral_needed tag="hidden"/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="body_location">
+        <root>
+          <item>
+            <itextId>body_location-0</itextId>
+            <name>head_face</name>
+          </item>
+          <item>
+            <itextId>body_location-1</itextId>
+            <name>neck</name>
+          </item>
+          <item>
+            <itextId>body_location-2</itextId>
+            <name>chest</name>
+          </item>
+          <item>
+            <itextId>body_location-3</itextId>
+            <name>back</name>
+          </item>
+          <item>
+            <itextId>body_location-4</itextId>
+            <name>abdomen</name>
+          </item>
+          <item>
+            <itextId>body_location-5</itextId>
+            <name>upper_arm</name>
+          </item>
+          <item>
+            <itextId>body_location-6</itextId>
+            <name>lower_leg</name>
+          </item>
+          <item>
+            <itextId>body_location-7</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="wound_type">
+        <root>
+          <item>
+            <itextId>wound_type-0</itextId>
+            <name>cut</name>
+          </item>
+          <item>
+            <itextId>wound_type-1</itextId>
+            <name>abrasion</name>
+          </item>
+          <item>
+            <itextId>wound_type-2</itextId>
+            <name>bruise</name>
+          </item>
+          <item>
+            <itextId>wound_type-3</itextId>
+            <name>puncture</name>
+          </item>
+          <item>
+            <itextId>wound_type-4</itextId>
+            <name>burn</name>
+          </item>
+          <item>
+            <itextId>wound_type-5</itextId>
+            <name>suspected_break</name>
+          </item>
+          <item>
+            <itextId>wound_type-6</itextId>
+            <name>bite</name>
+          </item>
+          <item>
+            <itextId>wound_type-7</itextId>
+            <name>ulcer</name>
+          </item>
+          <item>
+            <itextId>wound_type-8</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="severity">
+        <root>
+          <item>
+            <itextId>severity-0</itextId>
+            <name>mild</name>
+          </item>
+          <item>
+            <itextId>severity-1</itextId>
+            <name>moderate</name>
+          </item>
+          <item>
+            <itextId>severity-2</itextId>
+            <name>severe</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="duration">
+        <root>
+          <item>
+            <itextId>duration-0</itextId>
+            <name>today</name>
+          </item>
+          <item>
+            <itextId>duration-1</itextId>
+            <name>few_days</name>
+          </item>
+          <item>
+            <itextId>duration-2</itextId>
+            <name>past_week</name>
+          </item>
+          <item>
+            <itextId>duration-3</itextId>
+            <name>more_than_week</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="bleeding_status">
+        <root>
+          <item>
+            <itextId>bleeding_status-0</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>bleeding_status-1</itextId>
+            <name>minor</name>
+          </item>
+          <item>
+            <itextId>bleeding_status-2</itextId>
+            <name>active_heavy</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="infection_signs">
+        <root>
+          <item>
+            <itextId>infection_signs-0</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>infection_signs-1</itextId>
+            <name>redness_swelling</name>
+          </item>
+          <item>
+            <itextId>infection_signs-2</itextId>
+            <name>pus_discharge</name>
+          </item>
+          <item>
+            <itextId>infection_signs-3</itextId>
+            <name>foul_odor</name>
+          </item>
+          <item>
+            <itextId>infection_signs-4</itextId>
+            <name>fever_warmth</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="tetanus_status">
+        <root>
+          <item>
+            <itextId>tetanus_status-0</itextId>
+            <name>up_to_date</name>
+          </item>
+          <item>
+            <itextId>tetanus_status-1</itextId>
+            <name>not_up_to_date</name>
+          </item>
+          <item>
+            <itextId>tetanus_status-2</itextId>
+            <name>unknown</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string" required="select-contact type-person"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="db-object"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string" relevant="0"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/wound_assessment_group/wound_assessment_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/wound_assessment_group/body_part" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/body_part_label" type="string" calculate="jr:choice-name( /data/wound_assessment_group/body_part , ' /data/wound_assessment_group/body_part ')"/>
+      <bind nodeset="/data/wound_assessment_group/body_part_other" type="string" required="true()" relevant=" /data/wound_assessment_group/body_part  = 'other'"/>
+      <bind nodeset="/data/wound_assessment_group/wound_types" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/wound_types_label" type="string" calculate="concat(if(selected-at( /data/wound_assessment_group/wound_types , 0) != '', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 0), ' /data/wound_assessment_group/wound_types '), ''), if(selected-at( /data/wound_assessment_group/wound_types , 1) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 1), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 2) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 2), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 3) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 3), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 4) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 4), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 5) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 5), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 6) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 6), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 7) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 7), ' /data/wound_assessment_group/wound_types ')), ''), if(selected-at( /data/wound_assessment_group/wound_types , 8) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/wound_types , 8), ' /data/wound_assessment_group/wound_types ')), ''))"/>
+      <bind nodeset="/data/wound_assessment_group/wound_type_other" type="string" required="true()" relevant="selected( /data/wound_assessment_group/wound_types , 'other')"/>
+      <bind nodeset="/data/wound_assessment_group/severity_level" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/severity_level_label" type="string" calculate="jr:choice-name( /data/wound_assessment_group/severity_level , ' /data/wound_assessment_group/severity_level ')"/>
+      <bind nodeset="/data/wound_assessment_group/wound_duration" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/wound_duration_label" type="string" calculate="jr:choice-name( /data/wound_assessment_group/wound_duration , ' /data/wound_assessment_group/wound_duration ')"/>
+      <bind nodeset="/data/wound_assessment_group/bleeding" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/bleeding_label" type="string" calculate="jr:choice-name( /data/wound_assessment_group/bleeding , ' /data/wound_assessment_group/bleeding ')"/>
+      <bind nodeset="/data/wound_assessment_group/infection_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/infection_symptoms_label" type="string" calculate="concat(if(selected-at( /data/wound_assessment_group/infection_symptoms , 0) != '', jr:choice-name(selected-at( /data/wound_assessment_group/infection_symptoms , 0), ' /data/wound_assessment_group/infection_symptoms '), ''), if(selected-at( /data/wound_assessment_group/infection_symptoms , 1) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/infection_symptoms , 1), ' /data/wound_assessment_group/infection_symptoms ')), ''), if(selected-at( /data/wound_assessment_group/infection_symptoms , 2) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/infection_symptoms , 2), ' /data/wound_assessment_group/infection_symptoms ')), ''), if(selected-at( /data/wound_assessment_group/infection_symptoms , 3) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/infection_symptoms , 3), ' /data/wound_assessment_group/infection_symptoms ')), ''), if(selected-at( /data/wound_assessment_group/infection_symptoms , 4) != '', concat(', ', jr:choice-name(selected-at( /data/wound_assessment_group/infection_symptoms , 4), ' /data/wound_assessment_group/infection_symptoms ')), ''))"/>
+      <bind nodeset="/data/wound_assessment_group/tetanus_vaccine" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/tetanus_vaccine_label" type="string" calculate="jr:choice-name( /data/wound_assessment_group/tetanus_vaccine , ' /data/wound_assessment_group/tetanus_vaccine ')"/>
+      <bind nodeset="/data/wound_assessment_group/referral_needed" type="string" required="true()"/>
+      <bind nodeset="/data/wound_assessment_group/referral_needed_label" type="string" calculate="jr:choice-name( /data/wound_assessment_group/referral_needed , ' /data/wound_assessment_group/referral_needed ')"/>
+      <bind nodeset="/data/wound_assessment_group/wound_notes" type="string"/>
+      <bind nodeset="/data/summary_group/summary_banner" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary_group/summary_note" readonly="true()" type="string" relevant=" /data/wound_assessment_group/referral_needed  = 'yes' or  /data/wound_assessment_group/severity_level  = 'severe' or  /data/wound_assessment_group/bleeding  = 'active_heavy'"/>
+      <bind nodeset="/data/summary_group/submission_clinical_note" type="string"/>
+      <bind nodeset="/data/data/_body_part" type="string" calculate=" /data/wound_assessment_group/body_part "/>
+      <bind nodeset="/data/data/_wound_types" type="string" calculate=" /data/wound_assessment_group/wound_types "/>
+      <bind nodeset="/data/data/_severity_level" type="string" calculate=" /data/wound_assessment_group/severity_level "/>
+      <bind nodeset="/data/data/_wound_duration" type="string" calculate=" /data/wound_assessment_group/wound_duration "/>
+      <bind nodeset="/data/data/_bleeding" type="string" calculate=" /data/wound_assessment_group/bleeding "/>
+      <bind nodeset="/data/data/_infection_symptoms" type="string" calculate=" /data/wound_assessment_group/infection_symptoms "/>
+      <bind nodeset="/data/data/_referral_needed" type="string" calculate=" /data/wound_assessment_group/referral_needed "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/wound_assessment_group">
+      <label ref="jr:itext('/data/wound_assessment_group:label')"/>
+      <input ref="/data/wound_assessment_group/wound_assessment_note">
+        <label ref="jr:itext('/data/wound_assessment_group/wound_assessment_note:label')"/>
+      </input>
+      <select1 ref="/data/wound_assessment_group/body_part">
+        <label ref="jr:itext('/data/wound_assessment_group/body_part:label')"/>
+        <itemset nodeset="instance('body_location')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/wound_assessment_group/body_part_other">
+        <label ref="jr:itext('/data/wound_assessment_group/body_part_other:label')"/>
+      </input>
+      <select ref="/data/wound_assessment_group/wound_types">
+        <label ref="jr:itext('/data/wound_assessment_group/wound_types:label')"/>
+        <itemset nodeset="instance('wound_type')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/wound_assessment_group/wound_type_other">
+        <label ref="jr:itext('/data/wound_assessment_group/wound_type_other:label')"/>
+      </input>
+      <select1 ref="/data/wound_assessment_group/severity_level">
+        <label ref="jr:itext('/data/wound_assessment_group/severity_level:label')"/>
+        <itemset nodeset="instance('severity')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/wound_assessment_group/wound_duration">
+        <label ref="jr:itext('/data/wound_assessment_group/wound_duration:label')"/>
+        <itemset nodeset="instance('duration')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/wound_assessment_group/bleeding">
+        <label ref="jr:itext('/data/wound_assessment_group/bleeding:label')"/>
+        <itemset nodeset="instance('bleeding_status')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select ref="/data/wound_assessment_group/infection_symptoms">
+        <label ref="jr:itext('/data/wound_assessment_group/infection_symptoms:label')"/>
+        <itemset nodeset="instance('infection_signs')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/wound_assessment_group/tetanus_vaccine">
+        <label ref="jr:itext('/data/wound_assessment_group/tetanus_vaccine:label')"/>
+        <itemset nodeset="instance('tetanus_status')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/wound_assessment_group/referral_needed">
+        <label ref="jr:itext('/data/wound_assessment_group/referral_needed:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/wound_assessment_group/wound_notes">
+        <label ref="jr:itext('/data/wound_assessment_group/wound_notes:label')"/>
+        <hint ref="jr:itext('/data/wound_assessment_group/wound_notes:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary_group">
+      <label ref="jr:itext('/data/summary_group:label')"/>
+      <input ref="/data/summary_group/summary_banner" appearance="h1 blue">
+        <label ref="jr:itext('/data/summary_group/summary_banner:label')"/>
+      </input>
+      <input ref="/data/summary_group/summary_note" appearance="h2 red">
+        <label ref="jr:itext('/data/summary_group/summary_note:label')"/>
+      </input>
+      <input ref="/data/summary_group/submission_clinical_note">
+        <label ref="jr:itext('/data/summary_group/submission_clinical_note:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/data"/>
+  </h:body>
+</h:html>

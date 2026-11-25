@@ -1,0 +1,2 @@
+reference_id:excluded,is_name_generated,name,contact:person WHERE reference_id=COL_VAL
+test_country_region,false,Test Country Region,program_officer

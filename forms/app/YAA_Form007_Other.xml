@@ -1,0 +1,2351 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Youth Other Form</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="body_system-0">
+            <value>Cardiovascular / Circulatory</value>
+          </text>
+          <text id="body_system-1">
+            <value>Respiratory (Chest / Lungs)</value>
+          </text>
+          <text id="body_system-2">
+            <value>Gastrointestinal / Digestive</value>
+          </text>
+          <text id="body_system-3">
+            <value>Neurological / Nerve</value>
+          </text>
+          <text id="body_system-4">
+            <value>Musculoskeletal &amp; Joint</value>
+          </text>
+          <text id="body_system-5">
+            <value>Dermatological / Skin</value>
+          </text>
+          <text id="body_system-6">
+            <value>Genitourinary / Urinary &amp; Reproductive</value>
+          </text>
+          <text id="body_system-7">
+            <value>ENT &amp; Dental (Ear, Nose, Throat, Teeth)</value>
+          </text>
+          <text id="body_system-8">
+            <value>Ophthalmologic / Eye &amp; Vision</value>
+          </text>
+          <text id="body_system-9">
+            <value>Mental Health &amp; Behavioral</value>
+          </text>
+          <text id="body_system-10">
+            <value>General / Systemic / Constitutional</value>
+          </text>
+          <text id="body_system-11">
+            <value>Other unclassified complaint</value>
+          </text>
+          <text id="symptoms_cardio-0">
+            <value>Palpitations / Rapid or irregular heartbeat</value>
+          </text>
+          <text id="symptoms_cardio-1">
+            <value>Bilateral leg or ankle swelling</value>
+          </text>
+          <text id="symptoms_cardio-2">
+            <value>Dizziness or faintness upon standing</value>
+          </text>
+          <text id="symptoms_cardio-3">
+            <value>Leg cramps / calf pain when walking</value>
+          </text>
+          <text id="symptoms_cardio-4">
+            <value>Other cardiovascular symptom</value>
+          </text>
+          <text id="symptoms_resp-0">
+            <value>Chronic dry or productive cough (&gt; 3 weeks)</value>
+          </text>
+          <text id="symptoms_resp-1">
+            <value>Coughing up blood (hemoptysis)</value>
+          </text>
+          <text id="symptoms_resp-2">
+            <value>Chronic wheezing or whistling sound</value>
+          </text>
+          <text id="symptoms_resp-3">
+            <value>Chest tightness or breathing restriction</value>
+          </text>
+          <text id="symptoms_resp-4">
+            <value>Other respiratory symptom</value>
+          </text>
+          <text id="symptoms_gi-0">
+            <value>Severe chronic constipation</value>
+          </text>
+          <text id="symptoms_gi-1">
+            <value>Difficulty swallowing food or liquids (dysphagia)</value>
+          </text>
+          <text id="symptoms_gi-2">
+            <value>Yellow discoloration of eyes or skin (jaundice)</value>
+          </text>
+          <text id="symptoms_gi-3">
+            <value>Black tarry or bloody stools</value>
+          </text>
+          <text id="symptoms_gi-4">
+            <value>Chronic nausea or persistent bloating</value>
+          </text>
+          <text id="symptoms_gi-5">
+            <value>Other digestive symptom</value>
+          </text>
+          <text id="symptoms_neuro-0">
+            <value>Recurrent severe headaches or migraines</value>
+          </text>
+          <text id="symptoms_neuro-1">
+            <value>Numbness, burning, or tingling in hands/feet</value>
+          </text>
+          <text id="symptoms_neuro-2">
+            <value>Involuntary trembling or hand tremors</value>
+          </text>
+          <text id="symptoms_neuro-3">
+            <value>Frequent vertigo or unsteady walking</value>
+          </text>
+          <text id="symptoms_neuro-4">
+            <value>Other neurological symptom</value>
+          </text>
+          <text id="symptoms_msk-0">
+            <value>Persistent lower back or spine pain</value>
+          </text>
+          <text id="symptoms_msk-1">
+            <value>Joint pain, swelling, or prolonged morning stiffness</value>
+          </text>
+          <text id="symptoms_msk-2">
+            <value>Generalized muscle aches or localized weakness</value>
+          </text>
+          <text id="symptoms_msk-3">
+            <value>Residual chronic pain after trauma or injury</value>
+          </text>
+          <text id="symptoms_msk-4">
+            <value>Other bone or muscle symptom</value>
+          </text>
+          <text id="symptoms_derm-0">
+            <value>Chronic non-healing wound or ulcer (&gt; 2 weeks)</value>
+          </text>
+          <text id="symptoms_derm-1">
+            <value>Unexplained widespread rash or hives</value>
+          </text>
+          <text id="symptoms_derm-2">
+            <value>Discolored patches or suspicious skin growths</value>
+          </text>
+          <text id="symptoms_derm-3">
+            <value>Significant scalp lesion or severe hair loss</value>
+          </text>
+          <text id="symptoms_derm-4">
+            <value>Other skin symptom</value>
+          </text>
+          <text id="symptoms_gu-0">
+            <value>Involuntary urine leakage or urgency</value>
+          </text>
+          <text id="symptoms_gu-1">
+            <value>Chronic pelvic or lower abdominal pain</value>
+          </text>
+          <text id="symptoms_gu-2">
+            <value>Testicular / scrotal pain or swelling (boys)</value>
+          </text>
+          <text id="symptoms_gu-3">
+            <value>Abnormal menstrual cycle or heavy bleeding (girls)</value>
+          </text>
+          <text id="symptoms_gu-4">
+            <value>Other urinary or reproductive symptom</value>
+          </text>
+          <text id="symptoms_ent-0">
+            <value>Chronic ear pain or purulent ear drainage</value>
+          </text>
+          <text id="symptoms_ent-1">
+            <value>Hearing loss or continuous ringing in ears (tinnitus)</value>
+          </text>
+          <text id="symptoms_ent-2">
+            <value>Severe chronic dental pain or gum swelling</value>
+          </text>
+          <text id="symptoms_ent-3">
+            <value>Persistent voice hoarseness (&gt; 2 weeks)</value>
+          </text>
+          <text id="symptoms_ent-4">
+            <value>Other ear, nose, throat, or dental problem</value>
+          </text>
+          <text id="symptoms_eye-0">
+            <value>Progressive blurring or loss of vision</value>
+          </text>
+          <text id="symptoms_eye-1">
+            <value>Persistent eye redness, crusting, or discharge</value>
+          </text>
+          <text id="symptoms_eye-2">
+            <value>Sharp eye pain or intolerance to light</value>
+          </text>
+          <text id="symptoms_eye-3">
+            <value>Other eye symptom</value>
+          </text>
+          <text id="symptoms_mental-0">
+            <value>Persistent profound sadness, hopelessness, or weeping</value>
+          </text>
+          <text id="symptoms_mental-1">
+            <value>Severe anxiety, trembling, or panic attacks</value>
+          </text>
+          <text id="symptoms_mental-2">
+            <value>Severe chronic inability to sleep</value>
+          </text>
+          <text id="symptoms_mental-3">
+            <value>Memory loss, severe confusion, or sudden personality shift</value>
+          </text>
+          <text id="symptoms_mental-4">
+            <value>Other mental health or emotional symptom</value>
+          </text>
+          <text id="symptoms_general-0">
+            <value>Extreme fatigue / unable to perform daily tasks</value>
+          </text>
+          <text id="symptoms_general-1">
+            <value>Unintentional noticeable weight loss</value>
+          </text>
+          <text id="symptoms_general-2">
+            <value>Enlarged swollen lymph nodes in neck, armpit, or groin</value>
+          </text>
+          <text id="symptoms_general-3">
+            <value>Prolonged unexplained fever or night chills</value>
+          </text>
+          <text id="symptoms_general-4">
+            <value>Other general or constitutional complaint</value>
+          </text>
+          <text id="symptom_duration-0">
+            <value>Acute (&lt; 1 week)</value>
+          </text>
+          <text id="symptom_duration-1">
+            <value>Subacute (1 to 4 weeks)</value>
+          </text>
+          <text id="symptom_duration-2">
+            <value>Ongoing (1 to 3 months)</value>
+          </text>
+          <text id="symptom_duration-3">
+            <value>Chronic (&gt; 3 months)</value>
+          </text>
+          <text id="symptom_severity-0">
+            <value>Mild: Normal school and daily activities preserved</value>
+          </text>
+          <text id="symptom_severity-1">
+            <value>Moderate: Partially restricts school attendance or daily activities</value>
+          </text>
+          <text id="symptom_severity-2">
+            <value>Severe: Incapacitating / bedridden / unable to attend school or self-care</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/general_assessment_group:label">
+            <value>Youth &amp; Adolescent Unclassified Symptoms Assessment</value>
+          </text>
+          <text id="/data/general_assessment_group/general_assessment_intro:label">
+            <value>Use this form to document youth and adolescent complaints, symptoms, and clinical findings that are not covered by existing care protocols.</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system:label">
+            <value>Primary Affected Body System / Clinical Domain:</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system:hint">
+            <value>Select the primary organ system corresponding to the patient's main complaint</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular:label">
+            <value>Specific Cardiovascular Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory:label">
+            <value>Specific Respiratory Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal:label">
+            <value>Specific Gastrointestinal Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological:label">
+            <value>Specific Neurological Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal:label">
+            <value>Specific Musculoskeletal Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological:label">
+            <value>Specific Dermatological / Skin Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary:label">
+            <value>Specific Genitourinary Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental:label">
+            <value>Specific ENT &amp; Dental Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic:label">
+            <value>Specific Eye &amp; Vision Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health:label">
+            <value>Specific Mental &amp; Emotional Health Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional:label">
+            <value>Specific General / Constitutional Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional:hint">
+            <value>Select all symptoms reported by the patient</value>
+          </text>
+          <text id="/data/general_assessment_group/other_symptom_description:label">
+            <value>Describe Unlisted Symptom / Complaint in Detail:</value>
+          </text>
+          <text id="/data/general_assessment_group/other_symptom_description:hint">
+            <value>Provide specific details on presentation, triggers, and characteristics</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration:label">
+            <value>Duration of Current Symptoms:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration:hint">
+            <value>Estimated onset of the reported symptoms</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity:label">
+            <value>Severity of Condition / Functional Impact:</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity:hint">
+            <value>Assess impact on school attendance, mobility, and daily activities</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes:label">
+            <value>Has the patient experienced similar episodes in the past?</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes:hint">
+            <value>Check for recurrent or episodic conditions</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken:label">
+            <value>Is the patient currently taking medication or traditional remedies?</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken:hint">
+            <value>Includes pharmaceuticals, home treatments, or herbal preparations</value>
+          </text>
+          <text id="/data/general_assessment_group/medication_details:label">
+            <value>Specify Medications or Remedies Taken:</value>
+          </text>
+          <text id="/data/general_assessment_group/medication_details:hint">
+            <value>Record names, dosage, and duration of treatments if known</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history:label">
+            <value>Does the patient have known pre-existing chronic conditions?</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history:hint">
+            <value>e.g. Asthma, Sickle cell disease (anemi falsifòm), Epilepsy, Heart condition, Diabetes</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_details:label">
+            <value>Specify Pre-existing Chronic Conditions:</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_details:hint">
+            <value>Record diagnosed chronic medical conditions</value>
+          </text>
+          <text id="/data/submission_group:label">
+            <value>Final Submission</value>
+          </text>
+          <text id="/data/submission_group/submit_instruction_header:label">
+            <value>Complete Youth &amp; Adolescent Assessment Form</value>
+          </text>
+          <text id="/data/submission_group/submit_instruction_body:label">
+            <value>Please review all recorded symptoms and patient findings. Enter any additional clinical notes below, then submit for clinical review.</value>
+          </text>
+          <text id="/data/submission_group/submission_clinical_note:label">
+            <value>Clinical Notes for Review:</value>
+          </text>
+          <text id="/data/submission_group/submission_clinical_note:hint">
+            <value>Record detailed observations, adolescent or caregiver concerns, or exam findings for pilot review</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="body_system-0">
+            <value>Cardiovasculaire / Circulatoire</value>
+          </text>
+          <text id="body_system-1">
+            <value>Respiratoire (Poitrine / Poumons)</value>
+          </text>
+          <text id="body_system-2">
+            <value>Gastro-intestinal / Digestif</value>
+          </text>
+          <text id="body_system-3">
+            <value>Neurologique / Nerfs</value>
+          </text>
+          <text id="body_system-4">
+            <value>Musculo-squelettique et articulations</value>
+          </text>
+          <text id="body_system-5">
+            <value>Dermatologique / Maladie cutanée</value>
+          </text>
+          <text id="body_system-6">
+            <value>Génito-urinaire / Urinaire et reproducteur</value>
+          </text>
+          <text id="body_system-7">
+            <value>ORL et Dentaire (Oreille, Nez, Gorge, Dents)</value>
+          </text>
+          <text id="body_system-8">
+            <value>Ophtalmologique / Yeux et vision</value>
+          </text>
+          <text id="body_system-9">
+            <value>Santé mentale et comportementale</value>
+          </text>
+          <text id="body_system-10">
+            <value>Général / Systémique / Constitutionnel</value>
+          </text>
+          <text id="body_system-11">
+            <value>Autre plainte non classée</value>
+          </text>
+          <text id="symptoms_cardio-0">
+            <value>Palpitations / Battements cardiaques rapides ou irréguliers</value>
+          </text>
+          <text id="symptoms_cardio-1">
+            <value>Gonflement bilatéral des jambes ou des chevilles</value>
+          </text>
+          <text id="symptoms_cardio-2">
+            <value>Vertiges ou étourdissements au lever</value>
+          </text>
+          <text id="symptoms_cardio-3">
+            <value>Crampes aux mollets à la marche</value>
+          </text>
+          <text id="symptoms_cardio-4">
+            <value>Autre problème cardiovasculaire</value>
+          </text>
+          <text id="symptoms_resp-0">
+            <value>Toux chronique sèche ou productive (&gt; 3 semaines)</value>
+          </text>
+          <text id="symptoms_resp-1">
+            <value>Crachats de sang (hémoptysie)</value>
+          </text>
+          <text id="symptoms_resp-2">
+            <value>Sifflement respiratoire chronique</value>
+          </text>
+          <text id="symptoms_resp-3">
+            <value>Oppression thoracique ou sensation de gêne respiratoire</value>
+          </text>
+          <text id="symptoms_resp-4">
+            <value>Autre problème respiratoire</value>
+          </text>
+          <text id="symptoms_gi-0">
+            <value>Constipation sévère ou prolongée</value>
+          </text>
+          <text id="symptoms_gi-1">
+            <value>Difficulté à avaler les aliments ou liquides (dysphagie)</value>
+          </text>
+          <text id="symptoms_gi-2">
+            <value>Coloration jaune des yeux ou de la peau (ictère)</value>
+          </text>
+          <text id="symptoms_gi-3">
+            <value>Selles noires ou traces de sang dans les selles</value>
+          </text>
+          <text id="symptoms_gi-4">
+            <value>Nausées chroniques ou ballonnement persistant</value>
+          </text>
+          <text id="symptoms_gi-5">
+            <value>Autre symptôme digestif</value>
+          </text>
+          <text id="symptoms_neuro-0">
+            <value>Maux de tête récurrents ou migraines</value>
+          </text>
+          <text id="symptoms_neuro-1">
+            <value>Engourdissements, brûlures ou picotements (mains/pieds)</value>
+          </text>
+          <text id="symptoms_neuro-2">
+            <value>Tremblements involontaires des mains ou du corps</value>
+          </text>
+          <text id="symptoms_neuro-3">
+            <value>Vertiges fréquents ou perte d'équilibre à la marche</value>
+          </text>
+          <text id="symptoms_neuro-4">
+            <value>Autre trouble neurologique</value>
+          </text>
+          <text id="symptoms_msk-0">
+            <value>Lombalgie persistante ou douleur vertébrale</value>
+          </text>
+          <text id="symptoms_msk-1">
+            <value>Douleur, gonflement articulaire ou raideur matinale</value>
+          </text>
+          <text id="symptoms_msk-2">
+            <value>Myalgies diffuses ou faiblesse musculaire localisée</value>
+          </text>
+          <text id="symptoms_msk-3">
+            <value>Douleur chronique séquellaire après traumatisme</value>
+          </text>
+          <text id="symptoms_msk-4">
+            <value>Autre problème musculaire ou osseux</value>
+          </text>
+          <text id="symptoms_derm-0">
+            <value>Plaie ou ulcère chronique ne guérissant pas (&gt; 2 semaines)</value>
+          </text>
+          <text id="symptoms_derm-1">
+            <value>Éruption cutanée inexpliquée ou urticaire généralisée</value>
+          </text>
+          <text id="symptoms_derm-2">
+            <value>Taches dépigmentées ou excroissances cutanées</value>
+          </text>
+          <text id="symptoms_derm-3">
+            <value>Lésions du cuir chevelu ou chute massive de cheveux</value>
+          </text>
+          <text id="symptoms_derm-4">
+            <value>Autre affection cutanée</value>
+          </text>
+          <text id="symptoms_gu-0">
+            <value>Fuites urinaires involontaires ou impériosité</value>
+          </text>
+          <text id="symptoms_gu-1">
+            <value>Douleurs pelviennes ou du bas-ventre chroniques</value>
+          </text>
+          <text id="symptoms_gu-2">
+            <value>Douleur ou gonflement testiculaire / scrotal (garçons)</value>
+          </text>
+          <text id="symptoms_gu-3">
+            <value>Troubles du cycle menstruel ou ménorragies (filles)</value>
+          </text>
+          <text id="symptoms_gu-4">
+            <value>Autre problème urinaire ou gynécologique</value>
+          </text>
+          <text id="symptoms_ent-0">
+            <value>Otalgie ou écoulement purulent chronique de l'oreille</value>
+          </text>
+          <text id="symptoms_ent-1">
+            <value>Perte auditive ou acouphènes persistants</value>
+          </text>
+          <text id="symptoms_ent-2">
+            <value>Rage de dent sévère ou gonflement gingival</value>
+          </text>
+          <text id="symptoms_ent-3">
+            <value>Enrouement persistant de la voix (&gt; 2 semaines)</value>
+          </text>
+          <text id="symptoms_ent-4">
+            <value>Autre pathologie ORL ou dentaire</value>
+          </text>
+          <text id="symptoms_eye-0">
+            <value>Baisse progressive ou perte de vision</value>
+          </text>
+          <text id="symptoms_eye-1">
+            <value>Rougeur persistante, sécrétions ou croûtes oculaires</value>
+          </text>
+          <text id="symptoms_eye-2">
+            <value>Douleur vive à l'œil ou intolérance à la lumière</value>
+          </text>
+          <text id="symptoms_eye-3">
+            <value>Autre affection oculaire</value>
+          </text>
+          <text id="symptoms_mental-0">
+            <value>Tristesse profonde continue, désespoir ou pleurs fréquents</value>
+          </text>
+          <text id="symptoms_mental-1">
+            <value>Angoisse aiguë, agitation ou crises de panique</value>
+          </text>
+          <text id="symptoms_mental-2">
+            <value>Insomnie chronique sévère</value>
+          </text>
+          <text id="symptoms_mental-3">
+            <value>Perte de mémoire, confusion ou altération du comportement</value>
+          </text>
+          <text id="symptoms_mental-4">
+            <value>Autre trouble émotionnel ou psychologique</value>
+          </text>
+          <text id="symptoms_general-0">
+            <value>Fatigue extrême / incapacité à accomplir les tâches quotidiennes</value>
+          </text>
+          <text id="symptoms_general-1">
+            <value>Perte de poids importante involontaire</value>
+          </text>
+          <text id="symptoms_general-2">
+            <value>Ganglions enflés au niveau du cou, des aisselles ou de l'aine</value>
+          </text>
+          <text id="symptoms_general-3">
+            <value>Fièvre prolongée inexpliquée ou sueurs nocturnes</value>
+          </text>
+          <text id="symptoms_general-4">
+            <value>Autre plainte générale inexpliquée</value>
+          </text>
+          <text id="symptom_duration-0">
+            <value>Aigu (&lt; 1 semaine)</value>
+          </text>
+          <text id="symptom_duration-1">
+            <value>Subaigu (1 à 4 semaines)</value>
+          </text>
+          <text id="symptom_duration-2">
+            <value>Évolutif (1 à 3 mois)</value>
+          </text>
+          <text id="symptom_duration-3">
+            <value>Chronique (&gt; 3 mois)</value>
+          </text>
+          <text id="symptom_severity-0">
+            <value>Léger : Scolarité et activités quotidiennes préservées</value>
+          </text>
+          <text id="symptom_severity-1">
+            <value>Modéré : Gêne partielle de la scolarité ou des activités quotidiennes</value>
+          </text>
+          <text id="symptom_severity-2">
+            <value>Sévère : Incapacitant / alitement / incapacité scolaire ou soins personnels</value>
+          </text>
+          <text id="/data/general_assessment_group:label">
+            <value>Évaluation des symptômes des jeunes et adolescents non classés</value>
+          </text>
+          <text id="/data/general_assessment_group/general_assessment_intro:label">
+            <value>Utilisez ce formulaire pour documenter les plaintes des jeunes et adolescents, symptômes et observations cliniques non couverts par les protocoles de soins existants.</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system:label">
+            <value>Système corporel principal affecté / Domaine clinique :</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system:hint">
+            <value>Sélectionnez le système anatomique correspondant à la plainte principale</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular:label">
+            <value>Symptômes cardiovasculaires spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory:label">
+            <value>Symptômes respiratoires spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal:label">
+            <value>Symptômes digestifs spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological:label">
+            <value>Symptômes neurologiques spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal:label">
+            <value>Symptômes musculo-squelettiques spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological:label">
+            <value>Symptômes cutanés spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary:label">
+            <value>Symptômes génito-urinaires spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental:label">
+            <value>Symptômes ORL et dentaires spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic:label">
+            <value>Symptômes oculaires et visuels spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health:label">
+            <value>Symptômes de santé mentale spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional:label">
+            <value>Symptômes généraux / constitutionnels spécifiques :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional:hint">
+            <value>Sélectionnez tous les symptômes signalés par le patient</value>
+          </text>
+          <text id="/data/general_assessment_group/other_symptom_description:label">
+            <value>Décrivez le symptôme ou la plainte non répertorié(e) en détail :</value>
+          </text>
+          <text id="/data/general_assessment_group/other_symptom_description:hint">
+            <value>Fournissez des précisions sur le mode de début et les caractéristiques</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration:label">
+            <value>Durée des symptômes actuels :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration:hint">
+            <value>Début estimé des symptômes signalés</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity:label">
+            <value>Gravité de l'état / Impact fonctionnel :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity:hint">
+            <value>Évaluer l'impact sur la scolarité, la mobilité et les activités quotidiennes</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes:label">
+            <value>Le patient a-t-il déjà présenté des épisodes similaires dans le passé ?</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes:hint">
+            <value>Vérifier s'il s'agit d'une affection récurrente</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken:label">
+            <value>Le patient prend-il actuellement des médicaments ou remèdes traditionnels ?</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken:hint">
+            <value>Comprend médicaments prescrits, automédication ou tisanes traditionnelles</value>
+          </text>
+          <text id="/data/general_assessment_group/medication_details:label">
+            <value>Précisez les médicaments ou remèdes pris :</value>
+          </text>
+          <text id="/data/general_assessment_group/medication_details:hint">
+            <value>Notez les noms, posologie et durée des traitements</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history:label">
+            <value>Le patient a-t-il des antécédents de maladies chroniques connues ?</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history:hint">
+            <value>ex. Asthme, Drépanocytose, Épilepsie, Cardiopathie, Diabète</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_details:label">
+            <value>Précisez les maladies chroniques connues :</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_details:hint">
+            <value>Indiquez les diagnostics médicaux préexistants</value>
+          </text>
+          <text id="/data/submission_group:label">
+            <value>Soumission finale</value>
+          </text>
+          <text id="/data/submission_group/submit_instruction_header:label">
+            <value>Finaliser le formulaire d'évaluation des adolescents</value>
+          </text>
+          <text id="/data/submission_group/submit_instruction_body:label">
+            <value>Veuillez vérifier tous les symptômes notés chez le patient. Notez vos observations cliniques ci-dessous, puis soumettez pour révision clinique.</value>
+          </text>
+          <text id="/data/submission_group/submission_clinical_note:label">
+            <value>Notes cliniques pour examen :</value>
+          </text>
+          <text id="/data/submission_group/submission_clinical_note:hint">
+            <value>Consignez les observations détaillées, inquiétudes du jeune/parent ou signes d'examen</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_primary_body_system:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptom_duration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptom_severity:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_prior_similar_episodes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_current_medications_taken:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_medication_details:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_chronic_condition_history:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_chronic_condition_details:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_other_symptom_description:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_cardiovascular:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_respiratory:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_gastrointestinal:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_neurological:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_musculoskeletal:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_dermatological:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_genitourinary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_ent_dental:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_ophthalmologic:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_mental_health:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_constitutional:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="body_system-0">
+            <value>Kadyovaskilè / Sikilasyon</value>
+          </text>
+          <text id="body_system-1">
+            <value>Respiratwa (Pwatrin / Poumon)</value>
+          </text>
+          <text id="body_system-2">
+            <value>Dijestif / Vant</value>
+          </text>
+          <text id="body_system-3">
+            <value>Newolojik / Sistèm Nè</value>
+          </text>
+          <text id="body_system-4">
+            <value>Misk ak Zo ak Jwenti</value>
+          </text>
+          <text id="body_system-5">
+            <value>Dermatolojik / Maladi Po</value>
+          </text>
+          <text id="body_system-6">
+            <value>Jenito-urinè / Pipi ak Repwodiktif</value>
+          </text>
+          <text id="body_system-7">
+            <value>Zòrèy, Nen, Gòj ak Dan</value>
+          </text>
+          <text id="body_system-8">
+            <value>Je ak Vizyon</value>
+          </text>
+          <text id="body_system-9">
+            <value>Sante Mantal ak Konpòtman</value>
+          </text>
+          <text id="body_system-10">
+            <value>Jeneral / Sistèmik</value>
+          </text>
+          <text id="body_system-11">
+            <value>Lòt plent ki pa klase</value>
+          </text>
+          <text id="symptoms_cardio-0">
+            <value>Palpitasyon / Kè k ap bat vit oswa deregle</value>
+          </text>
+          <text id="symptoms_cardio-1">
+            <value>Anfle nan tou de pye oswa chevi</value>
+          </text>
+          <text id="symptoms_cardio-2">
+            <value>Toudisman lè w leve kanpe</value>
+          </text>
+          <text id="symptoms_cardio-3">
+            <value>Kranp oswa doulè nan janm lè w ap mache</value>
+          </text>
+          <text id="symptoms_cardio-4">
+            <value>Lòt sentòm nan kè oswa venn</value>
+          </text>
+          <text id="symptoms_resp-0">
+            <value>Tous ki dire plis pase 3 semèn</value>
+          </text>
+          <text id="symptoms_resp-1">
+            <value>Krache san lè w ap touse</value>
+          </text>
+          <text id="symptoms_resp-2">
+            <value>Respirasyon k ap soufle oswa sifle</value>
+          </text>
+          <text id="symptoms_resp-3">
+            <value>Pwatrin sere oswa souf kout</value>
+          </text>
+          <text id="symptoms_resp-4">
+            <value>Lòt sentòm respiratwa</value>
+          </text>
+          <text id="symptoms_gi-0">
+            <value>Konstipasyon grav ki dire lontan</value>
+          </text>
+          <text id="symptoms_gi-1">
+            <value>Difikilte pou vale manje oswa dlo</value>
+          </text>
+          <text id="symptoms_gi-2">
+            <value>Je oswa po k ap vin jòn (la jonis)</value>
+          </text>
+          <text id="symptoms_gi-3">
+            <value>Poupou nwa oswa poupou ak san</value>
+          </text>
+          <text id="symptoms_gi-4">
+            <value>Kè plen oswa vant gonfle ki pa janm pase</value>
+          </text>
+          <text id="symptoms_gi-5">
+            <value>Lòt sentòm dijestif</value>
+          </text>
+          <text id="symptoms_neuro-0">
+            <value>Maltèt grav ki repete souvan</value>
+          </text>
+          <text id="symptoms_neuro-1">
+            <value>Pye oswa men k ap boule, pike oswa angoudi</value>
+          </text>
+          <text id="symptoms_neuro-2">
+            <value>Men oswa kò k ap tranble san kontwòl</value>
+          </text>
+          <text id="symptoms_neuro-3">
+            <value>Toudisman souvan oswa difikilte pou mache dwat</value>
+          </text>
+          <text id="symptoms_neuro-4">
+            <value>Lòt pwoblèm newolojik</value>
+          </text>
+          <text id="symptoms_msk-0">
+            <value>Gwo doulè nan do oswa ren ki pa pase</value>
+          </text>
+          <text id="symptoms_msk-1">
+            <value>Doulè nan jwenti, anfle oswa jwenti rèd nan maten</value>
+          </text>
+          <text id="symptoms_msk-2">
+            <value>Kò fè mal toupatou oswa misk ki febli</value>
+          </text>
+          <text id="symptoms_msk-3">
+            <value>Doulè ki rete apre yon kout frape oswa aksidan</value>
+          </text>
+          <text id="symptoms_msk-4">
+            <value>Lòt pwoblèm nan zo oswa misk</value>
+          </text>
+          <text id="symptoms_derm-0">
+            <value>Maleng oswa blesi ki pa vle geri depi plis pase 2 semèn</value>
+          </text>
+          <text id="symptoms_derm-1">
+            <value>Gratèl oswa tach sou tout kò a san rezon</value>
+          </text>
+          <text id="symptoms_derm-2">
+            <value>Tach sou po oswa ti boul/lesyon ki pa nòmal</value>
+          </text>
+          <text id="symptoms_derm-3">
+            <value>Bouton sou tèt oswa pèdi anpil cheve</value>
+          </text>
+          <text id="symptoms_derm-4">
+            <value>Lòt pwoblèm sou po</value>
+          </text>
+          <text id="symptoms_gu-0">
+            <value>Pipi k ap sove san kontwòl oswa anvi pipi touswit</value>
+          </text>
+          <text id="symptoms_gu-1">
+            <value>Doulè nan basen oswa anba vant ki dire lontan</value>
+          </text>
+          <text id="symptoms_gu-2">
+            <value>Doulè oswa anfle nan grenn (pou gason)</value>
+          </text>
+          <text id="symptoms_gu-3">
+            <value>Règ deregle oswa k ap koule twòp (pou tifi)</value>
+          </text>
+          <text id="symptoms_gu-4">
+            <value>Lòt pwoblèm pipi oswa repwodiktif</value>
+          </text>
+          <text id="symptoms_ent-0">
+            <value>Doulè zòrèy oswa zòrèy k ap koule matyè depi lontan</value>
+          </text>
+          <text id="symptoms_ent-1">
+            <value>Difikilte pou tande oswa zòrèy k ap sifle tout tan</value>
+          </text>
+          <text id="symptoms_ent-2">
+            <value>Maldan grav oswa jansiv anfle</value>
+          </text>
+          <text id="symptoms_ent-3">
+            <value>Vwa anwe ki dire plis pase 2 semèn</value>
+          </text>
+          <text id="symptoms_ent-4">
+            <value>Lòt pwoblèm zòrèy, nen, gòj oswa dan</value>
+          </text>
+          <text id="symptoms_eye-0">
+            <value>Je k ap twoub oswa difikilte pou wè klè</value>
+          </text>
+          <text id="symptoms_eye-1">
+            <value>Je wouj ki pa pase oswa je k ap fè dlo/sekresyon</value>
+          </text>
+          <text id="symptoms_eye-2">
+            <value>Gwo doulè nan grenn je oswa limyè fè je mal</value>
+          </text>
+          <text id="symptoms_eye-3">
+            <value>Lòt pwoblèm nan je</value>
+          </text>
+          <text id="symptoms_mental-0">
+            <value>Tristès ki pa janm fini, dekourajman oswa anvi kriye</value>
+          </text>
+          <text id="symptoms_mental-1">
+            <value>Gwo laperèz, enkyetid ekstrèm oswa kriz panik</value>
+          </text>
+          <text id="symptoms_mental-2">
+            <value>Pa ka dòmi ditou pandan plizyè jou/semèn</value>
+          </text>
+          <text id="symptoms_mental-3">
+            <value>Pèdi memwa, tèt vire oswa konpòtman ki chanje britsoukou</value>
+          </text>
+          <text id="symptoms_mental-4">
+            <value>Lòt pwoblèm mantal oswa emosyonèl</value>
+          </text>
+          <text id="symptoms_general-0">
+            <value>Fatig ekstrèm / pa ka fè okenn aktivite nòmal</value>
+          </text>
+          <text id="symptoms_general-1">
+            <value>Kò k ap fonn / pèdi pwa san rezon</value>
+          </text>
+          <text id="symptoms_general-2">
+            <value>Ti boul anfle nan kou, anba bra oswa nan lenn</value>
+          </text>
+          <text id="symptoms_general-3">
+            <value>Lafyèv ki dire lontan oswa swe ak frison lannwit</value>
+          </text>
+          <text id="symptoms_general-4">
+            <value>Lòt plent jeneral sou kò a</value>
+          </text>
+          <text id="symptom_duration-0">
+            <value>Nouvo / Kout (&lt; 1 semèn)</value>
+          </text>
+          <text id="symptom_duration-1">
+            <value>1 rive 4 semèn</value>
+          </text>
+          <text id="symptom_duration-2">
+            <value>1 rive 3 mwa</value>
+          </text>
+          <text id="symptom_duration-3">
+            <value>Kwonik (&gt; 3 mwa)</value>
+          </text>
+          <text id="symptom_severity-0">
+            <value>Fasil : Ka ale lekòl ak fè aktivite chak jou nòmalman</value>
+          </text>
+          <text id="symptom_severity-1">
+            <value>Mwayen : Anpeche ale lekòl regilyèman oswa fè aktivite</value>
+          </text>
+          <text id="symptom_severity-2">
+            <value>Grav : Kouche sèlman / pa ka ale lekòl ditou oswa pran swen tèt li</value>
+          </text>
+          <text id="/data/general_assessment_group:label">
+            <value>Evalyasyon sentòm jèn ak adolesan ki pa nan lis la</value>
+          </text>
+          <text id="/data/general_assessment_group/general_assessment_intro:label">
+            <value>Itilize fòm sa a pou dokimante plent jèn ak adolesan yo, sentòm ak obsèvasyon klinik ki pa nan pwotokòl swen nòmal yo.</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system:label">
+            <value>Sistèm prensipal nan kò a ki gen pwoblèm :</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system:hint">
+            <value>Chwazi sistèm nan kò a kote pasyan an plis plenyen</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular:label">
+            <value>Sentòm kadyovaskilè espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory:label">
+            <value>Sentòm respiratwa espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal:label">
+            <value>Sentòm dijestif espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological:label">
+            <value>Sentòm newolojik espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal:label">
+            <value>Sentòm nan zo ak misk espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological:label">
+            <value>Sentòm sou po espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary:label">
+            <value>Sentòm jenito-urinè espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental:label">
+            <value>Sentòm zòrèy, nen, gòj ak dan espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic:label">
+            <value>Sentòm nan je ak vizyon espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health:label">
+            <value>Sentòm sante mantal espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional:label">
+            <value>Sentòm jeneral espesifik :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional:hint">
+            <value>Chwazi tout sentòm pasyan an dekri yo</value>
+          </text>
+          <text id="/data/general_assessment_group/other_symptom_description:label">
+            <value>Dekri lòt sentòm oswa plent ki pa nan lis la an detay :</value>
+          </text>
+          <text id="/data/general_assessment_group/other_symptom_description:hint">
+            <value>Bay tout detay sou ki jan sa kòmanse ak ki jan sa manifeste</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration:label">
+            <value>Konbyen tan sentòm sa yo genyen depi yo kòmanse :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration:hint">
+            <value>Konbyen tan pasyan an genyen depi l malad konsa</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity:label">
+            <value>Nivo gravite kondisyon an / Difikilte li bay nan lavi :</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity:hint">
+            <value>Evalye si sa anpeche l ale lekòl, deplase, oswa fè aktivite chak jou</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes:label">
+            <value>Èske pasyan an te janm fè menm maladi sa a anvan ?</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes:hint">
+            <value>Gade si maladi a repete plizyè fwa deja</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken:label">
+            <value>Èske pasyan an ap pran medikaman oswa remèd fèy kounye a ?</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken:hint">
+            <value>Sa gen ladan medikaman famasi, remèd lakay oswa te fèy</value>
+          </text>
+          <text id="/data/general_assessment_group/medication_details:label">
+            <value>Presize ki medikaman oswa remèd pasyan an pran :</value>
+          </text>
+          <text id="/data/general_assessment_group/medication_details:hint">
+            <value>Ekri non medikaman yo ak konbyen tan li genyen l ap pran yo</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history:label">
+            <value>Èske pasyan an gen lòt maladi kwonik li konnen li genyen ?</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history:hint">
+            <value>tankou Asma, Anemi falsifòm (drépanocytose), Kriz epilèpsi, Maladi Kè, Dyabèt</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_details:label">
+            <value>Presize ki maladi kwonik pasyan an genyen :</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_details:hint">
+            <value>Ekri ki lòt maladi doktè te deja di li genyen</value>
+          </text>
+          <text id="/data/submission_group:label">
+            <value>Soumèt fòm nan</value>
+          </text>
+          <text id="/data/submission_group/submit_instruction_header:label">
+            <value>Konplete fòm evalyasyon adolesan an</value>
+          </text>
+          <text id="/data/submission_group/submit_instruction_body:label">
+            <value>Tanpri verifye tout sentòm ak obsèvasyon ou te note yo. Ekri nòt klinik ou yo anba a epi klike sou soumèt pou revizyon doktè.</value>
+          </text>
+          <text id="/data/submission_group/submission_clinical_note:label">
+            <value>Nòt klinik pou revizyon :</value>
+          </text>
+          <text id="/data/submission_group/submission_clinical_note:hint">
+            <value>Mete detay sou sa w remake, enkyetid jèn nan oswa obsèvasyon klinik pou etid sa a</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/primary_body_system_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_cardiovascular_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_respiratory_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_gastrointestinal_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_neurological_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_musculoskeletal_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_dermatological_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_genitourinary_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ent_dental_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_ophthalmologic_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_mental_health_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptoms_constitutional_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_duration_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/symptom_severity_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/prior_similar_episodes_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/current_medications_taken_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/general_assessment_group/chronic_condition_history_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_primary_body_system:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptom_duration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptom_severity:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_prior_similar_episodes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_current_medications_taken:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_medication_details:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_chronic_condition_history:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_chronic_condition_details:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_other_symptom_description:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_cardiovascular:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_respiratory:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_gastrointestinal:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_neurological:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_musculoskeletal:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_dermatological:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_genitourinary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_ent_dental:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_ophthalmologic:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_mental_health:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_symptoms_constitutional:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="YAA_Form007_Other" version="20261111165005" prefix="J1!YAA_Form007_Other!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <general_assessment_group>
+            <general_assessment_intro tag="hidden"/>
+            <primary_body_system tag="hidden"/>
+            <primary_body_system_label/>
+            <symptoms_cardiovascular tag="hidden"/>
+            <symptoms_cardiovascular_label/>
+            <symptoms_respiratory tag="hidden"/>
+            <symptoms_respiratory_label/>
+            <symptoms_gastrointestinal tag="hidden"/>
+            <symptoms_gastrointestinal_label/>
+            <symptoms_neurological tag="hidden"/>
+            <symptoms_neurological_label/>
+            <symptoms_musculoskeletal tag="hidden"/>
+            <symptoms_musculoskeletal_label/>
+            <symptoms_dermatological tag="hidden"/>
+            <symptoms_dermatological_label/>
+            <symptoms_genitourinary tag="hidden"/>
+            <symptoms_genitourinary_label/>
+            <symptoms_ent_dental tag="hidden"/>
+            <symptoms_ent_dental_label/>
+            <symptoms_ophthalmologic tag="hidden"/>
+            <symptoms_ophthalmologic_label/>
+            <symptoms_mental_health tag="hidden"/>
+            <symptoms_mental_health_label/>
+            <symptoms_constitutional tag="hidden"/>
+            <symptoms_constitutional_label/>
+            <other_symptom_description/>
+            <symptom_duration tag="hidden"/>
+            <symptom_duration_label/>
+            <symptom_severity tag="hidden"/>
+            <symptom_severity_label/>
+            <prior_similar_episodes tag="hidden"/>
+            <prior_similar_episodes_label/>
+            <current_medications_taken tag="hidden"/>
+            <current_medications_taken_label/>
+            <medication_details/>
+            <chronic_condition_history tag="hidden"/>
+            <chronic_condition_history_label/>
+            <chronic_condition_details/>
+          </general_assessment_group>
+          <submission_group tag="hidden">
+            <submit_instruction_header tag="hidden"/>
+            <submit_instruction_body tag="hidden"/>
+            <submission_clinical_note tag="hidden"/>
+          </submission_group>
+          <data tag="hidden">
+            <_primary_body_system tag="hidden"/>
+            <_symptom_duration tag="hidden"/>
+            <_symptom_severity tag="hidden"/>
+            <_prior_similar_episodes tag="hidden"/>
+            <_current_medications_taken tag="hidden"/>
+            <_medication_details tag="hidden"/>
+            <_chronic_condition_history tag="hidden"/>
+            <_chronic_condition_details tag="hidden"/>
+            <_other_symptom_description tag="hidden"/>
+            <_symptoms_cardiovascular tag="hidden"/>
+            <_symptoms_respiratory tag="hidden"/>
+            <_symptoms_gastrointestinal tag="hidden"/>
+            <_symptoms_neurological tag="hidden"/>
+            <_symptoms_musculoskeletal tag="hidden"/>
+            <_symptoms_dermatological tag="hidden"/>
+            <_symptoms_genitourinary tag="hidden"/>
+            <_symptoms_ent_dental tag="hidden"/>
+            <_symptoms_ophthalmologic tag="hidden"/>
+            <_symptoms_mental_health tag="hidden"/>
+            <_symptoms_constitutional tag="hidden"/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="body_system">
+        <root>
+          <item>
+            <itextId>body_system-0</itextId>
+            <name>cardiovascular</name>
+          </item>
+          <item>
+            <itextId>body_system-1</itextId>
+            <name>respiratory</name>
+          </item>
+          <item>
+            <itextId>body_system-2</itextId>
+            <name>gastrointestinal</name>
+          </item>
+          <item>
+            <itextId>body_system-3</itextId>
+            <name>neurological</name>
+          </item>
+          <item>
+            <itextId>body_system-4</itextId>
+            <name>musculoskeletal</name>
+          </item>
+          <item>
+            <itextId>body_system-5</itextId>
+            <name>dermatological</name>
+          </item>
+          <item>
+            <itextId>body_system-6</itextId>
+            <name>genitourinary</name>
+          </item>
+          <item>
+            <itextId>body_system-7</itextId>
+            <name>ent_dental</name>
+          </item>
+          <item>
+            <itextId>body_system-8</itextId>
+            <name>ophthalmologic</name>
+          </item>
+          <item>
+            <itextId>body_system-9</itextId>
+            <name>mental_health</name>
+          </item>
+          <item>
+            <itextId>body_system-10</itextId>
+            <name>constitutional</name>
+          </item>
+          <item>
+            <itextId>body_system-11</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_cardio">
+        <root>
+          <item>
+            <itextId>symptoms_cardio-0</itextId>
+            <name>palpitations</name>
+          </item>
+          <item>
+            <itextId>symptoms_cardio-1</itextId>
+            <name>leg_swelling</name>
+          </item>
+          <item>
+            <itextId>symptoms_cardio-2</itextId>
+            <name>dizziness_orthostatic</name>
+          </item>
+          <item>
+            <itextId>symptoms_cardio-3</itextId>
+            <name>intermittent_claudication</name>
+          </item>
+          <item>
+            <itextId>symptoms_cardio-4</itextId>
+            <name>cardio_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_resp">
+        <root>
+          <item>
+            <itextId>symptoms_resp-0</itextId>
+            <name>chronic_cough</name>
+          </item>
+          <item>
+            <itextId>symptoms_resp-1</itextId>
+            <name>hemoptysis</name>
+          </item>
+          <item>
+            <itextId>symptoms_resp-2</itextId>
+            <name>wheezing_stridor</name>
+          </item>
+          <item>
+            <itextId>symptoms_resp-3</itextId>
+            <name>chest_tightness</name>
+          </item>
+          <item>
+            <itextId>symptoms_resp-4</itextId>
+            <name>resp_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_gi">
+        <root>
+          <item>
+            <itextId>symptoms_gi-0</itextId>
+            <name>chronic_constipation</name>
+          </item>
+          <item>
+            <itextId>symptoms_gi-1</itextId>
+            <name>dysphagia</name>
+          </item>
+          <item>
+            <itextId>symptoms_gi-2</itextId>
+            <name>jaundice</name>
+          </item>
+          <item>
+            <itextId>symptoms_gi-3</itextId>
+            <name>hematochezia_melena</name>
+          </item>
+          <item>
+            <itextId>symptoms_gi-4</itextId>
+            <name>recurrent_nausea</name>
+          </item>
+          <item>
+            <itextId>symptoms_gi-5</itextId>
+            <name>gi_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_neuro">
+        <root>
+          <item>
+            <itextId>symptoms_neuro-0</itextId>
+            <name>chronic_headache</name>
+          </item>
+          <item>
+            <itextId>symptoms_neuro-1</itextId>
+            <name>numbness_tingling</name>
+          </item>
+          <item>
+            <itextId>symptoms_neuro-2</itextId>
+            <name>tremors</name>
+          </item>
+          <item>
+            <itextId>symptoms_neuro-3</itextId>
+            <name>frequent_dizziness</name>
+          </item>
+          <item>
+            <itextId>symptoms_neuro-4</itextId>
+            <name>neuro_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_msk">
+        <root>
+          <item>
+            <itextId>symptoms_msk-0</itextId>
+            <name>back_pain</name>
+          </item>
+          <item>
+            <itextId>symptoms_msk-1</itextId>
+            <name>joint_stiffness</name>
+          </item>
+          <item>
+            <itextId>symptoms_msk-2</itextId>
+            <name>muscle_weakness</name>
+          </item>
+          <item>
+            <itextId>symptoms_msk-3</itextId>
+            <name>post_trauma_pain</name>
+          </item>
+          <item>
+            <itextId>symptoms_msk-4</itextId>
+            <name>msk_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_derm">
+        <root>
+          <item>
+            <itextId>symptoms_derm-0</itextId>
+            <name>nonhealing_ulcer</name>
+          </item>
+          <item>
+            <itextId>symptoms_derm-1</itextId>
+            <name>unexplained_rash</name>
+          </item>
+          <item>
+            <itextId>symptoms_derm-2</itextId>
+            <name>skin_pigmentation</name>
+          </item>
+          <item>
+            <itextId>symptoms_derm-3</itextId>
+            <name>alopecia</name>
+          </item>
+          <item>
+            <itextId>symptoms_derm-4</itextId>
+            <name>derm_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_gu">
+        <root>
+          <item>
+            <itextId>symptoms_gu-0</itextId>
+            <name>urinary_incontinence</name>
+          </item>
+          <item>
+            <itextId>symptoms_gu-1</itextId>
+            <name>pelvic_pain</name>
+          </item>
+          <item>
+            <itextId>symptoms_gu-2</itextId>
+            <name>scrotal_swelling</name>
+          </item>
+          <item>
+            <itextId>symptoms_gu-3</itextId>
+            <name>menstrual_irregularity</name>
+          </item>
+          <item>
+            <itextId>symptoms_gu-4</itextId>
+            <name>gu_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_ent">
+        <root>
+          <item>
+            <itextId>symptoms_ent-0</itextId>
+            <name>chronic_ear_discharge</name>
+          </item>
+          <item>
+            <itextId>symptoms_ent-1</itextId>
+            <name>hearing_loss_tinnitus</name>
+          </item>
+          <item>
+            <itextId>symptoms_ent-2</itextId>
+            <name>toothache_abscess</name>
+          </item>
+          <item>
+            <itextId>symptoms_ent-3</itextId>
+            <name>hoarseness</name>
+          </item>
+          <item>
+            <itextId>symptoms_ent-4</itextId>
+            <name>ent_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_eye">
+        <root>
+          <item>
+            <itextId>symptoms_eye-0</itextId>
+            <name>visual_impairment</name>
+          </item>
+          <item>
+            <itextId>symptoms_eye-1</itextId>
+            <name>eye_redness_discharge</name>
+          </item>
+          <item>
+            <itextId>symptoms_eye-2</itextId>
+            <name>photophobia_pain</name>
+          </item>
+          <item>
+            <itextId>symptoms_eye-3</itextId>
+            <name>eye_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_mental">
+        <root>
+          <item>
+            <itextId>symptoms_mental-0</itextId>
+            <name>persistent_sadness</name>
+          </item>
+          <item>
+            <itextId>symptoms_mental-1</itextId>
+            <name>severe_anxiety</name>
+          </item>
+          <item>
+            <itextId>symptoms_mental-2</itextId>
+            <name>insomnia</name>
+          </item>
+          <item>
+            <itextId>symptoms_mental-3</itextId>
+            <name>cognitive_changes</name>
+          </item>
+          <item>
+            <itextId>symptoms_mental-4</itextId>
+            <name>mental_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptoms_general">
+        <root>
+          <item>
+            <itextId>symptoms_general-0</itextId>
+            <name>unexplained_fatigue</name>
+          </item>
+          <item>
+            <itextId>symptoms_general-1</itextId>
+            <name>unexplained_weightloss</name>
+          </item>
+          <item>
+            <itextId>symptoms_general-2</itextId>
+            <name>swollen_lymph_nodes</name>
+          </item>
+          <item>
+            <itextId>symptoms_general-3</itextId>
+            <name>chronic_lowgrade_fever</name>
+          </item>
+          <item>
+            <itextId>symptoms_general-4</itextId>
+            <name>general_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptom_duration">
+        <root>
+          <item>
+            <itextId>symptom_duration-0</itextId>
+            <name>less_than_1_week</name>
+          </item>
+          <item>
+            <itextId>symptom_duration-1</itextId>
+            <name>1_to_4_weeks</name>
+          </item>
+          <item>
+            <itextId>symptom_duration-2</itextId>
+            <name>1_to_3_months</name>
+          </item>
+          <item>
+            <itextId>symptom_duration-3</itextId>
+            <name>more_than_3_months</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="symptom_severity">
+        <root>
+          <item>
+            <itextId>symptom_severity-0</itextId>
+            <name>mild</name>
+          </item>
+          <item>
+            <itextId>symptom_severity-1</itextId>
+            <name>moderate</name>
+          </item>
+          <item>
+            <itextId>symptom_severity-2</itextId>
+            <name>severe</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/general_assessment_group/general_assessment_intro" readonly="true()" type="string"/>
+      <bind nodeset="/data/general_assessment_group/primary_body_system" type="string" required="true()"/>
+      <bind nodeset="/data/general_assessment_group/primary_body_system_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/primary_body_system , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 0), ' /data/general_assessment_group/primary_body_system '), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 1), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 2), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 3), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 4), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 5) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 5), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 6) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 6), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 7) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 7), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 8) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 8), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 9) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 9), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 10) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 10), ' /data/general_assessment_group/primary_body_system ')), ''), if(selected-at( /data/general_assessment_group/primary_body_system , 11) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/primary_body_system , 11), ' /data/general_assessment_group/primary_body_system ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_cardiovascular" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'cardiovascular')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_cardiovascular_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 0), ' /data/general_assessment_group/symptoms_cardiovascular '), ''), if(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 1), ' /data/general_assessment_group/symptoms_cardiovascular ')), ''), if(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 2), ' /data/general_assessment_group/symptoms_cardiovascular ')), ''), if(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 3), ' /data/general_assessment_group/symptoms_cardiovascular ')), ''), if(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_cardiovascular , 4), ' /data/general_assessment_group/symptoms_cardiovascular ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_respiratory" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'respiratory')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_respiratory_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_respiratory , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_respiratory , 0), ' /data/general_assessment_group/symptoms_respiratory '), ''), if(selected-at( /data/general_assessment_group/symptoms_respiratory , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_respiratory , 1), ' /data/general_assessment_group/symptoms_respiratory ')), ''), if(selected-at( /data/general_assessment_group/symptoms_respiratory , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_respiratory , 2), ' /data/general_assessment_group/symptoms_respiratory ')), ''), if(selected-at( /data/general_assessment_group/symptoms_respiratory , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_respiratory , 3), ' /data/general_assessment_group/symptoms_respiratory ')), ''), if(selected-at( /data/general_assessment_group/symptoms_respiratory , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_respiratory , 4), ' /data/general_assessment_group/symptoms_respiratory ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_gastrointestinal" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'gastrointestinal')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_gastrointestinal_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 0), ' /data/general_assessment_group/symptoms_gastrointestinal '), ''), if(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 1), ' /data/general_assessment_group/symptoms_gastrointestinal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 2), ' /data/general_assessment_group/symptoms_gastrointestinal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 3), ' /data/general_assessment_group/symptoms_gastrointestinal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 4), ' /data/general_assessment_group/symptoms_gastrointestinal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 5) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_gastrointestinal , 5), ' /data/general_assessment_group/symptoms_gastrointestinal ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_neurological" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'neurological')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_neurological_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_neurological , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_neurological , 0), ' /data/general_assessment_group/symptoms_neurological '), ''), if(selected-at( /data/general_assessment_group/symptoms_neurological , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_neurological , 1), ' /data/general_assessment_group/symptoms_neurological ')), ''), if(selected-at( /data/general_assessment_group/symptoms_neurological , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_neurological , 2), ' /data/general_assessment_group/symptoms_neurological ')), ''), if(selected-at( /data/general_assessment_group/symptoms_neurological , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_neurological , 3), ' /data/general_assessment_group/symptoms_neurological ')), ''), if(selected-at( /data/general_assessment_group/symptoms_neurological , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_neurological , 4), ' /data/general_assessment_group/symptoms_neurological ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_musculoskeletal" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'musculoskeletal')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_musculoskeletal_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 0), ' /data/general_assessment_group/symptoms_musculoskeletal '), ''), if(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 1), ' /data/general_assessment_group/symptoms_musculoskeletal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 2), ' /data/general_assessment_group/symptoms_musculoskeletal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 3), ' /data/general_assessment_group/symptoms_musculoskeletal ')), ''), if(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_musculoskeletal , 4), ' /data/general_assessment_group/symptoms_musculoskeletal ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_dermatological" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'dermatological')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_dermatological_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_dermatological , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_dermatological , 0), ' /data/general_assessment_group/symptoms_dermatological '), ''), if(selected-at( /data/general_assessment_group/symptoms_dermatological , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_dermatological , 1), ' /data/general_assessment_group/symptoms_dermatological ')), ''), if(selected-at( /data/general_assessment_group/symptoms_dermatological , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_dermatological , 2), ' /data/general_assessment_group/symptoms_dermatological ')), ''), if(selected-at( /data/general_assessment_group/symptoms_dermatological , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_dermatological , 3), ' /data/general_assessment_group/symptoms_dermatological ')), ''), if(selected-at( /data/general_assessment_group/symptoms_dermatological , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_dermatological , 4), ' /data/general_assessment_group/symptoms_dermatological ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_genitourinary" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'genitourinary')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_genitourinary_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_genitourinary , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_genitourinary , 0), ' /data/general_assessment_group/symptoms_genitourinary '), ''), if(selected-at( /data/general_assessment_group/symptoms_genitourinary , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_genitourinary , 1), ' /data/general_assessment_group/symptoms_genitourinary ')), ''), if(selected-at( /data/general_assessment_group/symptoms_genitourinary , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_genitourinary , 2), ' /data/general_assessment_group/symptoms_genitourinary ')), ''), if(selected-at( /data/general_assessment_group/symptoms_genitourinary , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_genitourinary , 3), ' /data/general_assessment_group/symptoms_genitourinary ')), ''), if(selected-at( /data/general_assessment_group/symptoms_genitourinary , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_genitourinary , 4), ' /data/general_assessment_group/symptoms_genitourinary ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_ent_dental" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'ent_dental')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_ent_dental_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_ent_dental , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ent_dental , 0), ' /data/general_assessment_group/symptoms_ent_dental '), ''), if(selected-at( /data/general_assessment_group/symptoms_ent_dental , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ent_dental , 1), ' /data/general_assessment_group/symptoms_ent_dental ')), ''), if(selected-at( /data/general_assessment_group/symptoms_ent_dental , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ent_dental , 2), ' /data/general_assessment_group/symptoms_ent_dental ')), ''), if(selected-at( /data/general_assessment_group/symptoms_ent_dental , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ent_dental , 3), ' /data/general_assessment_group/symptoms_ent_dental ')), ''), if(selected-at( /data/general_assessment_group/symptoms_ent_dental , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ent_dental , 4), ' /data/general_assessment_group/symptoms_ent_dental ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_ophthalmologic" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'ophthalmologic')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_ophthalmologic_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 0), ' /data/general_assessment_group/symptoms_ophthalmologic '), ''), if(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 1), ' /data/general_assessment_group/symptoms_ophthalmologic ')), ''), if(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 2), ' /data/general_assessment_group/symptoms_ophthalmologic ')), ''), if(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_ophthalmologic , 3), ' /data/general_assessment_group/symptoms_ophthalmologic ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_mental_health" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'mental_health')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_mental_health_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_mental_health , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_mental_health , 0), ' /data/general_assessment_group/symptoms_mental_health '), ''), if(selected-at( /data/general_assessment_group/symptoms_mental_health , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_mental_health , 1), ' /data/general_assessment_group/symptoms_mental_health ')), ''), if(selected-at( /data/general_assessment_group/symptoms_mental_health , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_mental_health , 2), ' /data/general_assessment_group/symptoms_mental_health ')), ''), if(selected-at( /data/general_assessment_group/symptoms_mental_health , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_mental_health , 3), ' /data/general_assessment_group/symptoms_mental_health ')), ''), if(selected-at( /data/general_assessment_group/symptoms_mental_health , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_mental_health , 4), ' /data/general_assessment_group/symptoms_mental_health ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_constitutional" type="string" required="false()" relevant="selected( /data/general_assessment_group/primary_body_system , 'constitutional')"/>
+      <bind nodeset="/data/general_assessment_group/symptoms_constitutional_label" type="string" calculate="concat(if(selected-at( /data/general_assessment_group/symptoms_constitutional , 0) != '', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_constitutional , 0), ' /data/general_assessment_group/symptoms_constitutional '), ''), if(selected-at( /data/general_assessment_group/symptoms_constitutional , 1) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_constitutional , 1), ' /data/general_assessment_group/symptoms_constitutional ')), ''), if(selected-at( /data/general_assessment_group/symptoms_constitutional , 2) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_constitutional , 2), ' /data/general_assessment_group/symptoms_constitutional ')), ''), if(selected-at( /data/general_assessment_group/symptoms_constitutional , 3) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_constitutional , 3), ' /data/general_assessment_group/symptoms_constitutional ')), ''), if(selected-at( /data/general_assessment_group/symptoms_constitutional , 4) != '', concat(', ', jr:choice-name(selected-at( /data/general_assessment_group/symptoms_constitutional , 4), ' /data/general_assessment_group/symptoms_constitutional ')), ''))"/>
+      <bind nodeset="/data/general_assessment_group/other_symptom_description" type="string" required="true()" relevant="selected( /data/general_assessment_group/primary_body_system , 'other') or selected( /data/general_assessment_group/symptoms_cardiovascular , 'cardio_other') or selected( /data/general_assessment_group/symptoms_respiratory , 'resp_other') or selected( /data/general_assessment_group/symptoms_gastrointestinal , 'gi_other') or selected( /data/general_assessment_group/symptoms_neurological , 'neuro_other') or selected( /data/general_assessment_group/symptoms_musculoskeletal , 'msk_other') or selected( /data/general_assessment_group/symptoms_dermatological , 'derm_other') or selected( /data/general_assessment_group/symptoms_genitourinary , 'gu_other') or selected( /data/general_assessment_group/symptoms_ent_dental , 'ent_other') or selected( /data/general_assessment_group/symptoms_ophthalmologic , 'eye_other') or selected( /data/general_assessment_group/symptoms_mental_health , 'mental_other') or selected( /data/general_assessment_group/symptoms_constitutional , 'general_other')"/>
+      <bind nodeset="/data/general_assessment_group/symptom_duration" type="string" required="true()"/>
+      <bind nodeset="/data/general_assessment_group/symptom_duration_label" type="string" calculate="jr:choice-name( /data/general_assessment_group/symptom_duration , ' /data/general_assessment_group/symptom_duration ')"/>
+      <bind nodeset="/data/general_assessment_group/symptom_severity" type="string" required="true()"/>
+      <bind nodeset="/data/general_assessment_group/symptom_severity_label" type="string" calculate="jr:choice-name( /data/general_assessment_group/symptom_severity , ' /data/general_assessment_group/symptom_severity ')"/>
+      <bind nodeset="/data/general_assessment_group/prior_similar_episodes" type="string" required="true()"/>
+      <bind nodeset="/data/general_assessment_group/prior_similar_episodes_label" type="string" calculate="jr:choice-name( /data/general_assessment_group/prior_similar_episodes , ' /data/general_assessment_group/prior_similar_episodes ')"/>
+      <bind nodeset="/data/general_assessment_group/current_medications_taken" type="string" required="true()"/>
+      <bind nodeset="/data/general_assessment_group/current_medications_taken_label" type="string" calculate="jr:choice-name( /data/general_assessment_group/current_medications_taken , ' /data/general_assessment_group/current_medications_taken ')"/>
+      <bind nodeset="/data/general_assessment_group/medication_details" type="string" required="false()" relevant=" /data/general_assessment_group/current_medications_taken  = 'yes'"/>
+      <bind nodeset="/data/general_assessment_group/chronic_condition_history" type="string" required="true()"/>
+      <bind nodeset="/data/general_assessment_group/chronic_condition_history_label" type="string" calculate="jr:choice-name( /data/general_assessment_group/chronic_condition_history , ' /data/general_assessment_group/chronic_condition_history ')"/>
+      <bind nodeset="/data/general_assessment_group/chronic_condition_details" type="string" required="false()" relevant=" /data/general_assessment_group/chronic_condition_history  = 'yes'"/>
+      <bind nodeset="/data/submission_group/submit_instruction_header" readonly="true()" type="string"/>
+      <bind nodeset="/data/submission_group/submit_instruction_body" readonly="true()" type="string"/>
+      <bind nodeset="/data/submission_group/submission_clinical_note" type="string" required="false()"/>
+      <bind nodeset="/data/data/_primary_body_system" type="string" calculate="if( /data/general_assessment_group/primary_body_system  != '',  /data/general_assessment_group/primary_body_system , '')"/>
+      <bind nodeset="/data/data/_symptom_duration" type="string" calculate=" /data/general_assessment_group/symptom_duration "/>
+      <bind nodeset="/data/data/_symptom_severity" type="string" calculate=" /data/general_assessment_group/symptom_severity "/>
+      <bind nodeset="/data/data/_prior_similar_episodes" type="string" calculate="if( /data/general_assessment_group/prior_similar_episodes  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_current_medications_taken" type="string" calculate="if( /data/general_assessment_group/current_medications_taken  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_medication_details" type="string" calculate="if( /data/general_assessment_group/medication_details  != '',  /data/general_assessment_group/medication_details , '')"/>
+      <bind nodeset="/data/data/_chronic_condition_history" type="string" calculate="if( /data/general_assessment_group/chronic_condition_history  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_chronic_condition_details" type="string" calculate="if( /data/general_assessment_group/chronic_condition_details  != '',  /data/general_assessment_group/chronic_condition_details , '')"/>
+      <bind nodeset="/data/data/_other_symptom_description" type="string" calculate="if( /data/general_assessment_group/other_symptom_description  != '',  /data/general_assessment_group/other_symptom_description , '')"/>
+      <bind nodeset="/data/data/_symptoms_cardiovascular" type="string" calculate="if( /data/general_assessment_group/symptoms_cardiovascular  != '',  /data/general_assessment_group/symptoms_cardiovascular , '')"/>
+      <bind nodeset="/data/data/_symptoms_respiratory" type="string" calculate="if( /data/general_assessment_group/symptoms_respiratory  != '',  /data/general_assessment_group/symptoms_respiratory , '')"/>
+      <bind nodeset="/data/data/_symptoms_gastrointestinal" type="string" calculate="if( /data/general_assessment_group/symptoms_gastrointestinal  != '',  /data/general_assessment_group/symptoms_gastrointestinal , '')"/>
+      <bind nodeset="/data/data/_symptoms_neurological" type="string" calculate="if( /data/general_assessment_group/symptoms_neurological  != '',  /data/general_assessment_group/symptoms_neurological , '')"/>
+      <bind nodeset="/data/data/_symptoms_musculoskeletal" type="string" calculate="if( /data/general_assessment_group/symptoms_musculoskeletal  != '',  /data/general_assessment_group/symptoms_musculoskeletal , '')"/>
+      <bind nodeset="/data/data/_symptoms_dermatological" type="string" calculate="if( /data/general_assessment_group/symptoms_dermatological  != '',  /data/general_assessment_group/symptoms_dermatological , '')"/>
+      <bind nodeset="/data/data/_symptoms_genitourinary" type="string" calculate="if( /data/general_assessment_group/symptoms_genitourinary  != '',  /data/general_assessment_group/symptoms_genitourinary , '')"/>
+      <bind nodeset="/data/data/_symptoms_ent_dental" type="string" calculate="if( /data/general_assessment_group/symptoms_ent_dental  != '',  /data/general_assessment_group/symptoms_ent_dental , '')"/>
+      <bind nodeset="/data/data/_symptoms_ophthalmologic" type="string" calculate="if( /data/general_assessment_group/symptoms_ophthalmologic  != '',  /data/general_assessment_group/symptoms_ophthalmologic , '')"/>
+      <bind nodeset="/data/data/_symptoms_mental_health" type="string" calculate="if( /data/general_assessment_group/symptoms_mental_health  != '',  /data/general_assessment_group/symptoms_mental_health , '')"/>
+      <bind nodeset="/data/data/_symptoms_constitutional" type="string" calculate="if( /data/general_assessment_group/symptoms_constitutional  != '',  /data/general_assessment_group/symptoms_constitutional , '')"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/general_assessment_group">
+      <label ref="jr:itext('/data/general_assessment_group:label')"/>
+      <input ref="/data/general_assessment_group/general_assessment_intro">
+        <label ref="jr:itext('/data/general_assessment_group/general_assessment_intro:label')"/>
+      </input>
+      <select ref="/data/general_assessment_group/primary_body_system">
+        <label ref="jr:itext('/data/general_assessment_group/primary_body_system:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/primary_body_system:hint')"/>
+        <itemset nodeset="instance('body_system')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_cardiovascular">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_cardiovascular:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_cardiovascular:hint')"/>
+        <itemset nodeset="instance('symptoms_cardio')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_respiratory">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_respiratory:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_respiratory:hint')"/>
+        <itemset nodeset="instance('symptoms_resp')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_gastrointestinal">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_gastrointestinal:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_gastrointestinal:hint')"/>
+        <itemset nodeset="instance('symptoms_gi')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_neurological">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_neurological:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_neurological:hint')"/>
+        <itemset nodeset="instance('symptoms_neuro')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_musculoskeletal">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_musculoskeletal:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_musculoskeletal:hint')"/>
+        <itemset nodeset="instance('symptoms_msk')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_dermatological">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_dermatological:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_dermatological:hint')"/>
+        <itemset nodeset="instance('symptoms_derm')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_genitourinary">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_genitourinary:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_genitourinary:hint')"/>
+        <itemset nodeset="instance('symptoms_gu')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_ent_dental">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_ent_dental:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_ent_dental:hint')"/>
+        <itemset nodeset="instance('symptoms_ent')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_ophthalmologic">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_ophthalmologic:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_ophthalmologic:hint')"/>
+        <itemset nodeset="instance('symptoms_eye')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_mental_health">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_mental_health:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_mental_health:hint')"/>
+        <itemset nodeset="instance('symptoms_mental')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/general_assessment_group/symptoms_constitutional">
+        <label ref="jr:itext('/data/general_assessment_group/symptoms_constitutional:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptoms_constitutional:hint')"/>
+        <itemset nodeset="instance('symptoms_general')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/general_assessment_group/other_symptom_description">
+        <label ref="jr:itext('/data/general_assessment_group/other_symptom_description:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/other_symptom_description:hint')"/>
+      </input>
+      <select1 ref="/data/general_assessment_group/symptom_duration">
+        <label ref="jr:itext('/data/general_assessment_group/symptom_duration:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptom_duration:hint')"/>
+        <itemset nodeset="instance('symptom_duration')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/general_assessment_group/symptom_severity">
+        <label ref="jr:itext('/data/general_assessment_group/symptom_severity:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/symptom_severity:hint')"/>
+        <itemset nodeset="instance('symptom_severity')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/general_assessment_group/prior_similar_episodes">
+        <label ref="jr:itext('/data/general_assessment_group/prior_similar_episodes:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/prior_similar_episodes:hint')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/general_assessment_group/current_medications_taken">
+        <label ref="jr:itext('/data/general_assessment_group/current_medications_taken:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/current_medications_taken:hint')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/general_assessment_group/medication_details">
+        <label ref="jr:itext('/data/general_assessment_group/medication_details:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/medication_details:hint')"/>
+      </input>
+      <select1 ref="/data/general_assessment_group/chronic_condition_history">
+        <label ref="jr:itext('/data/general_assessment_group/chronic_condition_history:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/chronic_condition_history:hint')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/general_assessment_group/chronic_condition_details">
+        <label ref="jr:itext('/data/general_assessment_group/chronic_condition_details:label')"/>
+        <hint ref="jr:itext('/data/general_assessment_group/chronic_condition_details:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/submission_group">
+      <label ref="jr:itext('/data/submission_group:label')"/>
+      <input ref="/data/submission_group/submit_instruction_header" appearance="h1 blue">
+        <label ref="jr:itext('/data/submission_group/submit_instruction_header:label')"/>
+      </input>
+      <input ref="/data/submission_group/submit_instruction_body">
+        <label ref="jr:itext('/data/submission_group/submit_instruction_body:label')"/>
+      </input>
+      <input ref="/data/submission_group/submission_clinical_note">
+        <label ref="jr:itext('/data/submission_group/submission_clinical_note:label')"/>
+        <hint ref="jr:itext('/data/submission_group/submission_clinical_note:hint')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+  </h:body>
+</h:html>

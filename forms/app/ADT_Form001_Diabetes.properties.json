@@ -1,0 +1,10 @@
+{
+  "title": "Diabetes Form",
+  "icon": "icon-disease-diabetes@2x",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "ageInYears(contact) >= 18",
+    "permission": "can_conduct_assessment_forms"
+  }
+}

@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Child Vision (Ages 0-5)</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="va_distance-0">
+            <value>6/12 or better</value>
+          </text>
+          <text id="va_distance-1">
+            <value>Worse than 6/12</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/case_history_group:label">
+            <value>Case History</value>
+          </text>
+          <text id="/data/case_history_group/history_premature:label">
+            <value>Was the child born prematurely (preterm, before 37 weeks)?</value>
+          </text>
+          <text id="/data/case_history_group/history_low_birth_weight:label">
+            <value>Did the child have a low birth weight (under 2.5 kg)?</value>
+          </text>
+          <text id="/data/case_history_group/history_birth_defects:label">
+            <value>Does the child have any observed or suspected birth defects?</value>
+          </text>
+          <text id="/data/case_history_group/history_parent_concerns:label">
+            <value>Does the parent or carer have concerns about the child's eyes or vision?</value>
+          </text>
+          <text id="/data/case_history_group/history_eye_pain:label">
+            <value>Is the child experiencing eye pain, discomfort, or severe itchiness?</value>
+          </text>
+          <text id="/data/case_history_group/history_diabetes:label">
+            <value>Has the child been diagnosed with diabetes or a systemic condition?</value>
+          </text>
+          <text id="/data/distance_va_group:label">
+            <value>Distance Visual Acuity (3 meters)</value>
+          </text>
+          <text id="/data/distance_va_group/distance_va_note:label">
+            <value>Position child 3 meters from HOTV or LEA Symbols chart. Test each eye separately in ambient light (with spectacles if worn). Pass threshold: 6/12 or better in each eye.</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_right:label">
+            <value>Right eye distance visual acuity (3 meters):</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_left:label">
+            <value>Left eye distance visual acuity (3 meters):</value>
+          </text>
+          <text id="/data/external_eye_group:label">
+            <value>External Eye Screening (Ambient Light)</value>
+          </text>
+          <text id="/data/external_eye_group/external_eye_note:label">
+            <value>Examine external eye in adequate ambient room lighting without an ophthalmoscope or penlight. Do not touch patient's eyes.</value>
+          </text>
+          <text id="/data/external_eye_group/ext_crust_pus:label">
+            <value>Significant crust or pus on eyelid margins?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_swelling:label">
+            <value>Swollen eyelids?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_abnormal_eyelashes:label">
+            <value>Abnormal or absent eyelashes (or eyelashes turning inwards)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_excessive_watering:label">
+            <value>Excessive watering or sticky discharge from eyes?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_red_conjunctiva:label">
+            <value>Abnormal redness or lesion on white part of eye (conjunctiva)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_hazy_cornea:label">
+            <value>Abnormal haziness, cloudiness, or redness on coloured part (cornea/iris)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_unequal_alignment:label">
+            <value>Unequal size of eyes or eyes not aligned (strabismus / turned eye)?</value>
+          </text>
+          <text id="/data/calc_vision_referral:label">
+            <value form="audio">jr://audio/,</value>
+          </text>
+          <text id="/data/calc_vision_pass:label">
+            <value form="audio">jr://audio/,</value>
+          </text>
+          <text id="/data/results_refer_group:label">
+            <value>Results - Referral Required</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_banner:label">
+            <value>REFERRAL REQUIRED: Comprehensive Pediatric Eye Examination Needed</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_history:label">
+            <value>• Risk History: Premature birth, low birth weight, birth defect, systemic disease, or parent concern identified.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_pain:label">
+            <value>• Ocular Symptom: Eye pain, discomfort, or severe itchiness reported.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_va:label">
+            <value>• Distance Visual Acuity: Reduced vision (&lt; 6/12) in one or both eyes at 3 meters.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_external:label">
+            <value>• External Eye Abnormalities detected under ambient light inspection.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_protocol:label">
+            <value>Protocol: Refer child to an optometrist, ophthalmic nurse, or ophthalmologist within 30 days. Complete referral form, explain findings to parent/carer, and counsel on hand and eye hygiene.</value>
+          </text>
+          <text id="/data/results_pass_group:label">
+            <value>Results - Screening Passed</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_banner:label">
+            <value>SCREENING PASSED: Vision and Eye Appearance Within Normal Limits</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_counseling:label">
+            <value>Child meets visual acuity thresholds (Distance &gt;= 6/12 in each eye for ages 3-5) and no red flags or external abnormalities were observed. Counsel parent/carer on routine follow-up, eye hygiene (hand washing, avoiding eye rubbing), and prompt evaluation if symptoms appear.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="va_distance-0">
+            <value>6/12 ou mieux</value>
+          </text>
+          <text id="va_distance-1">
+            <value>Moins de 6/12</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Identifiant de contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Numéro d'identification du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/case_history_group:label">
+            <value>Étude de cas</value>
+          </text>
+          <text id="/data/case_history_group/history_premature:label">
+            <value>L'enfant est-il né prématurément (avant 37 semaines) ?</value>
+          </text>
+          <text id="/data/case_history_group/history_low_birth_weight:label">
+            <value>L'enfant avait-il un faible poids à la naissance (moins de 2,5 kg) ?</value>
+          </text>
+          <text id="/data/case_history_group/history_birth_defects:label">
+            <value>L'enfant présente-t-il des malformations congénitales constatées ou suspectées ?</value>
+          </text>
+          <text id="/data/case_history_group/history_parent_concerns:label">
+            <value>Le parent ou le tuteur a-t-il des inquiétudes concernant les yeux ou la vision de l'enfant ?</value>
+          </text>
+          <text id="/data/case_history_group/history_eye_pain:label">
+            <value>L'enfant ressent-il une douleur oculaire, une gêne ou de fortes démangeaisons ?</value>
+          </text>
+          <text id="/data/case_history_group/history_diabetes:label">
+            <value>L'enfant a-t-il reçu un diagnostic de diabète ou d'une maladie systémique ?</value>
+          </text>
+          <text id="/data/distance_va_group:label">
+            <value>Acuité visuelle à distance (3 mètres)</value>
+          </text>
+          <text id="/data/distance_va_group/distance_va_note:label">
+            <value>Placez l'enfant à 3 mètres du tableau HOTV ou LEA Symbols. Testez chaque œil séparément à la lumière ambiante (avec lunettes si nécessaire). Seuil de réussite : 6/12 ou mieux à chaque œil.</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_right:label">
+            <value>Acuité visuelle de l'œil droit à distance (3 mètres) :</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_left:label">
+            <value>Acuité visuelle de l'œil gauche à distance (3 mètres) :</value>
+          </text>
+          <text id="/data/external_eye_group:label">
+            <value>Examen oculaire externe (lumière ambiante)</value>
+          </text>
+          <text id="/data/external_eye_group/external_eye_note:label">
+            <value>Examiner l'œil externe dans une pièce suffisamment éclairée, sans ophtalmoscope ni lampe stylo. Ne pas toucher les yeux du patient.</value>
+          </text>
+          <text id="/data/external_eye_group/ext_crust_pus:label">
+            <value>Croûtes ou pus importants sur le bord des paupières ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_swelling:label">
+            <value>Paupières gonflées ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_abnormal_eyelashes:label">
+            <value>Cils anormaux ou absents (ou cils tournés vers l'intérieur) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_excessive_watering:label">
+            <value>Larmoiement excessif ou écoulement collant des yeux ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_red_conjunctiva:label">
+            <value>Rougeur anormale ou lésion sur la partie blanche de l'œil (conjonctive) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_hazy_cornea:label">
+            <value>Opacité, opacité ou rougeur anormales sur la partie colorée (cornée/iris) ?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_unequal_alignment:label">
+            <value>Yeux de taille inégale ou yeux non alignés (strabisme / œil dévié) ?</value>
+          </text>
+          <text id="/data/results_refer_group:label">
+            <value>Résultats - Orientation requise</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_banner:label">
+            <value>ORIENTATION REQUISE : Examen ophtalmologique pédiatrique complet nécessaire</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_history:label">
+            <value>• Antécédents de risque : Naissance prématurée, faible poids à la naissance, malformation congénitale, maladie systémique ou inquiétude parentale identifiés.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_pain:label">
+            <value>• Symptômes oculaires : Douleurs oculaires, gêne ou démangeaisons intenses signalées.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_va:label">
+            <value>• Acuité visuelle à distance : Vision réduite (&lt; 6/12) dans un œil ou les deux yeux à 3 mètres.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_external:label">
+            <value>• Anomalies externes de l'œil détectées lors de l'examen à la lumière ambiante.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_protocol:label">
+            <value>Protocole : Orienter l'enfant vers un optométriste, une infirmière spécialisée en ophtalmologie ou un ophtalmologiste dans les 30 jours. Remplir le formulaire d'orientation, expliquer les résultats au parent ou au tuteur et donner des conseils sur l'hygiène des mains et des yeux.</value>
+          </text>
+          <text id="/data/results_pass_group:label">
+            <value>Résultats - Test de dépistage réussi</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_banner:label">
+            <value>DÉPISTAGE RÉUSSI : Vision et aspect des yeux dans les limites normales</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_counseling:label">
+            <value>L'enfant présente une acuité visuelle normale (distance ≥ 6/12 à chaque œil pour les enfants de 3 à 5 ans) et aucun signe d'alerte ni anomalie externe n'a été observé. Conseillez aux parents ou au tuteur l'importance d'un suivi régulier, d'une bonne hygiène oculaire (lavage des mains, éviter de se frotter les yeux) et d'une consultation rapide en cas d'apparition de symptômes.</value>
+          </text>
+        </translation>
+        <translation lang="ht">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="va_distance-0">
+            <value>6/12 oswa pi bon</value>
+          </text>
+          <text id="va_distance-1">
+            <value>Pi ba pase 6/12</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Non kout</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID Pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat Nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/case_history_group:label">
+            <value>Istwa Ka a</value>
+          </text>
+          <text id="/data/case_history_group/history_premature:label">
+            <value>Èske timoun nan te fèt prematireman (anvan 37 semèn)?</value>
+          </text>
+          <text id="/data/case_history_group/history_low_birth_weight:label">
+            <value>Èske timoun nan te gen yon pwa ki ba lè l te fèt (anba 2.5 kg)?</value>
+          </text>
+          <text id="/data/case_history_group/history_birth_defects:label">
+            <value>Èske timoun nan gen nenpòt anomali konjenital yo obsève oswa yo sispèk?</value>
+          </text>
+          <text id="/data/case_history_group/history_parent_concerns:label">
+            <value>Èske paran an oswa moun k ap pran swen an gen enkyetid konsènan je oswa vizyon timoun nan?</value>
+          </text>
+          <text id="/data/case_history_group/history_eye_pain:label">
+            <value>Èske timoun nan ap soufri doulè nan je, malèz, oswa gratèl grav?</value>
+          </text>
+          <text id="/data/case_history_group/history_diabetes:label">
+            <value>Èske yo te dyagnostike timoun nan ak dyabèt oswa yon pwoblèm sistemik?</value>
+          </text>
+          <text id="/data/distance_va_group:label">
+            <value>Akwite Vizyèl Distans (3 mèt)</value>
+          </text>
+          <text id="/data/distance_va_group/distance_va_note:label">
+            <value>Mete timoun nan 3 mèt lwen tablo senbòl HOTV oubyen LEA a. Teste chak je separeman nan limyè anbyen (avèk linèt si w ap mete). Papòt reyisit: 6/12 oubyen pi bon nan chak je.</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_right:label">
+            <value>Akwite vizyèl distans je dwat (3 mèt):</value>
+          </text>
+          <text id="/data/distance_va_group/va_distance_left:label">
+            <value>Akwite vizyèl distans je gòch (3 mèt):</value>
+          </text>
+          <text id="/data/external_eye_group:label">
+            <value>Tès Ekstèn pou Je (Limyè Anbyen)</value>
+          </text>
+          <text id="/data/external_eye_group/external_eye_note:label">
+            <value>Egzamine ekstèn je a nan yon chanm ki gen bon ekleraj san oftalmoskòp oswa lanp plim. Pa touche je pasyan an.</value>
+          </text>
+          <text id="/data/external_eye_group/ext_crust_pus:label">
+            <value>Gen kwout oswa pi enpòtan sou rebò po je yo?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_swelling:label">
+            <value>Po je anfle?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_abnormal_eyelashes:label">
+            <value>Sil ki anormal oswa ki pa la (oswa sil ki vire anndan)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_excessive_watering:label">
+            <value>Twòp dlo oswa ekoulman kolan nan je yo?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_red_conjunctiva:label">
+            <value>Woujè oswa lezyon anòmal sou pati blan je a (konjonktiv)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_hazy_cornea:label">
+            <value>Yon aparans twoub, yon aparans twoub, oswa yon woujè anòmal sou pati ki gen koulè a ​​(kònè/iris)?</value>
+          </text>
+          <text id="/data/external_eye_group/ext_unequal_alignment:label">
+            <value>Je yo gen yon gwosè inegal oswa je yo pa aliyen (strabism / je ki vire)?</value>
+          </text>
+          <text id="/data/results_refer_group:label">
+            <value>Rezilta - Referans obligatwa</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_banner:label">
+            <value>REFERANS NESESÈ: Egzamen konplè pou je pedyatrik nesesè</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_history:label">
+            <value>• Istwa Risk: Akouchman prematire, pwa nesans ki ba, anomali konjenital, maladi sistemik, oswa enkyetid paran yo idantifye.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_pain:label">
+            <value>• Sentòm nan je: Yo rapòte doulè nan je, malèz, oswa gwo gratèl.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_va:label">
+            <value>• Akwite Vizyèl a Distans: Vizyon redwi (&lt; 6/12) nan youn oubyen toude je yo a 3 mèt.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_external:label">
+            <value>• Anomali ekstèn nan je detekte anba enspeksyon limyè anbyen.</value>
+          </text>
+          <text id="/data/results_refer_group/res_refer_protocol:label">
+            <value>Pwotokòl: Refere timoun nan bay yon optometris, yon enfimyè oftalmik, oswa yon oftalmològ nan lespas 30 jou. Ranpli fòm referans lan, eksplike rezilta yo bay paran/gadyen an, epi konseye sou ijyèn men ak je.</value>
+          </text>
+          <text id="/data/results_pass_group:label">
+            <value>Rezilta - Depistaj la reyisi</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_banner:label">
+            <value>TÈS DEPISTAJ REYISI: Vizyon ak Aparans Je nan Limit Nòmal yo</value>
+          </text>
+          <text id="/data/results_pass_group/res_pass_counseling:label">
+            <value>Timoun nan satisfè papòt akite vizyèl li yo (Distans &gt;= 6/12 nan chak je pou laj 3-5 an) epi pa gen okenn drapo wouj oswa anomali ekstèn ki te obsève. Konseye paran/gadyen an sou swivi woutin, ijyèn je (lave men, evite fwote je), ak evalyasyon rapid si sentòm yo parèt.</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="CHD_Form004_Vision" version="20261111155332" prefix="J1!CHD_Form004_Vision!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <case_history_group>
+            <history_premature tag="hidden"/>
+            <history_premature_label/>
+            <history_low_birth_weight tag="hidden"/>
+            <history_low_birth_weight_label/>
+            <history_birth_defects tag="hidden"/>
+            <history_birth_defects_label/>
+            <history_parent_concerns tag="hidden"/>
+            <history_parent_concerns_label/>
+            <history_eye_pain tag="hidden"/>
+            <history_eye_pain_label/>
+            <history_diabetes tag="hidden"/>
+            <history_diabetes_label/>
+          </case_history_group>
+          <distance_va_group>
+            <distance_va_note tag="hidden"/>
+            <va_distance_right tag="hidden"/>
+            <va_distance_right_label/>
+            <va_distance_left tag="hidden"/>
+            <va_distance_left_label/>
+          </distance_va_group>
+          <external_eye_group>
+            <external_eye_note tag="hidden"/>
+            <ext_crust_pus tag="hidden"/>
+            <ext_crust_pus_label/>
+            <ext_swelling tag="hidden"/>
+            <ext_swelling_label/>
+            <ext_abnormal_eyelashes tag="hidden"/>
+            <ext_abnormal_eyelashes_label/>
+            <ext_excessive_watering tag="hidden"/>
+            <ext_excessive_watering_label/>
+            <ext_red_conjunctiva tag="hidden"/>
+            <ext_red_conjunctiva_label/>
+            <ext_hazy_cornea tag="hidden"/>
+            <ext_hazy_cornea_label/>
+            <ext_unequal_alignment tag="hidden"/>
+            <ext_unequal_alignment_label/>
+          </external_eye_group>
+          <calc_refer_history tag="hidden"/>
+          <calc_refer_va tag="hidden"/>
+          <calc_refer_external tag="hidden"/>
+          <calc_vision_referral tag="hidden"/>
+          <calc_vision_pass tag="hidden"/>
+          <results_refer_group tag="hidden">
+            <res_refer_banner/>
+            <res_refer_history/>
+            <res_refer_pain/>
+            <res_refer_va/>
+            <res_refer_external/>
+            <res_refer_protocol/>
+          </results_refer_group>
+          <results_pass_group tag="hidden">
+            <res_pass_banner/>
+            <res_pass_counseling/>
+          </results_pass_group>
+          <data tag="hidden">
+            <_screening_result/>
+            <_referral_reason_history/>
+            <_referral_reason_va/>
+            <_referral_reason_external/>
+            <_va_distance_right/>
+            <_va_distance_left/>
+            <_has_parent_concerns/>
+            <_has_birth_defects/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="va_distance">
+        <root>
+          <item>
+            <itextId>va_distance-0</itextId>
+            <name>pass</name>
+          </item>
+          <item>
+            <itextId>va_distance-1</itextId>
+            <name>fail</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/case_history_group/history_premature" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_premature_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_premature , ' /data/case_history_group/history_premature ')"/>
+      <bind nodeset="/data/case_history_group/history_low_birth_weight" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_low_birth_weight_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_low_birth_weight , ' /data/case_history_group/history_low_birth_weight ')"/>
+      <bind nodeset="/data/case_history_group/history_birth_defects" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_birth_defects_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_birth_defects , ' /data/case_history_group/history_birth_defects ')"/>
+      <bind nodeset="/data/case_history_group/history_parent_concerns" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_parent_concerns_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_parent_concerns , ' /data/case_history_group/history_parent_concerns ')"/>
+      <bind nodeset="/data/case_history_group/history_eye_pain" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_eye_pain_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_eye_pain , ' /data/case_history_group/history_eye_pain ')"/>
+      <bind nodeset="/data/case_history_group/history_diabetes" type="string" required="true()"/>
+      <bind nodeset="/data/case_history_group/history_diabetes_label" type="string" calculate="jr:choice-name( /data/case_history_group/history_diabetes , ' /data/case_history_group/history_diabetes ')"/>
+      <bind nodeset="/data/distance_va_group" relevant=" /data/patient_age_in_years  &gt;= 3 and  /data/patient_age_in_years  &lt;= 5"/>
+      <bind nodeset="/data/distance_va_group/distance_va_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/distance_va_group/va_distance_right" type="string" required="true()"/>
+      <bind nodeset="/data/distance_va_group/va_distance_right_label" type="string" calculate="jr:choice-name( /data/distance_va_group/va_distance_right , ' /data/distance_va_group/va_distance_right ')"/>
+      <bind nodeset="/data/distance_va_group/va_distance_left" type="string" required="true()"/>
+      <bind nodeset="/data/distance_va_group/va_distance_left_label" type="string" calculate="jr:choice-name( /data/distance_va_group/va_distance_left , ' /data/distance_va_group/va_distance_left ')"/>
+      <bind nodeset="/data/external_eye_group/external_eye_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/external_eye_group/ext_crust_pus" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_crust_pus_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_crust_pus , ' /data/external_eye_group/ext_crust_pus ')"/>
+      <bind nodeset="/data/external_eye_group/ext_swelling" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_swelling_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_swelling , ' /data/external_eye_group/ext_swelling ')"/>
+      <bind nodeset="/data/external_eye_group/ext_abnormal_eyelashes" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_abnormal_eyelashes_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_abnormal_eyelashes , ' /data/external_eye_group/ext_abnormal_eyelashes ')"/>
+      <bind nodeset="/data/external_eye_group/ext_excessive_watering" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_excessive_watering_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_excessive_watering , ' /data/external_eye_group/ext_excessive_watering ')"/>
+      <bind nodeset="/data/external_eye_group/ext_red_conjunctiva" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_red_conjunctiva_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_red_conjunctiva , ' /data/external_eye_group/ext_red_conjunctiva ')"/>
+      <bind nodeset="/data/external_eye_group/ext_hazy_cornea" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_hazy_cornea_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_hazy_cornea , ' /data/external_eye_group/ext_hazy_cornea ')"/>
+      <bind nodeset="/data/external_eye_group/ext_unequal_alignment" type="string" required="true()"/>
+      <bind nodeset="/data/external_eye_group/ext_unequal_alignment_label" type="string" calculate="jr:choice-name( /data/external_eye_group/ext_unequal_alignment , ' /data/external_eye_group/ext_unequal_alignment ')"/>
+      <bind nodeset="/data/calc_refer_history" type="string" calculate="if( /data/case_history_group/history_premature  = 'yes' or  /data/case_history_group/history_low_birth_weight  = 'yes' or  /data/case_history_group/history_birth_defects  = 'yes' or  /data/case_history_group/history_parent_concerns  = 'yes' or  /data/case_history_group/history_eye_pain  = 'yes' or  /data/case_history_group/history_diabetes  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_va" type="string" calculate="if( /data/patient_age_in_years  &gt;= 3 and ( /data/distance_va_group/va_distance_right  = 'fail' or  /data/distance_va_group/va_distance_left  = 'fail'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_refer_external" type="string" calculate="if( /data/external_eye_group/ext_crust_pus  = 'yes' or  /data/external_eye_group/ext_swelling  = 'yes' or  /data/external_eye_group/ext_abnormal_eyelashes  = 'yes' or  /data/external_eye_group/ext_excessive_watering  = 'yes' or  /data/external_eye_group/ext_red_conjunctiva  = 'yes' or  /data/external_eye_group/ext_hazy_cornea  = 'yes' or  /data/external_eye_group/ext_unequal_alignment  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_vision_referral" type="string" calculate="if( /data/calc_refer_history  = 'true' or  /data/calc_refer_va  = 'true' or  /data/calc_refer_external  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/calc_vision_pass" type="string" calculate="if( /data/calc_vision_referral  = 'false', 'true', 'false')"/>
+      <bind nodeset="/data/results_refer_group" relevant=" /data/calc_vision_referral  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_banner" readonly="true()" type="string" relevant=" /data/calc_vision_referral  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_history" readonly="true()" type="string" relevant=" /data/calc_refer_history  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_pain" readonly="true()" type="string" relevant=" /data/case_history_group/history_eye_pain  = 'yes'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_va" readonly="true()" type="string" relevant=" /data/calc_refer_va  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_external" readonly="true()" type="string" relevant=" /data/calc_refer_external  = 'true'"/>
+      <bind nodeset="/data/results_refer_group/res_refer_protocol" readonly="true()" type="string" relevant=" /data/calc_vision_referral  = 'true'"/>
+      <bind nodeset="/data/results_pass_group" relevant=" /data/calc_vision_pass  = 'true'"/>
+      <bind nodeset="/data/results_pass_group/res_pass_banner" readonly="true()" type="string" relevant=" /data/calc_vision_pass  = 'true'"/>
+      <bind nodeset="/data/results_pass_group/res_pass_counseling" readonly="true()" type="string" relevant=" /data/calc_vision_pass  = 'true'"/>
+      <bind nodeset="/data/data/_screening_result" type="string" calculate="if( /data/calc_vision_referral  = 'true', 'refer', 'pass')"/>
+      <bind nodeset="/data/data/_referral_reason_history" type="string" calculate=" /data/calc_refer_history "/>
+      <bind nodeset="/data/data/_referral_reason_va" type="string" calculate=" /data/calc_refer_va "/>
+      <bind nodeset="/data/data/_referral_reason_external" type="string" calculate=" /data/calc_refer_external "/>
+      <bind nodeset="/data/data/_va_distance_right" type="string" calculate=" /data/distance_va_group/va_distance_right "/>
+      <bind nodeset="/data/data/_va_distance_left" type="string" calculate=" /data/distance_va_group/va_distance_left "/>
+      <bind nodeset="/data/data/_has_parent_concerns" type="string" calculate=" /data/case_history_group/history_parent_concerns "/>
+      <bind nodeset="/data/data/_has_birth_defects" type="string" calculate=" /data/case_history_group/history_birth_defects "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/case_history_group">
+      <label ref="jr:itext('/data/case_history_group:label')"/>
+      <select1 ref="/data/case_history_group/history_premature">
+        <label ref="jr:itext('/data/case_history_group/history_premature:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_low_birth_weight">
+        <label ref="jr:itext('/data/case_history_group/history_low_birth_weight:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_birth_defects">
+        <label ref="jr:itext('/data/case_history_group/history_birth_defects:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_parent_concerns">
+        <label ref="jr:itext('/data/case_history_group/history_parent_concerns:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_eye_pain">
+        <label ref="jr:itext('/data/case_history_group/history_eye_pain:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/case_history_group/history_diabetes">
+        <label ref="jr:itext('/data/case_history_group/history_diabetes:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/distance_va_group">
+      <label ref="jr:itext('/data/distance_va_group:label')"/>
+      <input ref="/data/distance_va_group/distance_va_note">
+        <label ref="jr:itext('/data/distance_va_group/distance_va_note:label')"/>
+      </input>
+      <select1 ref="/data/distance_va_group/va_distance_right">
+        <label ref="jr:itext('/data/distance_va_group/va_distance_right:label')"/>
+        <itemset nodeset="instance('va_distance')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/distance_va_group/va_distance_left">
+        <label ref="jr:itext('/data/distance_va_group/va_distance_left:label')"/>
+        <itemset nodeset="instance('va_distance')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/external_eye_group">
+      <label ref="jr:itext('/data/external_eye_group:label')"/>
+      <input ref="/data/external_eye_group/external_eye_note">
+        <label ref="jr:itext('/data/external_eye_group/external_eye_note:label')"/>
+      </input>
+      <select1 ref="/data/external_eye_group/ext_crust_pus">
+        <label ref="jr:itext('/data/external_eye_group/ext_crust_pus:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_swelling">
+        <label ref="jr:itext('/data/external_eye_group/ext_swelling:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_abnormal_eyelashes">
+        <label ref="jr:itext('/data/external_eye_group/ext_abnormal_eyelashes:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_excessive_watering">
+        <label ref="jr:itext('/data/external_eye_group/ext_excessive_watering:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_red_conjunctiva">
+        <label ref="jr:itext('/data/external_eye_group/ext_red_conjunctiva:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_hazy_cornea">
+        <label ref="jr:itext('/data/external_eye_group/ext_hazy_cornea:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/external_eye_group/ext_unequal_alignment">
+        <label ref="jr:itext('/data/external_eye_group/ext_unequal_alignment:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_refer_group">
+      <label ref="jr:itext('/data/results_refer_group:label')"/>
+      <input ref="/data/results_refer_group/res_refer_banner" appearance="h1 red">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_banner:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_history">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_history:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_pain">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_pain:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_va">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_va:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_external">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_external:label')"/>
+      </input>
+      <input ref="/data/results_refer_group/res_refer_protocol">
+        <label ref="jr:itext('/data/results_refer_group/res_refer_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_pass_group">
+      <label ref="jr:itext('/data/results_pass_group:label')"/>
+      <input ref="/data/results_pass_group/res_pass_banner" appearance="h1 green">
+        <label ref="jr:itext('/data/results_pass_group/res_pass_banner:label')"/>
+      </input>
+      <input ref="/data/results_pass_group/res_pass_counseling">
+        <label ref="jr:itext('/data/results_pass_group/res_pass_counseling:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/data"/>
+  </h:body>
+</h:html>
